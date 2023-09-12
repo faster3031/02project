@@ -3,8 +3,10 @@
 @import url("font.css");
 @import url("base.css");
 @import url("common.css");
-@import url("visual.css");
+@import url("slide.css");
 @import url("campaign.css");
+@import url("fandom.css");
+@import url("goods.css");
 @import url("donation.css");
 @import url("artist.css");
 @import url("news.css");
