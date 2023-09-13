@@ -1,6 +1,61 @@
 /* 헤더 */
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  transform: 0.3s;
 
-
+}
+.header-active {
+    background-color: #00000036;
+  }
+.header .inner {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  line-height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .logo img {
+  width: 200px;
+  height: 60px;
+}
+.nav {
+  width: 50%;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+.nav ul li {
+  font-family: "Cafe24Oneprettynight";
+  font-weight: bold;
+  font-size: 20px;
+}
+.nav ul li:hover::after {
+  opacity: 1;
+}
+.nav ul li:hover {
+  cursor: pointer;
+}
+.nav ul li:hover a {
+  color: #EBDEFF;
+}
+.login a {
+  font-family: "Cafe24Oneprettynight";
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.login a:hover{
+  color: #EBDEFF;
+}
+.login i {
+  font-size: 18px;
+}
 
 @media all and (max-width: 1680px) {
 }

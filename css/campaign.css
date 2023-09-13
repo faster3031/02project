@@ -10,3 +10,51 @@
 }
 @media all and (max-width: 480px) {
 }
+/* 작업 */
+
+.campaign {
+  /* width: calc(96% / 3); */
+  width: 100%;
+  height: 900px;
+  position: relative;
+  display: block;
+}
+.all_campaign {
+  flex-wrap: wrap;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.box {
+  display: block;
+  position: relative;
+  padding: 20px;
+  width: calc(96% / 3);
+  border-radius: 3px;
+}
+.box p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Cafe24Oneprettynight";
+}
+.campaign_percent {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.bar {
+  width: 100%;
+  height: 10px;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+.bar span {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 60%;
+  height: 10px;
+  background-color: #a583c8;
+  border-radius: 5px;
+}

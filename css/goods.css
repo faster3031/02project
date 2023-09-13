@@ -83,6 +83,7 @@
   text-align: center;
   padding-top: 10px;
 }
+
 @media all and (max-width: 1680px) {
 }
 
@@ -93,4 +94,6 @@
 @media all and (max-width: 760px) {
 }
 @media all and (max-width: 480px) {
+
 }
+
