@@ -1,4 +1,114 @@
 /* 소식 */
+.news{
+    width: 100%;
+}
+.news h1{
+    font-size: 20px;
+    margin-bottom: 20px
+}
+.news-card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 50%;
+}
+#card-box{
+width: calc(100%/3);
+margin: 10px;
+}
+#card-box h3{
+margin: 10px 0;
+}
+.card-box1{
+    float: left;
+}
+.news-card img{
+    width: 250px;
+    border-radius: 10px;
+}
+.news-card .bar{
+    width: 250px;
+}
+.card-text{
+    font-family: 'Cafe24Oneprettynight';
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.card-text p{
+font-size: 12px;
+    float: left;
+    margin-right: 140px;
+}
+
+.news > .slider-wrap {
+    position: relative;
+    width: 500px;
+}
+.news >.slider-wrap .slider {
+    width: 100%;
+}
+.slider-item {
+  width: 530px;
+  padding: 20px 0 25px 30px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+  box-shadow: 0 4px 9px #f1f1f4;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+.slider-item .animation-card_image {
+  max-width: 60px;
+  max-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 9px rgba(241, 241, 244, 0.72);
+  background-color: #ffffff;
+}
+.slider-item .animation-card_image img {
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.slider-item .animation-card_content {
+  width: 100%;
+  max-width: 374px;
+  margin-left: 26px;
+  font-family: "Open Sans", sans-serif;
+}
+.slider-item .animation-card_content .animation-card_content_title {
+  color: #4a4545;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.18px;
+  line-height: 24px;
+  margin: 0;
+}
+.slider-item .animation-card_content .animation-card_content_description {
+  color: #696d74;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 24px;
+  margin: 10px 0 0 0;
+}
+.slider-item .animation-card_content .animation-card_content_city {
+  font-size: 11px;
+  margin: 10px 0 0 0;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #696d74;
+}
 @media all and (max-width: 1680px) {
 }
 

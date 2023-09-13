@@ -47,6 +47,7 @@
     />
     <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/header.js"></script>
     <script src="js/slide.js"></script>
@@ -241,8 +242,110 @@
         <div class="inner"></div>
       </section>
       <!-- 소식 -->
-      <section class="news">
-        <div class="inner"></div>
+      <section class="news" >
+        <div class="inner">
+          <h1>새소식</h1>
+          <div class="news-card">
+            <div class="card-box1" id="card-box">
+              <a href="#"><img src="images/news_picture1.jpg" alt="새소식_무더위"></a>
+              <h3>[팬덤명] 한부모 가정에게 선선한 여름을 선물했습니다.</h3>
+              <div class="bar">
+                <span></span>
+              </div>
+              <div class="card-text">
+                <p>00000원 모금완료</p>
+                <b>30%</b>
+              </div>
+            </div>
+            <div class="card-box2" id="card-box">
+              <a href="#"><img src="images/news_picture2.jpg" alt="새소식_삼계탕"></a>
+              <h3>[팬덤명] 든든한 삼계탕을 먹고 힘을 낼 수 있었습니다.</h3>
+              <div class="bar">
+                <span></span>
+              </div>
+              <div class="card-text">
+                <p>00000원 모금완료</p>
+                <b>30%</b>
+              </div>
+            </div>
+            <div class="card-box3" id="card-box">
+              <a href="#"><img src="images/news_picture3.jpg" alt="새소식_폐화분"></a>
+              <h3>[팬덤명] 폐화분의 놀라운 변신!</h3>
+              <div class="bar">
+                <span></span>
+              </div>
+              <div class="card-text">
+                <p>00000원 모금완료</p>
+                <b>30%</b>
+              </div>
+            </div>
+            <div class="card-box4" id="card-box">
+              <a href="#"><img src="images/news_picture4.jpg" alt="새소식_김장"></a>
+              <h3>[팬덤명] 한 여름에도 든든한 김장김치를 전했어요.</h3>
+              <div class="bar">
+                <span></span>
+              </div>
+              <div class="card-text">
+                <p>00000원 모금완료</p>
+                <b>30%</b>
+              </div>
+            </div>
+          </div>
+          <div class="slider-wrap">
+            <div id="card-slider" class="slider">
+              <div class="slider-item">
+                  <div class="animation-card_image">
+                      <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
+                  </div>
+                  <div class="animation-card_content">
+                      <h4 class="animation-card_content_title title-2">Charlize Theron 1</h4>
+                      <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
+                      <p class="animation-card_content_city">New York, NY</p>
+                  </div>
+              </div>
+              <div class="slider-item">
+                  <div class="animation-card_image">
+                      <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
+                  </div>
+                  <div class="animation-card_content">
+                      <h4 class="animation-card_content_title title-2">Charlize Theron 2</h4>
+                      <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
+                      <p class="animation-card_content_city">New York, NY</p>
+                  </div>
+              </div>
+              <div class="slider-item">
+                  <div class="animation-card_image">
+                      <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
+                  </div>
+                  <div class="animation-card_content">
+                      <h4 class="animation-card_content_title title-2">Charlize Theron 3</h4>
+                      <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
+                      <p class="animation-card_content_city">New York, NY</p>
+                  </div>
+              </div>
+              <div class="slider-item">
+                  <div class="animation-card_image">
+                      <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
+                  </div>
+                  <div class="animation-card_content">
+                      <h4 class="animation-card_content_title title-2">Charlize Theron 4</h4>
+                      <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
+                      <p class="animation-card_content_city">New York, NY</p>
+                  </div>
+              </div>
+              <div class="slider-item">
+                  <div class="animation-card_image">
+                      <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
+                  </div>
+                  <div class="animation-card_content">
+                      <h4 class="animation-card_content_title title-2">Charlize Theron 5</h4>
+                      <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
+                      <p class="animation-card_content_city">New York, NY</p>
+                  </div>
+              </div>
+          </div>
+          </div>  
+        </div>
       </section>
       <!-- 푸터 -->
       <footer class="footer">
