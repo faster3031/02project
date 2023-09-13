@@ -21,21 +21,34 @@
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
     />
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KV63VKR9');</script>
-  <!-- End Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KV63VKR9");
+    </script>
+    <!-- End Google Tag Manager -->
     <title>별의 온도</title>
     <link rel="stylesheet" href="css/reset.css" />
     <!-- [if lt IE 9]
     <script src="js/respond.min.js"></script>
     <script src="js/html5shiv.js"></script>
     [endif] -->
-    <script src="js/prefixfree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/ProgressBar.js"></script>
     <script src="js/header.js"></script>
     <script src="js/slide.js"></script>
     <script src="js/donaiton.js"></script>
@@ -54,15 +67,112 @@
       </header>
       <!-- 슬라이드 -->
       <section class="slide">
-        <div class="inner"></div>
+        <div class="inner">
+          <!--슬라이드 스와이퍼 -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide1">
+                <a href="#"
+                  ><img src="images/slide1.png" alt="이벤트 슬라이드 1"
+                /></a>
+              </div>
+              <div class="swiper-slide slide2">
+                <a href="#"
+                  ><img src="images/slide2.png" alt="이벤트 슬라이드 2"
+                /></a>
+              </div>
+              <div class="swiper-slide slide3">
+                <a href="#"
+                  ><img src="images/slide3.png" alt="이벤트 슬라이드 3"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- 총 모금액 -->
       <section class="donation">
-        <div class="inner"></div>
+        <div class="inner">
+          <div class="donation_box">
+            <div class="1_box">
+              <div class="Participation">
+                <span>
+                  <p>참여 현황</p>
+                </span>
+              </div>
+              <div class="Cheering">
+                <p>오늘 모인 여러분의 소중한 응원</p>
+              </div>
+            </div>
+            <div class="personnel">
+              <p>참여 인원OOO명</p>
+            </div>
+            <div class="amount">
+              <p>기부 금액 : O,OOO,OOO,OOO원</p>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- 캠페인 -->
       <section class="campaign">
-        <div class="inner"></div>
+        <div class="inner">
+          <div class="all_campaign">
+            <div class="campaign_box1 box">
+              <a href="#"><img src="images/campaign1.png" alt="캠페인 1" /></a>
+              <p>[OOO] 기부캠페인 타이틀</p>
+              <p>팬덤명</p>
+              <p class="campaign_percent">OO%</p>
+              <div class="bar">
+                <span></span>
+              </div>
+            </div>
+            <div class="campaign_box2 box">
+              <a href="#"><img src="images/campaign1.png" alt="캠페인 1" /></a>
+              <p>[OOO] 기부캠페인 타이틀</p>
+              <p>팬덤명</p>
+              <p class="campaign_percent">OO%</p>
+              <div class="bar">
+                <span></span>
+              </div>
+            </div>
+            <div class="campaign_box3 box">
+              <a href="#"><img src="images/campaign1.png" alt="캠페인 1" /></a>
+              <p>[OOO] 기부캠페인 타이틀</p>
+              <p>팬덤명</p>
+              <p class="campaign_percent">OO%</p>
+              <div class="bar">
+                <span></span>
+              </div>
+            </div>
+            <div class="campaign_box4 box">
+              <a href="#"><img src="images/campaign1.png" alt="캠페인 1" /></a>
+              <p>[OOO] 기부캠페인 타이틀</p>
+              <p>팬덤명</p>
+              <p class="campaign_percent">OO%</p>
+              <div class="bar">
+                <span></span>
+              </div>
+            </div>
+            <div class="campaign_box5 box">
+              <a href="#"><img src="images/campaign1.png" alt="캠페인 1" /></a>
+              <p>[OOO] 기부캠페인 타이틀</p>
+              <p>팬덤명</p>
+              <p class="campaign_percent">OO%</p>
+              <div class="bar">
+                <span></span>
+              </div>
+            </div>
+            <div class="campaign_box6 box">
+              <a href="#"><img src="images/campaign1.png" alt="캠페인 1" /></a>
+              <p>[OOO] 기부캠페인 타이틀</p>
+              <p>팬덤명</p>
+              <p class="campaign_percent">OO%</p>
+              <div class="bar">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- 팬덤 -->
       <section class="fandom">
@@ -116,7 +226,13 @@
     </div>
   </body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV63VKR9"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript
+    ><iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-KV63VKR9"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe
+  ></noscript>
   <!-- End Google Tag Manager (noscript) -->
 </html>
