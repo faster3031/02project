@@ -12,10 +12,6 @@
 }
 
 /* 호버 효과 테스트 */
-img {
-  min-height: 100%;
-  max-width: 100%;
-}
 
 .imgHoverEvent .imgBox {
   width: 100%;
