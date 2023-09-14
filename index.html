@@ -36,7 +36,7 @@
     <!-- End Google Tag Manager -->
     <title>별의 온도</title>
     <link rel="stylesheet" href="css/reset.css" />
-    <!-- [if lt IE 9]
+    [if lt IE 9]
     <script src="js/respond.min.js"></script>
     <script src="js/html5shiv.js"></script>
 
@@ -45,7 +45,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="js/prefixfree.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
@@ -95,7 +95,7 @@
       <section class="slide">
         <div class="inner">
           <!--슬라이드 스와이퍼 -->
-          <div class="swiper mySwiper">
+          <div class="swiper slide_Swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide slide1">
                 <a href="#"
@@ -141,67 +141,163 @@
       </section>
       <!-- 캠페인 -->
       <section class="campaign">
-        <div class="inner">
-          <div class="all_campaign">
-            <div class="campaign_box1 box">
-              <a href="#"><img src="images/s_aespa.jpg" alt="캠페인 1" /></a>
-              <p>[에스파] 장애인 교통 차량지원</p>
-              <p>MY</p>
-              <p class="campaign_percent">8O%</p>
-              <div class="bar_80">
-                <span></span>
+        <div class="inner campaign-wrap">
+          <!-- 세븐틴 -->
+          <div class="campaign_item">
+            <div class="campaign_box">
+              <div class="imgBox">
+                <img src="images/s_seventeen.jpg" alt="세븐틴" />
+              </div>
+              <div class="imgBox imgBox_back">
+                <img src="images/s_1.JPG" alt="6.25" />
+              </div>
+              <div class="hoverBox">
+                <p class="p1">[세븐틴] 6.25 참전 영웅 생활비 지원</p>
+                <p class="p2">
+                  6.25 참전 영웅들을 위해 작지만 보답하고자 합니다. <br />많은
+                  관심 부탁드립니다.
+                </p>
               </div>
             </div>
-            <div class="campaign_box2 box">
-              <a href="#"
-                ><img src="images/s_blackpink.jpg" alt="캠페인 2"
-              /></a>
-              <p>[블랙핑크] 장애아동 기부캠페인</p>
-              <p>BLINK</p>
-              <p class="campaign_percent">6O%</p>
-              <div class="bar">
-                <span></span>
+            <p class="campaign_percent">6O%</p>
+            <div class="bar">
+              <span></span>
+            </div>
+          </div>
+          <div class="campaign_item">
+            <div class="imgHoverEvent event campaign_box">
+              <div class="imgBox">
+                <img src="images/s_seventeen.jpg" alt="세븐틴" />
+              </div>
+              <div class="imgBox_back">
+                <img src="images/s_1.JPG" alt="6.25" />
+              </div>
+              <div class="hoverBox">
+                <p class="p1">[세븐틴] 6.25 참전 영웅 생활비 지원</p>
+                <p class="p2">
+                  6.25 참전 영웅들을 위해 작지만 보답하고자 합니다. <br />많은
+                  관심 부탁드립니다.
+                </p>
               </div>
             </div>
-            <div class="campaign_box3 box">
-              <a href="#"><img src="images/s_bts.jpg" alt="캠페인 3" /></a>
-              <p>[BTS] 모로고 강진 긴급지원</p>
-              <p>ARMY</p>
-              <p class="campaign_percent">3O%</p>
-              <div class="bar_30">
-                <span></span>
+            <p class="campaign_percent">6O%</p>
+            <div class="bar">
+              <span></span>
+            </div>
+          </div>
+          <!-- BTS -->
+          <div class="campaign_item">
+            <div class="imgHoverEvent event campaign_box">
+              <div class="imgBox">
+                <img src="images/s_bts.jpg" alt="bts" />
+              </div>
+              <div class="imgBox_back">
+                <img src="images/s_2.jpg" alt="모로코" />
+              </div>
+              <div class="hoverBox">
+                <p class="p1">[방탄소년단] 모로코 강진 피해 복구 지원</p>
+                <p class="p2">
+                  09.13 모로코 강진으로 인해 많은 분들이 집과 삶을
+                  잃어버렸습니다. <br />여러분들의 많은 관심 부탁드립니다.
+                </p>
               </div>
             </div>
-            <div class="campaign_box4 box">
-              <a href="#"
-                ><img src="images/s_seventeen.jpg" alt="캠페인 4"
-              /></a>
-              <p>[세븐틴] 다문화 가정 일자리 지원</p>
-              <p>CARAT</p>
-              <p class="campaign_percent">7O%</p>
-              <div class="bar_70">
-                <span></span>
+            <p class="campaign_percent">6O%</p>
+            <div class="bar">
+              <span></span>
+            </div>
+          </div>
+          <!-- IU -->
+          <div class="campaign_item">
+            <div class="imgHoverEvent event campaign_box">
+              <div class="imgBox">
+                <img src="images/s_IU.jpg" alt="IU" />
+              </div>
+              <div class="imgBox_back">
+                <img src="images/s_3.jpg" alt="한부모" />
+              </div>
+              <div class="hoverBox">
+                <p class="p1">
+                  [아이유] 한부모가족과 자립준비청년을 위한 지원
+                </p>
+                <p class="p2">
+                  한부모 가족과 자립을 준비하는 청년을 위해 아이유가 다시한번
+                  기부를 준비하고 있습니다. <br />여러분들도 함께 많은 관심과
+                  모금 부탁드립니다.
+                </p>
               </div>
             </div>
-            <div class="campaign_box5 box">
-              <a href="#"><img src="images/s_twice.jpg" alt="캠페인 5" /></a>
-              <p>[트와이스] 우크라이나 전쟁 물자 지원</p>
-              <p>ONCE</p>
-              <p class="campaign_percent">1O%</p>
-              <div class="bar_10">
-                <span></span>
+            <p class="campaign_percent">6O%</p>
+            <div class="bar">
+              <span></span>
+            </div>
+          </div>
+          <!-- 에스퍼 -->
+          <div class="campaign_item">
+            <div class="imgHoverEvent event campaign_box">
+              <div class="imgBox">
+                <img src="images/s_aespa.jpg" alt="에스퍼" />
+              </div>
+              <div class="imgBox_back">
+                <img src="images/s_4.jpg" alt="한글" />
+              </div>
+              <div class="hoverBox">
+                <p class="p1">[에스퍼] 어르신 교육지원</p>
+                <p class="p2">
+                  나라를 위해 가족을 위해 쉬지 않고 일만 해오시던 분들 하지만
+                  아직 한글을 제대로 읽지 못하신 분들을 위해 교육을 지원하고자
+                  합니다.
+                </p>
+              </div>
+              
+            </div>
+            <p class="campaign_percent">6O%</p>
+            <div class="bar">
+              <span></span>
+          </div>
+          <!-- 트와이스 -->
+          <div class="campaign_item">
+            <div class="imgHoverEvent event campaign_box">
+              <div class="imgBox">
+                <img src="images/s_twice.jpg" alt="트와이스" />
+              </div>
+              <div class="imgBox_back">
+                <img src="images/s_5.jpg" alt="독거노인" />
+              </div>
+              <div class="hoverBox">
+                <p class="p1">[트와이스] 독거노인 추석 음식지원</p>
+                <p class="p2">
+                  이번 추석 혼자 지내시는 독거노인분들을 위해 추석 음식을 지원
+                  하려고 합니다 많은 관심과 참여 부탁드립니다.
+                </p>
               </div>
             </div>
-            <div class="campaign_box6 box">
-              <div class="box_6_back">
-                <a href="#"><img src="images/s_6.JPG" alt="캠페인 6" /></a>
+            <p class="campaign_percent">6O%</p>
+            <div class="bar">
+              <span></span>
+            </div>
+          </div>
+            <!-- 블랙핑크 -->
+          <div class="campaign_item">
+            <div class="imgHoverEvent event campaign_box">
+              <div class="imgBox">
+                <img src="images/s_blackpink.jpg" alt="블랙핑크" />
               </div>
-              <p>[아이유] 6.25 국가유공자 생활비 지원</p>
-              <p>유애나</p>
-              <p class="campaign_percent">9O%</p>
-              <div class="bar_90">
-                <span></span>
+              <div class="imgBox_back">
+                <img src="images/s_6.jpg" alt="연탄" />
               </div>
+              <div class="hoverBox">
+                <p class="p1">[블랙핑크] 겨울맞이 연탄 나눔행사</p>
+                <p class="p2">
+                  이제 추운 겨울이 다가 오고 있습니다. 그때를 대비하기 위해
+                  연탄을 전달해 드리고자 합니다. 많은 관심과 참여
+                  부탁드립니다.
+                </p>
+              </div>
+            </div>
+            <p class="campaign_percent">6O%</p>
+            <div class="bar">
+              <span></span>
             </div>
           </div>
         </div>
@@ -231,10 +327,8 @@
             </div>
             <div class="fandonimg">
               <ul class="imgbox">
-                
                 <img src="images/fandom_iu.jpg" alt="팬덤_아이유" />
               </ul>
-              
             </div>
           </div>
         </div>
@@ -245,16 +339,32 @@
           <div class="goodsbox">
             <div class="goodstxt">
               <h2>별의온도 후원 굿즈</h2>
-              <p>별의온도를 통해 기부해 주시는 팬분들을 위한<br>
-              오직 별의온도만의 특별한 굿즈
+              <p>
+                별의온도를 통해 기부해 주시는 팬분들을 위한<br />
+                오직 별의온도만의 특별한 굿즈
               </p>
               <button>보러가기</button>
             </div>
             <div class="goodslist">
               <ul class="goodsart">
-                <li><a href="#"><img src="images/fandom_goods01.jpg" alt="굿즈1"> <p>미공개 앨범 (후원ver.)</p></a></li>
-                <li><a href="#"><img src="images/fandom_goods02.jpg" alt="굿즈2"> <p>스타의 애장품</p></a></li>
-                <li><a href="#"><img src="images/fandom_goods03.jpg" alt="굿즈3"> <p>랜덤카드 (후원ver.)</p></a></li>
+                <li>
+                  <a href="#"
+                    ><img src="images/fandom_goods01.jpg" alt="굿즈1" />
+                    <p>미공개 앨범 (후원ver.)</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="images/fandom_goods02.jpg" alt="굿즈2" />
+                    <p>스타의 애장품</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="images/fandom_goods03.jpg" alt="굿즈3" />
+                    <p>랜덤카드 (후원ver.)</p></a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -265,12 +375,14 @@
         <div class="inner"></div>
       </section>
       <!-- 소식 -->
-      <section class="news" >
+      <section class="news">
         <div class="inner">
           <h1>새소식</h1>
           <div class="news-card">
             <div class="card-box1" id="card-box">
-              <a href="#"><img src="images/news_picture1.jpg" alt="새소식_무더위"></a>
+              <a href="#"
+                ><img src="images/news_picture1.jpg" alt="새소식_무더위"
+              /></a>
               <h3>[팬덤명] 한부모 가정에게 선선한 여름을 선물했습니다.</h3>
               <div class="bar">
                 <span></span>
@@ -281,7 +393,9 @@
               </div>
             </div>
             <div class="card-box2" id="card-box">
-              <a href="#"><img src="images/news_picture2.jpg" alt="새소식_삼계탕"></a>
+              <a href="#"
+                ><img src="images/news_picture2.jpg" alt="새소식_삼계탕"
+              /></a>
               <h3>[팬덤명] 든든한 삼계탕을 먹고 힘을 낼 수 있었습니다.</h3>
               <div class="bar">
                 <span></span>
@@ -292,7 +406,9 @@
               </div>
             </div>
             <div class="card-box3" id="card-box">
-              <a href="#"><img src="images/news_picture3.jpg" alt="새소식_폐화분"></a>
+              <a href="#"
+                ><img src="images/news_picture3.jpg" alt="새소식_폐화분"
+              /></a>
               <h3>[팬덤명] 폐화분의 놀라운 변신!</h3>
               <div class="bar">
                 <span></span>
@@ -303,7 +419,9 @@
               </div>
             </div>
             <div class="card-box4" id="card-box">
-              <a href="#"><img src="images/news_picture4.jpg" alt="새소식_김장"></a>
+              <a href="#"
+                ><img src="images/news_picture4.jpg" alt="새소식_김장"
+              /></a>
               <h3>[팬덤명] 한 여름에도 든든한 김장김치를 전했어요.</h3>
               <div class="bar">
                 <span></span>
@@ -317,57 +435,97 @@
           <div class="slider-wrap">
             <div id="card-slider" class="slider">
               <div class="slider-item">
-                  <div class="animation-card_image">
-                      <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
-                  </div>
-                  <div class="animation-card_content">
-                      <h4 class="animation-card_content_title title-2">Charlize Theron 1</h4>
-                      <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
-                      <p class="animation-card_content_city">New York, NY</p>
-                  </div>
+                <div class="animation-card_image">
+                  <img
+                    src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="animation-card_content">
+                  <h4 class="animation-card_content_title title-2">
+                    Charlize Theron 1
+                  </h4>
+                  <p class="animation-card_content_description p-2">
+                    With no contractual commitments comes the freedom of having
+                    top notch content created whenever.
+                  </p>
+                  <p class="animation-card_content_city">New York, NY</p>
+                </div>
               </div>
               <div class="slider-item">
-                  <div class="animation-card_image">
-                      <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
-                  </div>
-                  <div class="animation-card_content">
-                      <h4 class="animation-card_content_title title-2">Charlize Theron 2</h4>
-                      <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
-                      <p class="animation-card_content_city">New York, NY</p>
-                  </div>
+                <div class="animation-card_image">
+                  <img
+                    src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="animation-card_content">
+                  <h4 class="animation-card_content_title title-2">
+                    Charlize Theron 2
+                  </h4>
+                  <p class="animation-card_content_description p-2">
+                    With no contractual commitments comes the freedom of having
+                    top notch content created whenever.
+                  </p>
+                  <p class="animation-card_content_city">New York, NY</p>
+                </div>
               </div>
               <div class="slider-item">
-                  <div class="animation-card_image">
-                      <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
-                  </div>
-                  <div class="animation-card_content">
-                      <h4 class="animation-card_content_title title-2">Charlize Theron 3</h4>
-                      <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
-                      <p class="animation-card_content_city">New York, NY</p>
-                  </div>
+                <div class="animation-card_image">
+                  <img
+                    src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="animation-card_content">
+                  <h4 class="animation-card_content_title title-2">
+                    Charlize Theron 3
+                  </h4>
+                  <p class="animation-card_content_description p-2">
+                    With no contractual commitments comes the freedom of having
+                    top notch content created whenever.
+                  </p>
+                  <p class="animation-card_content_city">New York, NY</p>
+                </div>
               </div>
               <div class="slider-item">
-                  <div class="animation-card_image">
-                      <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
-                  </div>
-                  <div class="animation-card_content">
-                      <h4 class="animation-card_content_title title-2">Charlize Theron 4</h4>
-                      <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
-                      <p class="animation-card_content_city">New York, NY</p>
-                  </div>
+                <div class="animation-card_image">
+                  <img
+                    src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="animation-card_content">
+                  <h4 class="animation-card_content_title title-2">
+                    Charlize Theron 4
+                  </h4>
+                  <p class="animation-card_content_description p-2">
+                    With no contractual commitments comes the freedom of having
+                    top notch content created whenever.
+                  </p>
+                  <p class="animation-card_content_city">New York, NY</p>
+                </div>
               </div>
               <div class="slider-item">
-                  <div class="animation-card_image">
-                      <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
-                  </div>
-                  <div class="animation-card_content">
-                      <h4 class="animation-card_content_title title-2">Charlize Theron 5</h4>
-                      <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
-                      <p class="animation-card_content_city">New York, NY</p>
-                  </div>
+                <div class="animation-card_image">
+                  <img
+                    src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="animation-card_content">
+                  <h4 class="animation-card_content_title title-2">
+                    Charlize Theron 5
+                  </h4>
+                  <p class="animation-card_content_description p-2">
+                    With no contractual commitments comes the freedom of having
+                    top notch content created whenever.
+                  </p>
+                  <p class="animation-card_content_city">New York, NY</p>
+                </div>
               </div>
+            </div>
           </div>
-          </div>  
         </div>
       </section>
       <!-- 푸터 -->
