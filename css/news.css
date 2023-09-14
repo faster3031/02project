@@ -1,81 +1,139 @@
 /* 소식 */
-.news{
-    width: 100%;
+.news {
+  width: 100%;
+  height: 1100px;
 }
-.news h1{
-    font-size: 20px;
-    margin-bottom: 20px
+.news .title {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
 }
-.news-card{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 50%;
+.news h1 {
+  font-weight: bold;
+  height: 100px;
+  line-height: 100px;
 }
-#card-box{
-width: calc(100%/3);
-margin: 10px;
+.news-card {
+  float: left;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 50%;
 }
-#card-box h3{
-margin: 10px 0;
+.news .newSwiper {
+  margin-bottom: 60px;
+  width: 40%;
+  height: 400px;
+  float: left;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+  margin-left: 120px;
+  padding: 10px;
 }
-.card-box1{
-    float: left;
+.news .newSwiper h1 {
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  width: 100%;
+  height: 60px;
+  line-height: 40px;
+  display: block;
+  font-size: 20px;
+  padding: 0 30px;
+  text-align: left;
 }
-.news-card img{
-    width: 250px;
-    border-radius: 10px;
+.news .newSwiper h2 {
+  /* font-family: "Cafe24Oneprettynight"; */
+  font-size: 22px;
+  text-align: left;
+  padding: 0 30px;
 }
-.news-card .bar{
-    width: 250px;
+.news .newSwiper p {
+  line-height: 28px;
+  font-weight: 300;
+  text-align: left;
+  font-size: 16px;
+  margin: 20px 0;
+  padding: 0 30px;
+  opacity: 0.8;
 }
-.card-text{
-    font-family: 'Cafe24Oneprettynight';
-    font-weight: bold;
-    font-size: 13px;
-    margin-top: 10px;
+#card-box {
+  width: calc(90% / 2);
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 20px 10px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
 }
-.card-text p{
-font-size: 12px;
-    float: left;
-    margin-right: 140px;
+#card-box h3 {
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 14px;
 }
-
-.news > .slider-wrap {
-    position: relative;
-    width: 500px;
+.card-box1 {
+  float: left;
 }
-.news >.slider-wrap .slider {
-    width: 100%;
+.news-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.news-card .bar {
+  width: 100%;
+}
+.card-text {
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.card-text p {
+  font-size: 12px;
+  float: left;
+}
+.card-text b {
+  color: #7724c9;
+  float: right;
+}
+.slider-wrap {
+  margin-top: 60px;
+  overflow: hidden;
+  float: right;
+  width: 50%;
+  height: 500px;
+}
+#card-slider {
+  margin-left: 150px;
+  position: relative;
+  width: 700px;
+  height: 200px;
 }
 .slider-item {
-  width: 530px;
+  width: 520px;
+  height: 150px;
   padding: 20px 0 25px 30px;
   border-radius: 10px;
   background-color: #ffffff;
   display: flex;
   justify-content: flex-start;
-  position: absolute;
   opacity: 0;
   z-index: 0;
   box-shadow: 0 4px 9px #f1f1f4;
   position: absolute;
-  left: 50%;
+  left: 0;
   top: 0;
 }
 .slider-item .animation-card_image {
-  max-width: 60px;
-  max-height: 60px;
+  max-width: 70px;
+  max-height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  box-shadow: 0 4px 9px rgba(241, 241, 244, 0.72);
+  box-shadow: 0 4px 9px rgba(122, 122, 122, 0.72);
   background-color: #ffffff;
 }
 .slider-item .animation-card_image img {
-  width: 53px;
-  height: 53px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -88,9 +146,9 @@ font-size: 12px;
 .slider-item .animation-card_content .animation-card_content_title {
   color: #4a4545;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: bold;
   letter-spacing: -0.18px;
-  line-height: 24px;
+  line-height: 30px;
   margin: 0;
 }
 .slider-item .animation-card_content .animation-card_content_description {
@@ -98,16 +156,21 @@ font-size: 12px;
   font-size: 15px;
   font-weight: 300;
   letter-spacing: normal;
-  line-height: 24px;
+  line-height: 30px;
   margin: 10px 0 0 0;
 }
 .slider-item .animation-card_content .animation-card_content_city {
   font-size: 11px;
   margin: 10px 0 0 0;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   color: #696d74;
+}
+.news .swiper-pagination-bullet {
+  width: 30px;
+  border-radius: 5px;
+  background-color: #7724c9;
 }
 @media all and (max-width: 1680px) {
 }

@@ -1,5 +1,6 @@
 /* 푸터 */
 .footer {
+    clear: both;
     width: 100%;
     height: 200px;
     background-color: #EBDEFF;
