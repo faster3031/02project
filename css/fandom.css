@@ -1,5 +1,5 @@
 /* 팬덤 */
-.fandom{
+.fandom {
   width: 100%;
   height: 600px;
   /* background-color: #5c5c5c; */
@@ -8,7 +8,7 @@
   width: 100%;
   height: 600px;
   background: url("../images/fandom_background.png") no-repeat;
- background-color: #ebdeff32;
+  background-color: #ebdeff32;
   display: flex;
 }
 .rank {
@@ -87,7 +87,7 @@
   width: 200px;
   height: 60px;
   border-radius: 20px;
-  background-color: #8D5CB2;
+  background-color: #8d5cb2;
   cursor: pointer;
   border: none;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -114,20 +114,19 @@
 }
 
 /* 랭킹이미지 */
-.fandonimg {
+/* .fandonimg {
   width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-}
-.fandonimg .imgbox {
+} */
+/* .fandonimg .imgbox {
   width: 400px;
   height: 400px;
   display: block;
   position: relative;
-}
-.fandonimg img {
+} */
+/* .fandonimg img {
   display: block;
   width: 100%;
   height: 100%;
@@ -135,8 +134,8 @@
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 1px 1px 30px rgba(98, 19, 135, 1);
-}
-.fandonimg .imgbox::before {
+} */
+/* .fandonimg .imgbox::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -146,7 +145,152 @@
   width: 130%;
   height: 130%;
   border: 1px dotted rgb(66, 0, 99);
+} */
+.fandomimg {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
+.imgbox {
+  position: relative;
+  height: 640px;
+  -webkit-transition: all 0.09s ease-in;
+  -moz-transition: all 0.09s ease-in;
+  -o-transition: all 0.09s ease-in;
+  transition: all 0.09s ease-in;
+  overflow: hidden;
+}
+.imgbox li {
+  text-indent: -99999;
+  display: block;
+  position: absolute;
+  border: 2px solid #394057;
+}
+.imgbox li span {
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 50%;
+}
+.imgbox li span::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 20px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.imgbox li.active {
+  border-color: #aa4200;
+}
+.imgbox li.active.starimg,
+.imgbox li.active span {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.imgbox .starimg {
+  width: 400px;
+  height: 400px;
+  -webkit-border-radius: 400px;
+  -moz-border-radius: 400px;
+  border-radius: 50%;
+  background: url("../images/fandom_iu.jpg")no-repeat;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  -webkit-box-shadow: 0 0 50px rgb(141, 60, 216);
+  -moz-box-shadow: 0 0 50px rgb(141, 60, 216);
+  box-shadow: 0 0 50px rgb(141, 60, 216);
+  z-index: 100;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.imgbox .starimg span {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+/* .imgbox .starimg span::after{
+  display: block;
+  content: "";
+  background-color: #ffec46;
+  top: 45px;
+  left: 45px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.imgbox .starimg::after{
+  content: "";
+  display: block;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  border: 1px dotted #8d5cb2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation:  rotate 5s linear infinite;
+}
+ */
+
+.imgbox .mercury {
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  border: 1px dotted #8d5cb2;
+  top: 12%;
+  left: 21.8%;
+  transform: translate(-50%, -50%);
+  animation:  rotate 10s linear infinite;
+}
+.imgbox .mercury span {
+  background-color: #ffec46;
+  top: 45px;
+  left: 45px;
+}
+@keyframes rotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+/* .imgbox li {
+  -webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: orbit;
+
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -moz-animation-name: orbit;
+}
+.imgbox li.mercury {
+  -webkit-animation-duration: 15s;
+  -moz-animation-duration: 5s;
+} */
+/* @-webkit-keyframes orbit {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+} */
+
 @media all and (max-width: 1680px) {
 }
 
