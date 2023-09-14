@@ -10,41 +10,162 @@
 }
 @media all and (max-width: 480px) {
 }
+
+/* 호버 효과 테스트 */
+
+.imgHoverEvent .imgBox {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.imgHoverEvent .hoverBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 80%;
+  padding-left: 20px;
+}
+.hoverBox p.p1 {
+  color: #fff;
+  padding-left: 10px;
+  /* text-align: center; */
+  margin-top: 80%;
+  font-size: 18px;
+}
+.hoverBox p.p2 {
+  padding-left: 10px;
+  margin-top: 20px;
+  color: #fff;
+  /* margin-top: 40px; */
+}
+.event .hoverBox {
+  width: 100%;
+  height: 450px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 10%,
+    rgb(0, 0, 0) 70%
+  );
+  transform: translateY(50%);
+  transition: 0.5s;
+}
+.event:hover .hoverBox {
+  transform: translateY(0);
+}
+
+.event:hover .imgBox {
+  opacity: 0;
+}
+.event:hover .hoverBox p.p1 {
+  margin-top: 500px;
+}
+.event .imgBox_back {
+  opacity: 0;
+  position: relative;
+  transition: 0.8s;
+}
+.event:hover .imgBox_back {
+  opacity: 1;
+}
+
 /* 작업 */
 
 .campaign {
-  /* width: calc(96% / 3); */
   width: 100%;
   height: 900px;
   position: relative;
   display: block;
 }
-.all_campaign {
+.campaign-wrap {
+  gap: 20px;
   flex-wrap: wrap;
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 20px 0;
 }
-.box {
+.campaign_item {
+  width: calc(90% / 3);
+}
+.campaign_box {
   display: block;
   position: relative;
-  padding: 20px;
-  width: calc(96% / 3);
   border-radius: 3px;
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
 }
-.box p {
+.campaign_box::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.campaign_box .imgBox {
+  transition: 0.8s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.campaign_box .imgBox img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.campaign_box:hover .imgBox {
+  opacity: 0;
+}
+.campaign_box .imgBox_back {
+  opacity: 0;
+}
+.campaign_box .imgBox_back img {
+}
+
+.campaign_box:hover .imgBox_back {
+  opacity: 1;
+}
+.campaign_box .hoverBox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  padding: 0 20px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 10%,
+    rgb(0, 0, 0) 70%
+  );
+  bottom: -100%;
+  transition: 0.5s;
+}
+.campaign_box:hover .hoverBox {
+  bottom: 0;
+}
+.campaign_box .hoverBox p {
   font-size: 20px;
   font-weight: bold;
   font-family: "Cafe24Oneprettynight";
+  color: #fff;
 }
+.campaign_box .hoverBox .p1 {
+  margin-top: -125px;
+  font-size: 20px;
+}
+.campaign_box .hoverBox .p2 {
+  margin-top: 20px;
+}
+
+/* 바 테스트 */
 .campaign_percent {
+  width: calc(80% / 3);
+  color: #000000;
   position: relative;
   display: flex;
   justify-content: flex-end;
 }
 .bar {
-  width: 100%;
+  width: 80%;
   height: 10px;
   background-color: #d9d9d9;
   border-radius: 5px;
@@ -53,7 +174,7 @@
   position: relative;
   display: block;
   z-index: 99;
-  width: 60%;
+  width: 80%;
   height: 10px;
   background-color: #a583c8;
   border-radius: 5px;
