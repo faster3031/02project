@@ -36,10 +36,9 @@
     <!-- End Google Tag Manager -->
     <title>별의 온도</title>
     <link rel="stylesheet" href="css/reset.css" />
-    [if lt IE 9]
     <script src="js/respond.min.js"></script>
     <script src="js/html5shiv.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link
       rel="stylesheet"
@@ -377,7 +376,10 @@
       <!-- 소식 -->
       <section class="news">
         <div class="inner">
-          <h1>새소식</h1>
+          <div class="title">
+            <h1>새소식</h1>
+            <h1>팬덤 한마디</h1>
+          </div>
           <div class="news-card">
             <div class="card-box1" id="card-box">
               <a href="#"
@@ -431,100 +433,171 @@
                 <b>30%</b>
               </div>
             </div>
+            <div class="card-box5" id="card-box">
+              <a href="#"
+                ><img src="images/news_picture5.jpg" alt="새소식_희망"
+              /></a>
+              <h3>[팬덤명] 똑똑똑! 희망이 배달되었습니다.</h3>
+              <div class="bar">
+                <span></span>
+              </div>
+              <div class="card-text">
+                <p>00000원 모금완료</p>
+                <b>30%</b>
+              </div>
+            </div>
+            <div class="card-box6" id="card-box">
+              <a href="#"
+                ><img src="images/news_picture6.jpg" alt="새소식_어르신"
+              /></a>
+              <h3>[팬덤명] 어르신들이 건강검진을 받고 왔어요</h3>
+              <div class="bar">
+                <span></span>
+              </div>
+              <div class="card-text">
+                <p>00000원 모금완료</p>
+                <b>30%</b>
+              </div>
+            </div>
           </div>
           <div class="slider-wrap">
             <div id="card-slider" class="slider">
               <div class="slider-item">
                 <div class="animation-card_image">
-                  <img
-                    src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg"
-                    alt=""
-                  />
+                  <img src="images/news-message1.webp" alt="message-ive" />
                 </div>
                 <div class="animation-card_content">
                   <h4 class="animation-card_content_title title-2">
-                    Charlize Theron 1
+                    IVE LOVE 님이 200,000원을 후원합니다.
                   </h4>
                   <p class="animation-card_content_description p-2">
-                    With no contractual commitments comes the freedom of having
-                    top notch content created whenever.
+                    "좋은 일에 사용되었으면 좋겠어요~ IVE 화이팅~!"
                   </p>
-                  <p class="animation-card_content_city">New York, NY</p>
+                  <p class="animation-card_content_city">[DIVE]</p>
+
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="animation-card_image">
+                  <img src="images/news-message2.webp" alt="message-newjeans" />
+                </div>
+                <div class="animation-card_content">
+                  <h4 class="animation-card_content_title title-2">
+                    뉴진스 버니즈 님이 800,000원을 후원합니다.
+                  </h4>
+                  <p class="animation-card_content_description p-2">
+                    "별의온도와 함께하는 버니즈!!"
+                  </p>
+                  <p class="animation-card_content_city">[Bunnies]</p>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="animation-card_image">
+                  <img src="images/news-message3.webp" alt="message-bts" />
+                </div>
+                <div class="animation-card_content">
+                  <h4 class="animation-card_content_title title-2">
+                    BTS ARMY 님이 1,000,000원을 후원합니다.
+                  </h4>
+                  <p class="animation-card_content_description p-2">
+                    "우리는 영원한 ARMY"
+                  </p>
+                  <p class="animation-card_content_city">[ARMY]</p>
+
                 </div>
               </div>
               <div class="slider-item">
                 <div class="animation-card_image">
                   <img
-                    src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg"
-                    alt=""
+                    src="images/news-message4.webp"
+                    alt="message-seventeen"
+
                   />
                 </div>
                 <div class="animation-card_content">
                   <h4 class="animation-card_content_title title-2">
-                    Charlize Theron 2
+                    SEVENTEEN 당근 님이 500,000원을 후원합니다.
                   </h4>
                   <p class="animation-card_content_description p-2">
-                    With no contractual commitments comes the freedom of having
-                    top notch content created whenever.
+                    "이런 일에는 캐럿도 빠질 수 없지!"
                   </p>
-                  <p class="animation-card_content_city">New York, NY</p>
+                  <p class="animation-card_content_city">[CARAT]</p>
                 </div>
               </div>
               <div class="slider-item">
                 <div class="animation-card_image">
-                  <img
-                    src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg"
-                    alt=""
-                  />
+                  <img src="images/news-message5.webp" alt="message-aespa" />
                 </div>
                 <div class="animation-card_content">
                   <h4 class="animation-card_content_title title-2">
-                    Charlize Theron 3
+                    AESPA 카리나 님이 600,000원을 후원합니다.
                   </h4>
                   <p class="animation-card_content_description p-2">
-                    With no contractual commitments comes the freedom of having
-                    top notch content created whenever.
+                    "착한 MY들은 기부 못 참지"
                   </p>
-                  <p class="animation-card_content_city">New York, NY</p>
-                </div>
-              </div>
-              <div class="slider-item">
-                <div class="animation-card_image">
-                  <img
-                    src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="animation-card_content">
-                  <h4 class="animation-card_content_title title-2">
-                    Charlize Theron 4
-                  </h4>
-                  <p class="animation-card_content_description p-2">
-                    With no contractual commitments comes the freedom of having
-                    top notch content created whenever.
-                  </p>
-                  <p class="animation-card_content_city">New York, NY</p>
-                </div>
-              </div>
-              <div class="slider-item">
-                <div class="animation-card_image">
-                  <img
-                    src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="animation-card_content">
-                  <h4 class="animation-card_content_title title-2">
-                    Charlize Theron 5
-                  </h4>
-                  <p class="animation-card_content_description p-2">
-                    With no contractual commitments comes the freedom of having
-                    top notch content created whenever.
-                  </p>
-                  <p class="animation-card_content_city">New York, NY</p>
+                  <p class="animation-card_content_city">[MY]</p>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="swiper newSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="review-box">
+                  <h1>따뜻한 모금 후기</h1>
+                  <h2>따뜻한 곰국으로 어르신들께 건강한 새해를 선물해주세요!</h2>
+                  <p>
+                    연수종합사회복지관 '나눔이 모락모락' 지원이 성공적으로
+                    종료되었습니다. 어르신 무료급식의 단가 3,500원은 그 어떤
+                    대상자의 급식비보다 열악한 상황입니다. 이에 복지관에서는
+                    양질의 급식 지원을 위한 모금을 준비하게 되었습니다.
+                    목표금액보다는 적은 모금액이지만 무더운 여름철 초복, 말복에
+                    특식으로 사용했습니다. 입추가 지났지만 아직도 무더운 날씨가
+                    지속되고 있습니다. 참여해 주신 모든 분의 안녕과 건강을
+                    기원하겠습니다. 앞으로도 우리 연수종합사회복지관의 다양한
+                    사업과 발걸음에 관심과 응원 부탁드립니다.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-box">
+                  <h1>따뜻한 모금 후기</h1>
+                  <h2>
+                    어르신에게 찾아가는 칠순,팔순,구순 잔치를 선물해 주세요!
+                  </h2>
+                  <p>
+                    안녕하세요! 아름채노인복지관입니다. 지난 8월 2일 칠순, 팔순,
+                    구순 회원님을 대상으로 '찾아가는 장수잔치'를 진행했습니다.
+                    지난 6월 복지관에서 진행한 장수잔치에 불참한 어르신을 위하여
+                    직원이 직접 가정에 방문, 선물과 축하 케이크를 전달했습니다.
+                    모금함 개설 후 약 4천여 명 후원자분들이 관심을 가지고 함께해
+                    주셨고, 약 89만 원이 모금되어 여러분의 따뜻한 마음을 담아
+                    축하하는 시간을 가졌습니다. 아름채노인복지관 회원님들이 행복한
+                    생신을 보낼 수 있도록 동참해 주신 후원자 여러분, 감사합니다.
+                    사랑합니다.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-box">
+                  <h1>따뜻한 모금 후기</h1>
+                  <h2>'백년해로' 당신과 함께 할게요, 부디 건강하기만 해요</h2>
+                  <p>
+                    김기호 할아버지는 과거 건설업에 종사한 경험을 바탕으로 새로운
+                    일자리를 찾으러 외출을 하십니다. 일자리를 찾는 곳에는 당연히
+                    김기호 할아버지 보다 젊은 사람이 많습니다. 아마 할아버지가
+                    최고령이실 테지요. 할아버지는 젊은 사람들 사이에서도 자신감을
+                    잃지 않으려 노력하고 계십니다. 매일같이 입는 양복을 보여주며
+                    “여름철에 입고 나갈 양복이 없는데 이사하면서 가구 사지 말고
+                    남은 후원금으로 여름 양복을 사 입을 수 있겠나?”라고 조심스럽게
+                    물어오셨습니다. 다른 사람과 사회적 관계를 이루어가는 김기호
+                    할아버지. 여름 양복 선물로 꾸준한 사회활동에 힘을...
+  
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
