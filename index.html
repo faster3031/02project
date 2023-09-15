@@ -44,7 +44,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <script src="js/prefixfree.min.js"></script>
+    <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
@@ -210,39 +210,86 @@
       <!-- 팬덤 -->
       <section class="fandom">
         <div class="inner">
-          <div id="fandombox">
-            <ul class="rank">
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-            </ul>
-            <div class="ranktxt">
-              <h2 class="ranktitle">DONATION FANDOM <br />OF THE MONTH</h2>
-              <h1 class="rankname">
-                1위 아이유
-                <span>유애나</span>
-              </h1>
-              <ul class="ranklist">
-                <li><a href="#">기부횟수 총 32번</a></li>
-                <li><a href="#">기부횟수 총 32번</a></li>
-                <li><a href="#">기부횟수 총 32번</a></li>
-              </ul>
-              <button class="rankbtn1"><p>페이지 보러가기</p></button>
-              <button class="rankbtn2"><p>응원하기</p></button>
-            </div>
-            <div class="fandomimg">
-              <ul class="imgbox">
-                <li class="starimg">
-                  <a href="#"><span></span></a>
-                </li> 
-                <li class="mercury">
-                  <a href="#"><span></span></a>
-                </li>
-                <!-- <img src="images/fandom_iu.jpg" alt="팬덤_아이유" /> -->
-              </ul>
+          <div class="swiper mySwiper" id="fandombox">
+            <div class="swiper-pagination" id="fandombtn"></div>
+            <div class="swiper-wrapper" id="fandomslide">
+              <div class="swiper-slide" id="fandomslide1">
+                <div class="ranktxt">
+                  <h2 class="ranktitle">DONATION FANDOM <br />OF THE MONTH</h2>
+                  <h1 class="rankname">
+                    1위 아이유
+                    <span>유애나</span>
+                  </h1>
+                  <ul class="ranklist">
+                    <li><a href="#">기부횟수 총 32번</a></li>
+                    <li><a href="#">기부횟수 총 32번</a></li>
+                    <li><a href="#">기부횟수 총 32번</a></li>
+                  </ul>
+                  <button class="rankbtn1"><p>페이지 보러가기</p></button>
+                  <button class="rankbtn2"><p>응원하기</p></button>
+                </div>
+                <div class="fandomimg">
+                  <ul class="imgbox">
+                    <li class="starimg">
+                      <a href="#"
+                        ><span><p></p></span
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide" id="fandomslide2">
+                <div class="ranktxt">
+                  <h2 class="ranktitle">DONATION FANDOM <br />OF THE MONTH</h2>
+                  <h1 class="rankname">
+                    2위 뷔
+                    <span>아미</span>
+                  </h1>
+                  <ul class="ranklist">
+                    <li><a href="#">기부횟수 총 32번</a></li>
+                    <li><a href="#">기부횟수 총 32번</a></li>
+                    <li><a href="#">기부횟수 총 32번</a></li>
+                  </ul>
+                  <button class="rankbtn1"><p>페이지 보러가기</p></button>
+                  <button class="rankbtn2"><p>응원하기</p></button>
+                </div>
+                <div class="fandomimg">
+                  <ul class="imgbox">
+                    <li class="starimg">
+                      <a href="#"
+                        ><span><p></p></span
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide" id="fandomslide3">
+                <div class="ranktxt">
+                  <h2 class="ranktitle">DONATION FANDOM <br />OF THE MONTH</h2>
+                  <h1 class="rankname">
+                    3위 태연
+                    <span></span>
+                  </h1>
+                  <ul class="ranklist">
+                    <li><a href="#">기부횟수 총 32번</a></li>
+                    <li><a href="#">기부횟수 총 32번</a></li>
+                    <li><a href="#">기부횟수 총 32번</a></li>
+                  </ul>
+                  <button class="rankbtn1"><p>페이지 보러가기</p></button>
+                  <button class="rankbtn2"><p>응원하기</p></button>
+                </div>
+                <div class="fandomimg">
+                  <ul class="imgbox">
+                    <li class="starimg">
+                      <a href="#"
+                        ><span><p></p></span
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
       </section>
       <!-- 굿즈 -->
@@ -472,7 +519,9 @@
               <div class="swiper-slide">
                 <div class="review-box">
                   <h1>따뜻한 모금 후기</h1>
-                  <h2>따뜻한 곰국으로 어르신들께 건강한 새해를 선물해주세요!</h2>
+                  <h2>
+                    따뜻한 곰국으로 어르신들께 건강한 새해를 선물해주세요!
+                  </h2>
                   <p>
                     연수종합사회복지관 '나눔이 모락모락' 지원이 성공적으로
                     종료되었습니다. 어르신 무료급식의 단가 3,500원은 그 어떤
@@ -499,9 +548,9 @@
                     직원이 직접 가정에 방문, 선물과 축하 케이크를 전달했습니다.
                     모금함 개설 후 약 4천여 명 후원자분들이 관심을 가지고 함께해
                     주셨고, 약 89만 원이 모금되어 여러분의 따뜻한 마음을 담아
-                    축하하는 시간을 가졌습니다. 아름채노인복지관 회원님들이 행복한
-                    생신을 보낼 수 있도록 동참해 주신 후원자 여러분, 감사합니다.
-                    사랑합니다.
+                    축하하는 시간을 가졌습니다. 아름채노인복지관 회원님들이
+                    행복한 생신을 보낼 수 있도록 동참해 주신 후원자 여러분,
+                    감사합니다. 사랑합니다.
                   </p>
                 </div>
               </div>
@@ -510,16 +559,16 @@
                   <h1>따뜻한 모금 후기</h1>
                   <h2>'백년해로' 당신과 함께 할게요, 부디 건강하기만 해요</h2>
                   <p>
-                    김기호 할아버지는 과거 건설업에 종사한 경험을 바탕으로 새로운
-                    일자리를 찾으러 외출을 하십니다. 일자리를 찾는 곳에는 당연히
-                    김기호 할아버지 보다 젊은 사람이 많습니다. 아마 할아버지가
-                    최고령이실 테지요. 할아버지는 젊은 사람들 사이에서도 자신감을
-                    잃지 않으려 노력하고 계십니다. 매일같이 입는 양복을 보여주며
-                    “여름철에 입고 나갈 양복이 없는데 이사하면서 가구 사지 말고
-                    남은 후원금으로 여름 양복을 사 입을 수 있겠나?”라고 조심스럽게
-                    물어오셨습니다. 다른 사람과 사회적 관계를 이루어가는 김기호
-                    할아버지. 여름 양복 선물로 꾸준한 사회활동에 힘을...
-  
+                    김기호 할아버지는 과거 건설업에 종사한 경험을 바탕으로
+                    새로운 일자리를 찾으러 외출을 하십니다. 일자리를 찾는 곳에는
+                    당연히 김기호 할아버지 보다 젊은 사람이 많습니다. 아마
+                    할아버지가 최고령이실 테지요. 할아버지는 젊은 사람들
+                    사이에서도 자신감을 잃지 않으려 노력하고 계십니다. 매일같이
+                    입는 양복을 보여주며 “여름철에 입고 나갈 양복이 없는데
+                    이사하면서 가구 사지 말고 남은 후원금으로 여름 양복을 사
+                    입을 수 있겠나?”라고 조심스럽게 물어오셨습니다. 다른 사람과
+                    사회적 관계를 이루어가는 김기호 할아버지. 여름 양복 선물로
+                    꾸준한 사회활동에 힘을...
                   </p>
                 </div>
               </div>

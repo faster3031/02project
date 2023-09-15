@@ -2,14 +2,46 @@
 .fandom {
   width: 100%;
   height: 600px;
-  /* background-color: #5c5c5c; */
+  margin-bottom: 120px;
 }
 #fandombox {
   width: 100%;
   height: 600px;
-  background: url("../images/fandom_background.png") no-repeat;
-  background-color: #ebdeff32;
   display: flex;
+}
+#fandomslide1 {
+  padding-left: 120px;
+  background: radial-gradient(
+    ellipse farthest-corner at 10% 10%,
+    #fdff9b 10%,
+    #fdff9c70 50%,
+    #e4e72400
+  );
+  /* background: url("../images/fandom_background.png")no-repeat; */
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100%;
+}
+#fandomslide2 {
+  padding-left: 120px;
+  background: radial-gradient(
+    ellipse farthest-corner at 10% 10%,
+    #c89fff 10%,
+    #e4b4ff 50%,
+    #e4e72400
+  );
+  /* border-radius: 0 50% 50% 0; */
+}
+#fandomslide3 {
+  padding-left: 120px;
+  background: radial-gradient(
+    ellipse farthest-corner at 10% 10%,
+    #f8b0ff 10%,
+    #ffd9f9 50%,
+    #e4e72400
+  );
 }
 .rank {
   display: flex;
@@ -20,11 +52,14 @@
   justify-content: center;
   align-items: center;
 }
-.rank li {
+.fandom
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
   padding: 8px;
   width: 40px;
   height: 40px;
-  background-color: #aaa;
+  background-color: #ffffff;
   border-radius: 50%;
   font-size: 20px;
   text-align: center;
@@ -33,16 +68,43 @@
   position: relative;
   display: block;
 }
-.rank li a {
-  color: #fff;
+/* .fandom
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet:nth-child(1) {
+  background-color: #ffffff;
+} */
+
+.fandom
+  .swiper-pagination-clickable
+  .swiper-pagination-bullet:nth-child(1)::after {
+  content: "1";
 }
+.fandom
+  .swiper-pagination-clickable
+  .swiper-pagination-bullet:nth-child(2)::after {
+  content: "2";
+}
+.fandom
+  .swiper-pagination-clickable
+  .swiper-pagination-bullet:nth-child(3)::after {
+  content: "3";
+}
+
 /* 랭킹내용 */
+.ranktitle {
+  /* font-style: italic; */
+  font-family: "Pretendard-Regular";
+  font-weight: 900;
+}
 .ranktxt {
   width: 50%;
   height: 100%;
   min-width: 580px;
   /* display: block; */
   /* background-color: #6b6b6b; */
+}
+.rankname {
+  text-align: left;
 }
 .ranktxt h2 {
   text-align: left;
@@ -54,8 +116,14 @@
 }
 .ranktxt h1 {
   font-size: 63px;
-  color: rgba(98, 19, 135, 1);
+  color: rgb(161, 132, 0);
   font-weight: bold;
+}
+#fandomslide2 .ranktxt h1 {
+  color: #8d5cb2;
+}
+#fandomslide3 .ranktxt h1 {
+  color: #d158bd;
 }
 .ranktxt > h1 > span {
   font-size: 45px;
@@ -71,6 +139,7 @@
   padding: 10px 20px;
   margin-left: 10px;
   position: relative;
+  text-align: left;
 }
 .ranklist li::before {
   content: "";
@@ -82,15 +151,31 @@
   height: 8px;
   background-color: black;
 }
-/* 랭킹버튼 */
+/* 랭킹순서버튼  */
+#fandombtn {
+  width: 100px;
+  position: absolute;
+  display: inline-block;
+  top: 40%;
+  transform: translateY(-15%);
+  padding-left: 40px;
+}
+/* 보러가기 버튼 */
 .rankbtn1 {
   width: 200px;
   height: 60px;
   border-radius: 20px;
-  background-color: #8d5cb2;
+  background-color: #e4e724;
+
   cursor: pointer;
   border: none;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+#fandomslide2 .rankbtn1 {
+  background-color: #8d5cb2;
+}
+#fandomslide3 .rankbtn1 {
+  background-color: #e769d2;
 }
 .rankbtn1 p {
   color: #fff;
@@ -114,38 +199,6 @@
 }
 
 /* 랭킹이미지 */
-/* .fandonimg {
-  width: 40%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-} */
-/* .fandonimg .imgbox {
-  width: 400px;
-  height: 400px;
-  display: block;
-  position: relative;
-} */
-/* .fandonimg img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-width: 400px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 1px 1px 30px rgba(98, 19, 135, 1);
-} */
-/* .fandonimg .imgbox::before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  width: 130%;
-  height: 130%;
-  border: 1px dotted rgb(66, 0, 99);
-} */
 .fandomimg {
   display: block;
   height: 100%;
@@ -154,10 +207,6 @@
 .imgbox {
   position: relative;
   height: 640px;
-  -webkit-transition: all 0.09s ease-in;
-  -moz-transition: all 0.09s ease-in;
-  -o-transition: all 0.09s ease-in;
-  transition: all 0.09s ease-in;
   overflow: hidden;
 }
 .imgbox li {
@@ -171,30 +220,20 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 50%;
-}
-.imgbox li span::after {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 20px;
-  border-radius: 50%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
 }
 .imgbox li.active {
   border-color: #aa4200;
 }
-.imgbox li.active.starimg,
-.imgbox li.active span {
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -o-transform: scale(1.3);
-  transform: scale(1.3);
+
+.fandom .swiper-slide {
+  display: flex;
+}
+.fandom .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
 }
 .imgbox .starimg {
   width: 400px;
@@ -202,95 +241,65 @@
   -webkit-border-radius: 400px;
   -moz-border-radius: 400px;
   border-radius: 50%;
-  background: url("../images/fandom_iu.jpg")no-repeat;
+  background: url("../images/fandom_iu.jpg") no-repeat;
+  background-size: cover;
   display: block;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: none;
-  -webkit-box-shadow: 0 0 50px rgb(141, 60, 216);
-  -moz-box-shadow: 0 0 50px rgb(141, 60, 216);
-  box-shadow: 0 0 50px rgb(141, 60, 216);
+  box-shadow: 0 0 50px #e4e724;
   z-index: 100;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
+
   transition: all 0.2s ease-in;
+  position: relative;
+}
+#fandomslide2 .imgbox .starimg {
+  background: url("../images/fandom_v.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: -50px;
+  -webkit-box-shadow: 0 0 50px #8d5cb2;
+  -moz-box-shadow: 0 0 50px #8d5cb2;
+  box-shadow: 0 0 50px #8d5cb2;
+}
+#fandomslide3 .imgbox .starimg {
+  background: url("../images/fandom_taeyeon.png") no-repeat;
+  background-size: cover;
+  background-position-y: -50px;
+  -webkit-box-shadow: 0 0 50px #e769d2;
+  -moz-box-shadow: 0 0 50px #e769d2;
+  box-shadow: 0 0 50px #e769d2;
 }
 .imgbox .starimg span {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-/* .imgbox .starimg span::after{
-  display: block;
-  content: "";
-  background-color: #ffec46;
-  top: 45px;
-  left: 45px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-.imgbox .starimg::after{
-  content: "";
-  display: block;
   width: 480px;
   height: 480px;
   border-radius: 50%;
   border: 1px dotted #8d5cb2;
-  top: 50%;
-  left: 50%;
+  position: relative;
+  top: -10%;
+  left: -10%;
   transform: translate(-50%, -50%);
-  animation:  rotate 5s linear infinite;
+  animation: rotate 10s linear infinite;
 }
- */
-
-.imgbox .mercury {
-  width: 480px;
-  height: 480px;
-  border-radius: 50%;
-  border: 1px dotted #8d5cb2;
-  top: 12%;
-  left: 21.8%;
-  transform: translate(-50%, -50%);
-  animation:  rotate 10s linear infinite;
-}
-.imgbox .mercury span {
+.imgbox .starimg span p {
   background-color: #ffec46;
   top: 45px;
   left: 45px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  animation: rotate 10s linear infinite;
+  border-radius: 50%;
 }
-@keyframes rotate{
-  from{
+@keyframes rotate {
+  from {
     transform: rotate(0deg);
   }
-  to{
+  to {
     transform: rotate(360deg);
   }
 }
-/* .imgbox li {
-  -webkit-animation-timing-function: linear;
--webkit-animation-iteration-count: infinite;
-  -webkit-animation-name: orbit;
-
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -moz-animation-name: orbit;
-}
-.imgbox li.mercury {
-  -webkit-animation-duration: 15s;
-  -moz-animation-duration: 5s;
-} */
-/* @-webkit-keyframes orbit {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-} */
-
 @media all and (max-width: 1680px) {
 }
 

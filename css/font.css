@@ -1,6 +1,8 @@
+
 @font-face {
-    font-family: 'Cafe24Oneprettynight','AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: Pretendard-Regular','Cafe24Oneprettynight','AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400, 900;
+  font-style: normal;
 }
