@@ -10,6 +10,8 @@
   font-size: 30px;
 }
 .news h1 {
+
+  font-size: 23px;
   font-weight: bold;
   height: 100px;
   line-height: 100px;
@@ -63,14 +65,40 @@
   border-radius: 10px;
   padding: 20px 10px;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+#card-box:hover{
+  scale: 1.1;
+}
+#card-box strong{
+  font-weight: bold;
 }
 #card-box h3 {
   padding: 5px;
   margin: 10px 0;
   font-size: 14px;
 }
+
 .card-box1 {
   float: left;
+}
+.card-box1 > .bar span{
+  width: 30%;
+}
+.card-box2 > .bar span{
+  width: 100%;
+}
+.card-box3 > .bar span{
+  width: 76%;
+}
+.card-box4 > .bar span{
+  width: 25%;
+}
+.card-box5 > .bar span{
+  width: 100%;
+}
+.card-box6 > .bar span{
+  width: 43%;
 }
 .news-card img {
   width: 100%;

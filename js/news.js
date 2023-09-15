@@ -31,9 +31,12 @@ $(document).ready(function () {
 // 멀티미디어 리소스 로딩 완료 후 실행
 window.addEventListener("load", function () {
     var swiper = new Swiper(".newSwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          loop: true
-        },
-      });
-});
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      autoplay: {
+        delay: 3000, // 각 슬라이드 간의 재생 지연 시간 (밀리초 단위)
+        disableOnInteraction: false // 사용자 상호 작용 후에도 자동 재생을 멈추지 않음
+      }
+    });
+  });
