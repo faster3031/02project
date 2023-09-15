@@ -11,8 +11,8 @@
 @media all and (max-width: 480px) {
 }
 /* 본문 슬라이더 */
-.slide{
-    height: 600px;
+.slide {
+  height: 600px;
 }
 .slide .inner {
   /* background-color: aqua; */
@@ -21,11 +21,12 @@
   max-width: none;
   padding: 0;
 }
-.swiper {
+.slide_Swiper {
   width: 100%;
   height: 100%;
 }
-.swiper-slide {
+.slide_img {
+  position: relative;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -34,9 +35,11 @@
   align-items: center;
 }
 
-.swiper-slide img {
+.slide_img img {
+  position: relative;
   display: block;
   width: 100%;
   height: 100%;
+
   object-fit: cover;
 }
