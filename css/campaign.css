@@ -1,84 +1,17 @@
 /* 캠페인 */
-@media all and (max-width: 1680px) {
-}
-
-@media all and (max-width: 1280px) {
-}
-@media all and (max-width: 1024px) {
-}
-@media all and (max-width: 760px) {
-}
-@media all and (max-width: 480px) {
-}
-
-/* 호버 효과 테스트 */
-
-.imgHoverEvent .imgBox {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-.imgHoverEvent .hoverBox {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 450px;
-  height: 80%;
-  padding-left: 20px;
-}
-.hoverBox p.p1 {
-  color: #fff;
-  padding-left: 10px;
-  /* text-align: center; */
-  margin-top: 80%;
-  font-size: 18px;
-}
-.hoverBox p.p2 {
-  padding-left: 10px;
-  margin-top: 20px;
-  color: #fff;
-  /* margin-top: 40px; */
-}
-.event .hoverBox {
-  width: 100%;
-  height: 450px;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 10%,
-    rgb(0, 0, 0) 70%
-  );
-  transform: translateY(50%);
-  transition: 0.5s;
-}
-.event:hover .hoverBox {
-  transform: translateY(0);
-}
-
-.event:hover .imgBox {
-  opacity: 0;
-}
-.event:hover .hoverBox p.p1 {
-  margin-top: 500px;
-}
-.event .imgBox_back {
-  opacity: 0;
-  position: relative;
-  transition: 0.8s;
-}
-.event:hover .imgBox_back {
-  opacity: 1;
-}
 
 /* 작업 */
 
 .campaign {
   width: 100%;
-  height: 900px;
+  /* height: 900px; */
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 .campaign-wrap {
-  gap: 20px;
+  gap: 70px;
   flex-wrap: wrap;
   position: relative;
   display: flex;
@@ -86,12 +19,12 @@
   margin: 20px 0;
 }
 .campaign_item {
-  width: calc(90% / 3);
+  width: calc(85% / 4);
 }
 .campaign_box {
   display: block;
   position: relative;
-  border-radius: 3px;
+  border-radius: 30px;
   width: 100%;
   overflow: hidden;
   display: inline-block;
@@ -99,7 +32,7 @@
 .campaign_box::after {
   content: "";
   display: block;
-  padding-bottom: 100%;
+  padding-bottom: 60%;
 }
 .campaign_box .imgBox {
   transition: 0.8s;
@@ -110,7 +43,6 @@
 .campaign_box .imgBox img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
   object-fit: cover;
 }
 .campaign_box:hover .imgBox {
@@ -118,8 +50,6 @@
 }
 .campaign_box .imgBox_back {
   opacity: 0;
-}
-.campaign_box .imgBox_back img {
 }
 
 .campaign_box:hover .imgBox_back {
@@ -129,48 +59,116 @@
   position: absolute;
   left: 0;
   width: 100%;
-  height: 80%;
-  padding: 0 20px;
+  padding: 50px 20px;
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 10%,
     rgb(0, 0, 0) 70%
   );
   bottom: -100%;
-  transition: 0.5s;
+  transition: 0.5s; /* transform 속성에 대한 transition을 추가 */
 }
 .campaign_box:hover .hoverBox {
-  bottom: 0;
+  bottom: -20%;
 }
-.campaign_box .hoverBox p {
-  font-size: 20px;
+.campaign_box .hoverBox p.p1 {
+  font-size: 18px;
   font-weight: bold;
-  font-family: "Cafe24Oneprettynight";
+  font-family: "AppleSDGothicNeo";
   color: #fff;
+  padding-bottom: 20px;
 }
-.campaign_box .hoverBox .p1 {
-  margin-top: -125px;
-  font-size: 20px;
-}
-.campaign_box .hoverBox .p2 {
-  margin-top: 20px;
+.campaign_box .hoverBox p.p2 {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "AppleSDGothicNeo";
+  color: #afafaf;
 }
 
 /* 바 테스트 */
-.campaign_percent {
-  width: calc(80% / 3);
+.campaign_ber_title {
+  /* width: calc(80% / 3); */
   color: #000000;
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  padding-right: 20px;
+  justify-content: space-between;
+  margin: px 10px;
+  font-size: 18px;
+  font-family: "AppleSDGothicNeo";
+  font-weight: 700;
 }
 .bar {
-  width: 80%;
+  margin: 0 auto;
+  width: 95%;
   height: 10px;
   background-color: #d9d9d9;
   border-radius: 5px;
 }
-.bar span {
+.bar_10 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 20%;
+  height: 10px;
+  background-color: #a583c8;
+  border-radius: 5px;
+}
+.bar_20 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 20%;
+  height: 10px;
+  background-color: #a583c8;
+  border-radius: 5px;
+}
+.bar_30 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 30%;
+  height: 10px;
+  background-color: #a583c8;
+  border-radius: 5px;
+}
+.bar_40 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 40%;
+  height: 10px;
+  background-color: #a583c8;
+  border-radius: 5px;
+}
+.bar_50 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 50%;
+  height: 10px;
+  background-color: #a583c8;
+  border-radius: 5px;
+}
+.bar_60 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 60%;
+  height: 10px;
+  background-color: #a583c8;
+  border-radius: 5px;
+}
+.bar_70 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 70%;
+  height: 10px;
+  background-color: #a583c8;
+  border-radius: 5px;
+}
+.bar_80 {
   position: relative;
   display: block;
   z-index: 99;
@@ -178,4 +176,87 @@
   height: 10px;
   background-color: #a583c8;
   border-radius: 5px;
+}
+.bar_90 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 90%;
+  height: 10px;
+  background-color: #a583c8;
+  border-radius: 5px;
+}
+
+/* 반응형 */
+@media all and (max-width: 1680px) {
+  .campaign-wrap {
+    gap: 20px;
+  }
+  .campaign_box .hoverBox p.p1 {
+    font-size: 15px;
+  }
+  .campaign_box .hoverBox {
+    bottom: -120%;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .campaign_item {
+    width: calc(85% / 3);
+  }
+  .campaign-wrap {
+    gap: 20;
+  }
+  .akmu {
+    display: none;
+  }
+  .ive {
+    display: none;
+  }
+}
+@media all and (max-width: 1024px) {
+  .campaign_item {
+    width: calc(85% / 2);
+  }
+}
+@media all and (max-width: 760px) {
+  .campaign_item {
+    width: calc(85% / 2);
+  }
+}
+@media all and (max-width: 643px) {
+  .campaign_box .hoverBox p.p2 {
+    display: none;
+    text-align: center;
+  }
+  .campaign-wrap {
+    gap: 5px;
+  }
+  .campaign_ber_title {
+    font-size: 12px;
+  }
+  .campaign_box .hoverBox {
+    bottom: -150%;
+  }
+  .campaign_box:hover .hoverBox {
+    bottom: -50%;
+  }
+}
+@media all and (max-width: 480px) {
+  .campaign_box .hoverBox p.p2 {
+    display: none;
+    text-align: center;
+  }
+  .campaign-wrap {
+    gap: 10px;
+  }
+  .campaign_ber_title {
+    font-size: 12px;
+  }
+  .campaign_box .hoverBox {
+    bottom: -150%;
+  }
+  .campaign_box:hover .hoverBox {
+    bottom: -50%;
+  }
 }
