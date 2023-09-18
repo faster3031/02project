@@ -1,33 +1,43 @@
 /* 아티스트 목록 */
 .artist {
   width: 100%;
-  height: 600px;
+  height: 400px;
 }
-.artist h1{
-    font-size: 23px;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 1);
+.artist h1 {
+  margin-top: 100px;
+  display: inline;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 1);
+}
+.artist i{
+  font-size: 16px;
 }
 .artist .inner {
   width: 100%;
-  height: 600px;
+  height: 400px;
   display: grid;
   place-items: center;
   min-height: 50vh;
   background: #ffffff;
   color: gray;
   text-align: center;
-  font-family: sans-serif;
+}
+.card-list{
+  width: 100%;
+  height: 100px;
+  margin-bottom: 100px;
 }
 .card-list > div {
-  width: 10vw;
-  max-width: 200px;
-  height: 20vh;
+  width: 5vw;
+  max-width: 90px;
+  height: 10vh;
   background: red;
   background-size: auto 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  border-radius: 10px;
+  border-radius: 50%;
   display: inline-block;
   margin: 0 0.5rem;
   filter: grayscale(1) opacity(0.1) contrast(200%);
@@ -49,9 +59,9 @@
   }
 
   #artist-card {
-    width: 75vw;
-    max-width: 75vw;
-    height: 20vh;
+    width: 5vw;
+    max-width: 20vw;
+    height: 5vh;
     display: block;
     margin: 1rem 0;
     background-size: 100% auto;
@@ -128,15 +138,15 @@
   background-size: cover;
 }
 
-#artist-card::after{
+#artist-card::after {
   content: "NAME";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   text-align: center;
-  font-size: 20px;
-  font-weight: 900;
+  font-size: 14px;
+  font-weight: 700;
   color: white;
   text-shadow: 3px 3px #555;
 }
@@ -153,35 +163,35 @@
   content: "LESSERAFIM";
 }
 #artist-card:nth-child(5):after {
-    content: "NEWJEANS";
-  }
-  #artist-card:nth-child(6):after {
-    content: "SEVENTEEN";
-  }
-  #artist-card:nth-child(7):after {
-    content: "STAYC";
-  }
-  #artist-card:nth-child(8):after {
-    content: "TXT";
-  }
-  #artist-card:nth-child(9):after {
-    content: "ITZY";
-  }
-  #artist-card:nth-child(10):after {
-    content: "MONSTA X";
-  }
-  #artist-card:nth-child(11):after {
-    content: "TWICE";
-  }
-  #artist-card:nth-child(12):after {
-    content: "NMMIX";
-  }
-  #artist-card:nth-child(13):after {
-    content: "STRAY KIDS";
-  }
-  #artist-card:nth-child(14):after {
-    content: "ATEEZ";
-  }
+  content: "NEWJEANS";
+}
+#artist-card:nth-child(6):after {
+  content: "SEVENTEEN";
+}
+#artist-card:nth-child(7):after {
+  content: "STAYC";
+}
+#artist-card:nth-child(8):after {
+  content: "TXT";
+}
+#artist-card:nth-child(9):after {
+  content: "ITZY";
+}
+#artist-card:nth-child(10):after {
+  content: "MONSTA X";
+}
+#artist-card:nth-child(11):after {
+  content: "TWICE";
+}
+#artist-card:nth-child(12):after {
+  content: "NMMIX";
+}
+#artist-card:nth-child(13):after {
+  content: "STRAY KIDS";
+}
+#artist-card:nth-child(14):after {
+  content: "ATEEZ";
+}
 @media all and (max-width: 1680px) {
 }
 

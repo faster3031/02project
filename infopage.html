@@ -10,8 +10,8 @@
     <meta property="og:description" content="" />
     <meta property="og:image" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" type="image/png" sizes="32x32" href="" />
-    <link rel="icon" type="image/png" sizes="192x192" href="" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link
       rel="apple-touch-icon-precomposed"
       href="images/mobile_web_icon.png"
@@ -20,17 +20,196 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
     />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KV63VKR9");
+    </script>
+    <!-- End Google Tag Manager -->
     <title>별의 온도</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <!-- [if lt IE 9]
+    <link rel="stylesheet" href="css/reset.css" />
     <script src="js/respond.min.js"></script>
     <script src="js/html5shiv.js"></script>
-    [endif] -->
-    <script src="js/prefixfree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/infopage/infopage.css">
+    <script src="js/header.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/donaiton.js"></script>
+    <script src="js/campaign.js"></script>
+    <script src="js/fandom.js"></script>
+    <script src="js/goods.js"></script>
+    <script src="js/artist.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/footer.js"></script>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css"
+    />
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <div class="wrap">
+      <!-- 헤더 -->
+      <header class="header">
+        <div class="inner">
+          <a href="#" alt="메인 로고" class="logo">
+            <img src="images/logo.png" alt="logo" />
+          </a>
+          <!-- 메뉴 -->
+          <nav class="nav">
+            <ul>
+              <li><a href="#" alt="기부">기부</a></li>
+              <li><a href="#" alt="캠페인">캠페인</a></li>
+              <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
+              <li><a href="#" alt="후기">후기</a></li>
+              <li><a href="#" alt="게시판">게시판</a></li>
+            </ul>
+          </nav>
+          <div class="login">
+            <a href="#">로그인</a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+        </div>
+      </header>
+      <!-- 인포 메인 -->
+      <section class="info-main">
+        <div class="inner">
+          <a href="#"><img src="images/infopage_main.jpg" alt="인포메인" /></a>
+          <nav class="nav_tab">
+            <ul>
+              <li>소개</li>
+              <li>소개</li>
+              <li>소개</li>
+            </ul>
+          </nav>
+          <div class="main_tab">
+            <h1>120년 만에 최악의 지진이 발생한 모로코</h1>
+            <p>
+              120년 만에 최악의 지진이 발생한 모로코 2023년 9월 8일 오후 23시
+              11분(현지 시각), 북아프리카 모로코 중부 도시 마라케시의 남서쪽 약
+              72km 지점에서 지진이 발생했습니다. 규모 6.8의 강진이 강타한
+              모로코에는 지진 발생 19분 만에 규모 4.9의 여진이 더해진 만큼
+              피해가 극심했습니다. 인접 국가 알제리를 비롯해, 모로코에서 멀리
+              떨어진 포르투갈, 스페인에서도 진동이 감지될 정도로 강력한
+              지진이었습니다.
+            </p>
+            <p>
+              이번 지진으로 현재까지 확인된 사망자는 2,946명, 부상자는
+              5,674명이며, 이 중 1,404명은 위독한 상태입니다. (2023년 9월 13일,
+              모로코 내무부 기준) 건물 잔해에 깔린 실종자와 구조·수색 작업이
+              계속 진행 중이어서 인명피해가 계속 늘어날 것으로 예상됩니다.
+            </p>
+            <figure>
+              <img src="images/infopage_main2.jpg" alt="인포메인2" /> 
+              <figcaption>마라케시 골목길에서 잔해 속을 걷는 모로코 주민</figcaption>
+            </figure>
+            <h1>건물 잔해 속에 갇힌 어린이와 가족</h1>
+            <p>
+              수도 라바트와 마라케시를 비롯해 알 하우자, 우아르자자트, 아질랄,
+              치차우아, 타루단트 등 모로코 곳곳에서 건물이 흔들리고 파괴됐으며,
+              특히 진앙에서 가까운 알 하우자와 타루단트는에서 다수의 사망자가
+              발행했습니다. 모로코는 강진이 잦은 국가가 아닌 데다 마라케시 인근
+              지역은 1900년 이래 단 한 번도 규모 6 이상의 강진이 발생한 적 없는
+              곳입니다. 내진 설계가 흔하지 않고, 지진에 취약한 낡은 벽돌 건물이
+              많아서 피해가 더 극심한 상황입니다.
+            </p>
+            <p>
+              또한 지진이 한밤중에 발생하여 모로코 주민들은 대피할 수조차
+              없었으며, 아직도 많은 어린이와 가족들이 건물 잔해에 매몰된 채
+              구조를 기다리고 있습니다.
+            </p>
+            <figure>
+              <img src="images/infopage_main3.jpg" alt="인포메인3" /> 
+              <figcaption>지진 피해를 입은 집 앞에서 울고 있는 모로코 주민</figcaption>
+            </figure>
+            <h1>지진이 발생한 현장에서 공포에 떨고 있는 어린이</h1>
+            <p>
+              산사태와 지진으로 마을로 향하는 도로가 끊기면서 구조 활동은 난항을
+              겪고 있습니다. 또한 마땅한 장비가 없어서 주민들은 삽과 곡괭이,
+              맨손으로 잔해를 뒤지며, 가족들을 애타게 찾고 있습니다. 병원은
+              쏟아지는 부상자로 붐비고 있으며, 모로코 당국은 혈액 수급을 위해
+              주민들에게 긴급히 헌혈을 요청했습니다. 최소 약 10만 명의 어린이가
+              피해를 입은 것으로 확인되며, 어린이를 비롯한 많은 모로코 주민들이
+              여전히 여진의 공포에 휩싸여 있습니다. 건물이 다시 무너져 내리지
+              않을까 두려운 마음에 주차장, 공원, 광장 등에서 담요 한 장에 의지한
+              채 겨우 잠을 청하고 있습니다.
+            </p>
+            <figure>
+              <img src="images/infopage_main4.jpg" alt="인포메인4" /> 
+              <figcaption>거리에서 잠을 청하는 모로코 어린이와 가족들</figcaption>
+            </figure>
+            <h1>유니세프는 언제나처럼 재난 현장에서 어린이를 지킵니다.</h1>
+            <p>
+              이번 모로코 지진처럼 자연재해는 수많은 어린이와 가족들의 안전을
+              위협하며, 한순간에 평생 일궈온 모든 것을 앗아갑니다. 유니세프는
+              재난 상황이 발생하는 곳이 어디든지, 어린이와 가족들 곁을 지키며
+              전문적인 구호활동을 이어가고 있습니다. 당장 머물 임시 거처, 깨끗한
+              식수와 안전한 식량, 부상을 치료할 의약품 등 긴급구호 물품을
+              비롯하여 트라우마로 고통받는 어린이와 가족들을 위해 심리적 지원을
+              이어갑니다. 또한 긴급한 재난 상황에서 가장 취약한 존재인 어린이를
+              보호하는 일을 최우선으로 하며, 재난 현장 곳곳에 어린이 센터를
+              운영하여 어린이 안전과 회복을 위해 앞장서고 있습니다.
+            </p>
+            <p>
+              유니세프는 1957년부터 모로코 어린이를 지원해왔으며, 1978년 모로코
+              국가사무소를 설립해 45년간 활동하고 있습니다. 후원자님 한 분 한
+              분의 따뜻한 손길은 자연재해와 재난으로 어려움을 겪는 어린이와
+              가족들에게 큰 힘이 됩니다.
+            </p>
+            <h1>
+              지금 유니세프와 함께, 모로코를 포함한 전 세계 어린이의 생명을
+              구해주세요!
+            </h1>
+          </div>
+          <div class="main_donate">
+            <h1>모금함 상세정보</h1>
+            <div class="donate_box">
+              <div class="donate_text">
+              <h2>프로젝트팀</h2>
+              <p>유니세프한국위원회</p>
+              <h2>모금기간</h2>
+              <p>2023. 09. 11 ~ 2023. 12. 11</p>
+              <h2>사업기간</h2>
+              <p>2023. 12. 26 ~ 2024. 08. 31</p>
+              <h2>영수증 발급기관</h2>
+              <p>유니세프한국위원회</p>
+            </div>
+              <h3>본 모금은 유니세프한국위원회에서 사업 검토 및 기부금 집행, 사후관리를 담당하고 있습니다.</h3>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <!-- 인포 사이드 -->
+      <section class="info-side">
+        <div class="inner"></div>
+      </section>
+      <!-- footer -->
+    </div>
     <!-- 결제 페이지는 모달창으로 진행 -->
   </body>
 </html>
