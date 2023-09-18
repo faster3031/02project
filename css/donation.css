@@ -2,38 +2,90 @@
 
 .donation {
   width: 100%;
-  height: 100px;
+  height: 170px;
   background-color: #ebdeff;
 }
+.Cheering p {
+  font-size: 24px !important;
+}
 .donation_box {
-  width: 100%;
-  height: 100px;
-  /* padding: 0 20px; */
-  /* background-color: brown; */
+  margin: 0 auto;
   position: relative;
   display: flex;
+  width: 100%;
+  height: 170px;
   justify-content: space-around;
   align-items: center;
 }
 .donation_box p {
-  font-family: "Cafe24Oneprettynight";
-  font-size: 20px;
-  font-weight: bold;
+  font-family: "AppleSDGothicNeo";
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-end;
+  /* font-weight: bold; */
   color: #621387;
+  width: 100%;
 }
 .Participation {
+  font-family: "AppleSDGothicNeo";
   width: 50%;
-  /* height: 100px; */
+  height: 30px;
   text-align: center;
   /* color: aliceblue; */
   background-color: #a583c8;
-  border-radius: 15px;
+  border-radius: 50px;
   margin-bottom: 10px;
 }
 .Participation p {
+  font-family: "AppleSDGothicNeo";
+  position: relative;
+  display: block;
+  /* line-height: 50px; */
+  font-size: 17px;
+  font-weight: bold;
   color: aliceblue;
 }
-
+.personnel {
+  font-family: "AppleSDGothicNeo";
+  margin-left: 100px;
+}
+.personnel p {
+  font-family: "AppleSDGothicNeo";
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.personnel span {
+  font-family: "AppleSDGothicNeo";
+  padding-left: 50px;
+  font-weight: bold;
+  width: 60%;
+  justify-content: flex-end;
+  /* float: right; */
+  display: flex;
+  font-size: 33px;
+}
+.amount p {
+  font-family: "AppleSDGothicNeo";
+  color: #a583c8;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.amount span {
+  color: #621387;
+  padding-left: 50px;
+  font-weight: bold;
+  width: 60%;
+  justify-content: flex-end;
+  /* float: right; */
+  display: flex;
+  font-size: 33px;
+}
 /* 반응형 */
 @media all and (max-width: 1680px) {
   .donation_box p {
