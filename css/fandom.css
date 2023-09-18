@@ -13,13 +13,11 @@
   padding-left: 120px;
   background: radial-gradient(
     ellipse farthest-corner at 10% 10%,
-    #fdff9b 10%,
-    #fdff9c70 50%,
-    #e4e72400
+    #e9eb71 10%,
+    #feffbe 50%,
+    rgb(255, 255, 255)
   );
-  /* background: url("../images/fandom_background.png")no-repeat; */
   background-size: cover;
-
   background-repeat: no-repeat;
   width: 100vw;
   height: 100%;
@@ -30,7 +28,7 @@
     ellipse farthest-corner at 10% 10%,
     #c89fff 10%,
     #e4b4ff 50%,
-    #e4e72400
+    #f4ecff
   );
   /* border-radius: 0 50% 50% 0; */
 }
@@ -40,7 +38,7 @@
     ellipse farthest-corner at 10% 10%,
     #f8b0ff 10%,
     #ffd9f9 50%,
-    #e4e72400
+    #fef4ff
   );
 }
 .rank {
@@ -68,12 +66,6 @@
   position: relative;
   display: block;
 }
-/* .fandom
-  .swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet:nth-child(1) {
-  background-color: #ffffff;
-} */
-
 .fandom
   .swiper-pagination-clickable
   .swiper-pagination-bullet:nth-child(1)::after {
@@ -100,7 +92,7 @@
   width: 50%;
   height: 100%;
   min-width: 580px;
-  /* display: block; */
+  display: block;
   /* background-color: #6b6b6b; */
 }
 .rankname {
@@ -165,7 +157,7 @@
   width: 200px;
   height: 60px;
   border-radius: 20px;
-  background-color: #e4e724;
+  background-color: #a1a319;
 
   cursor: pointer;
   border: none;
@@ -206,7 +198,7 @@
 }
 .imgbox {
   position: relative;
-  height: 640px;
+  height: 600px;
   overflow: hidden;
 }
 .imgbox li {
@@ -304,8 +296,148 @@
 }
 
 @media all and (max-width: 1280px) {
+  /* 랭킹순위 */
+
+  .rank {
+    width: 8%;}
+  .fandom
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet{
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 15px;
+  }
+  /* 랭킹내용 */
+  #fandomslide1,
+  #fandomslide2,
+  #fandomslide3
+  {
+    padding-left: 87px;
+  }
+  .ranktxt{
+    width: 35%;
+  }
+  .ranktxt h1 {
+    font-size: 58px;
+  }
+  .ranktxt h2{
+    font-size: 50px;
+  }
+  .ranktxt > h1 > span {
+    font-size: 40px;
+  }
+/* 랭킹순서버튼 */
+#fandombtn{
+  padding-left: 30px;
+}
+/* 보러가기버튼 */
+.rankbtn1,
+.rankbtn2{
+  width: 165px;
+  height: 55px;
+  border-radius: 15px;
+}
+.rankbtn1 p,
+.rankbtn2 p
+{
+  font-size: 18px;
+}
+/* 랭킹이미지 */
+.fandombox{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.imgbox .starimg {
+  width: 380px;
+  height: 380px;
+
+}
+.imgbox .starimg span{
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  border: 1px dotted #8d5cb2;
+  position: relative;
+  top: -6%;
+  left: -7%;
+}
+.imgbox .starimg span p{
+  width: 43px;
+  height: 43px;
+}
 }
 @media all and (max-width: 1024px) {
+  .fandom{
+    height: 970px;
+  }
+#fandombox{
+  height: 1020px;
+}
+#fandomslide1,
+#fandomslide2,
+#fandomslide3
+{
+  padding-left: 0px;
+}
+#fandombtn{
+  top: 51%;
+  left: 45%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+.fandom .swiper-slide{
+  flex-direction: column-reverse;
+  align-items: center;
+}
+/* 랭킹내용 */
+.ranktxt h1,
+.ranktxt h2,
+.ranklist li
+{
+  text-align: center;
+}
+.ranktxt h2{
+  margin-top: 30px;
+  font-size: 40px;
+  line-height: 40px;
+}
+.ranktxt h1{
+  font-size: 45px;
+}
+.ranklist li::before {
+  left: 33%;
+}
+.rankbtn{
+  width: 100%;
+  text-align: center;
+}
+.ranktxt > h1 > span {
+  font-size: 30px;
+}
+.ranklist li{
+  padding: 5px 20px;
+}
+.ranklist li a{
+  font-size: 20px;
+}
+/* 보러가기버튼 */
+.rankbtn1,
+.rankbtn2{
+  width: 140px;
+  height: 40px;
+  border-radius: 10px;
+}
+.rankbtn1 p,
+.rankbtn2 p
+{
+  font-size: 15px;
+}
+/* 랭킹이미지 */
+.imgbox{
+  height: 500px;
+}
 }
 @media all and (max-width: 760px) {
 }

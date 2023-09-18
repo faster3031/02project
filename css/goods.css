@@ -15,10 +15,11 @@
   display: flex;
   position: relative;
   padding: 20px 80px;
-  background-color: #d6d6d6;
+  background-color: #d9d9d9;
   height: 100%;
   width: 100%;
   border-radius: 20px;
+  justify-content: space-evenly;
 }
 /* 굿즈 설명박스 */
 .goodsbox .goodstxt {
@@ -27,6 +28,9 @@
   width: 30%;
   height: 100%;
   min-width: 363px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   /* background-color: cadetblue; */
 }
 .goodsbox .goodstxt h2 {
@@ -91,10 +95,71 @@
 }
 
 @media all and (max-width: 1280px) {
+  .goodsbox .goodstxt h2 {
+    font-size: 30px;
+  }
+  .goodsbox .goodstxt p {
+    font-size: 18px;
+  }
+  .goodsbox .goodstxt button {
+    width: 165px;
+    height: 55px;
+    border-radius: 15px;
+    font-size: 18px;
+  }
+  .goodsart li p {
+    font-size: 18px;
+  }
 }
 @media all and (max-width: 1024px) {
+  .goods .goodsbox{
+    padding: 20px 20px;
+  }
+  /* 굿즈 설명박스 */
+  .goodsbox .goodstxt {
+    min-width: 200px;
+  }
+  .goodsbox .goodstxt h2 {
+    font-size: 23px;
+  }
+  .goodsbox .goodstxt p {
+    font-size: 16px;
+  }
+  /* 굿즈 리스트 */
+  .goodsbox .goodslist {
+
+    display: flex;
+    align-items: center;
+  }
+  .goodsart li{
+    width: 180px;
+  }
+  .goodsart li img{
+    height: 160px;
+  }
+  /* 굿즈 보러가기 버튼 */
+  .goodsbox .goodstxt > button {
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+  }
 }
 @media all and (max-width: 760px) {
+  .goods .goodsbox{
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+  }
+  .goods .goodstxt{
+    width: 100%;
+    flex-direction: row;
+  }
+  .goodsbox .goodslist{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
 @media all and (max-width: 480px) {
 }
