@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+/* 후기 게시판 */
+/* 후기 썸네일 */
+
+.thumbnail {
+  width: 100%;
+  height: 380px;
+  background-color: #ccc;
+  background: url("../images/review_thumbnail4.jpg");
+  background-size: cover;
+}
+
+/* 기부 타이틀 */
+.reviewTitle {
+  width: 100%;
+  height: 220px;
+  padding: 30px 50px;
+}
+.reviewTitle h2 {
+  font-size: 30px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.reviewTitle > ul > li {
+  font-size: 15px;
+  padding: 5px 0;
+  display: block;
+}
+
+/* 기부 게시글  */
+.board_st {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+table .subject a {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 90%;
+}
+#board_st caption {
+  text-indent: -9999;
+  width: 0;
+  height: 0;
+  font-size: 0;
+}
+
+thead {
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 15px;
+  table-layout: fixed;
+}
+tr {
+  border-bottom: 1px solid #ccc;
+}
+tbody > tr:nth-child(1),
+tr:nth-child(2),
+tr:nth-child(3) {
+  background-color: #f1f1f1;
+}
+th {
+  padding: 10px 10px;
+}
+td {
+  text-align: center;
+  padding: 13px;
+  border-bottom: 1px dashed #ccc;
+  color: #555;
+}
+
+/* 검색기능 */
+#searchContainer {
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* 검색기능 - 날짜 */
+#searchContainer > .date > input {
+  height: 40px;
+  padding: 0 5px;
+}
+#searchContainer > .subject > select {
+  height: 30px;
+  width: 70px;
+  margin-right: 5px;
+}
+#searchContainer > .subject > input {
+  height: 30px;
+  width: 150px;
+  padding: 0 5px;
+}
+#searchContainer > .subject > button {
+  height: 30px;
+  width: 70px;
+  padding: 0 5px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* 검색기능 - 분류 */
+
+/* 페이지번호 */
+.container {
+  width: 100%;
+  background: #fdfdfd;
+  padding: 1rem;
+  /* margin: 3rem auto; */
+  border-radius: 0.2rem;
+  /* box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3); */
+  counter-reset: pagination;
+  text-align: center;
+}
+.container:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.container ul {
+  width: 100%;
+}
+.container .middle {
+  width: 32rem;
+}
+
+.container ul,
+li {
+  list-style: none;
+  display: inline;
+  padding-left: 0px;
+}
+
+.container li {
+  counter-increment: pagination;
+}
+.container li:hover a {
+  color: #fdfdfd;
+  background-color: #1d1f20;
+  border: solid 1px #1d1f20;
+}
+.container li.active a {
+  color: #fdfdfd;
+  background-color: #1d1f20;
+  border: solid 1px #1d1f20;
+}
+.container li:first-child {
+  float: left;
+}
+.container li:first-child a:after {
+  content: "Previous";
+}
+.container li:nth-child(2) {
+  counter-reset: pagination;
+}
+.container li:last-child {
+  float: right;
+}
+.container li:last-child a:after {
+  content: "Next";
+}
+.container li a {
+  border: solid 1px #d7d7d7;
+  border-radius: 0.2rem;
+  color: #7d7d7d;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem 0.9rem;
+}
+.container li a:after {
+  content: " " counter(pagination) " ";
+}
+
+.middle li a {
+  display: none;
+}
+.middle li:first-child a {
+  display: inline-block;
+}
+.middle li:first-child a:after {
+  content: "<";
+}
+.middle li:last-child a {
+  display: inline-block;
+}
+.middle li:last-child a:after {
+  content: ">";
+}
+.middle li:nth-child(2) a {
+  display: inline-block;
+}
+.middle li:nth-child(3) a {
+  display: inline-block;
+}
+.middle li:nth-child(4) a {
+  display: inline-block;
+}
+.middle li:nth-child(5) a {
+  display: inline-block;
+}
+.middle li:nth-last-child(2) a {
+  display: inline-block;
+}
+.middle li:nth-last-child(3) {
+  display: inline-block;
+}
+.middle li:nth-last-child(3):after {
+  padding: 0 1rem;
+  content: "...";
+}
+
+/* 게시글 작성 */
+#writeBtn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: #8d5cb2;
+  color: #fff;
+  float: right;
+  margin: 10px;
+  cursor: pointer;
+  margin: 3rem auto;
+}
+
+@media all and (max-width: 1680px) {
+}
+
+@media all and (max-width: 1280px) {
+}
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 760px) {
+}
+@media all and (max-width: 480px) {
+}
