@@ -5,10 +5,11 @@
 
 .thumbnail {
   width: 100%;
-  height: 380px;
+  height: 200px;
   background-color: #ccc;
   background: url("../images/review_thumbnail4.jpg");
   background-size: cover;
+  display: none;
 }
 
 /* 기부 타이틀 */
@@ -16,6 +17,7 @@
   width: 100%;
   height: 220px;
   padding: 30px 50px;
+  background-color: #eee7f3;
 }
 .reviewTitle h2 {
   font-size: 30px;
@@ -26,6 +28,7 @@
   font-size: 15px;
   padding: 5px 0;
   display: block;
+  color: #424242;
 }
 
 /* 기부 게시글  */
@@ -53,11 +56,14 @@ table .subject a {
 thead {
   vertical-align: middle;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
   table-layout: fixed;
 }
 tr {
   border-bottom: 1px solid #ccc;
+}
+tbody{
+  font-size: 15px;
 }
 tbody > tr:nth-child(1),
 tr:nth-child(2),
@@ -80,49 +86,72 @@ td {
   height: 60px;
   font-size: 16px;
   border: 1px solid #ccc;
+  border-radius: 5px;
   text-align: center;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 0 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 32px;
+}
+#searchContainer .inner{
+  display: flex;
+  align-items: center;
+    justify-content: space-around;
 }
 /* 검색기능 - 날짜 */
-#searchContainer > .date > input {
-  height: 40px;
-  padding: 0 5px;
-}
-#searchContainer > .subject > select {
-  height: 30px;
-  width: 70px;
-  margin-right: 5px;
-}
-#searchContainer > .subject > input {
+#searchContainer .date  input {
   height: 30px;
   width: 150px;
   padding: 0 5px;
 }
-#searchContainer > .subject > button {
+
+#searchContainer .subject select {
+  height: 30px;
+  width: 70px;
+  /* margin-right: 5px; */
+}
+#searchContainer .subject input {
+  height: 30px;
+  width: 150px;
+  padding: 0 5px;
+}
+#searchContainer .subject button {
   height: 30px;
   width: 70px;
   padding: 0 5px;
   vertical-align: middle;
   cursor: pointer;
 }
-
+/* 게시글 작성 */
+#writeBtn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: #8d5cb2;
+  color: #fff;
+  margin-left: 381px;
+  margin: 10px;
+  cursor: pointer;
+  
+  /* margin: 3rem auto; */
+}
 /* 검색기능 - 분류 */
 
 /* 페이지번호 */
 .container {
-  width: 100%;
+  width: 30%;
   background: #fdfdfd;
   padding: 1rem;
-  /* margin: 3rem auto; */
   border-radius: 0.2rem;
-  /* box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3); */
   counter-reset: pagination;
   text-align: center;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+  margin-top: 2rem;
 }
 .container:after {
   clear: both;
@@ -148,13 +177,13 @@ li {
 }
 .container li:hover a {
   color: #fdfdfd;
-  background-color: #1d1f20;
-  border: solid 1px #1d1f20;
+  background-color: #8d5cb2;
+  border: solid 1px #8d5cb2;
 }
 .container li.active a {
   color: #fdfdfd;
-  background-color: #1d1f20;
-  border: solid 1px #1d1f20;
+  background-color: #8d5cb2;
+  border: solid 1px #8d5cb2;
 }
 .container li:first-child {
   float: left;
@@ -223,20 +252,7 @@ li {
   content: "...";
 }
 
-/* 게시글 작성 */
-#writeBtn {
-  width: 100px;
-  height: 30px;
-  border: none;
-  border-radius: 3px;
-  padding: 5px;
-  background-color: #8d5cb2;
-  color: #fff;
-  float: right;
-  margin: 10px;
-  cursor: pointer;
-  margin: 3rem auto;
-}
+
 
 @media all and (max-width: 1680px) {
 }

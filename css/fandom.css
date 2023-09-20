@@ -1,23 +1,23 @@
 /* 팬덤 */
 .fandom {
   width: 100%;
-  height: 900px;
-  margin-bottom: 120px;
+  height: 780px;
+  margin-bottom: 60px;
 }
 .fandom .inner {
   padding: 0;
   max-width: none;
 }
-#fandomslide .inner {
+.star .inner {
   padding: 0px 20px;
   max-width: 1480px;
   width: 100%;
   display: flex;
 }
 
-#fandombox {
+.star {
   width: 100%;
-  height: 900px;
+  height: 790px;
   display: flex;
 }
 #fandomslide {
@@ -25,47 +25,46 @@
   max-width: 1480px;
   display: block;
   position: relative;
+  height: 100%;
 }
 #fandomslide1 {
-  /* padding-left: 300px; */
-  padding-top: 90px;
-  /* background:  linear-gradient(
+  padding-top: 30px;
+  background:  linear-gradient(
     
-    #e9eb71 10%,
+    #fbfccb 10%,
     #feffbe 50%,
     rgb(255, 255, 255)
-  ); */
-  background-color: #feffdf;
+  );
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-/* #fandomslide1::before{
-  background-color: #5c5c5c;
-  width: 100vw;
-  height: 900px;
-  display: block;
-} */
 #fandomslide2 {
-  padding-top: 90px;
-  background: radial-gradient(
-    ellipse farthest-corner at 10% 10%,
-    #c89fff 10%,
+  padding-top: 30px;
+  background: linear-gradient(
+to top,
+    #dabdff 10%,
     #e4b4ff 50%,
     rgb(255, 255, 255)
   );
   /* border-radius: 0 50% 50% 0; */
+  display: flex;
+  flex-direction: column;
 }
 #fandomslide3 {
   /* padding-left: 300px; */
-  padding-top: 90px;
-  background: radial-gradient(
-    ellipse farthest-corner at 10% 10%,
-    #f8b0ff 10%,
+  padding-top: 30px;
+  background: linear-gradient(
+
+    #fbcaff 10%,
     #ffd9f9 50%,
     rgb(255, 255, 255)
   );
+  display: flex;
+  flex-direction: column;
 }
 .rank {
   display: flex;
@@ -80,10 +79,10 @@
   .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
-  padding: 8px;
   width: 50px;
-  height: 10px;
-  background-color: #797979;
+  height: 8px;
+  background-color: #9c9c9c;
+  box-shadow: 0px 0px 2px #ffffff;
   border-radius: 5px;
   font-size: 20px;
   text-align: center;
@@ -91,22 +90,6 @@
   position: relative;
   display: block;
 }
-.fandom
-  .swiper-pagination-clickable
-  .swiper-pagination-bullet:nth-child(1)::after {
-  content: "";
-}
-.fandom
-  .swiper-pagination-clickable
-  .swiper-pagination-bullet:nth-child(2)::after {
-  content: "";
-}
-.fandom
-  .swiper-pagination-clickable
-  .swiper-pagination-bullet:nth-child(3)::after {
-  content: "";
-}
-
 /* 랭킹내용 */
 .ranktitle {
   /* font-style: italic; */
@@ -117,7 +100,7 @@
   width: 50%;
   height: 100%;
   min-width: 580px;
-  display: block;
+  /* display: block; */
   padding-left: 50px;
   /* background-color: #6b6b6b; */
 }
@@ -132,11 +115,13 @@
   color: #333;
   font-family: "Cafe24Ssurround";
   font-weight: 500;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 .ranktxt h1 {
   font-size: 72px;
-  color: rgb(161, 132, 0);
-  font-weight: bold;
+  color: #a2a50a;
+  font-weight: bold;  font-family: "Cafe24Ssurround";
+  padding-top: 10px;
 }
 #fandomslide2 .ranktxt h1 {
   color: #8d5cb2;
@@ -154,8 +139,8 @@
 }
 .ranklist li {
   font-size: 22px;
-  font-weight: 600;
-  padding: 10px 20px;
+  font-weight: 500;
+  padding: 5px 21px;
   margin-left: 10px;
   position: relative;
   text-align: left;
@@ -166,18 +151,18 @@
   position: absolute;
   top: 22px;
   left: 0;
-  width: 8px;
-  height: 8px;
-  background-color: black;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(73, 73, 73);
 }
 /* 랭킹순서버튼  */
 #fandombtn {
   width: 200px;
   position: absolute;
   display: flex;
-  top: 75%;
+  top: 80%;
   transform: translateX(100%);
-  left: 50%;
+  left: 54%;
   flex-direction: row;
   height: 50px;
 }
@@ -186,17 +171,17 @@
   width: 200px;
   height: 60px;
   border-radius: 20px;
-  background-color: #a1a319;
+  background-color: #b9bd0b;
 
   cursor: pointer;
   border: none;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 #fandomslide2 .rankbtn1 {
   background-color: #8d5cb2;
 }
 #fandomslide3 .rankbtn1 {
-  background-color: #e769d2;
+  background-color: #d66cc5;
 }
 .rankbtn1 p {
   color: #fff;
@@ -204,14 +189,14 @@
   font-size: 20px;
 }
 .rankbtn2 {
-  margin-left: 50px;
+  margin-left: 24px;
   width: 200px;
   height: 60px;
   border-radius: 20px;
   background-color: #ffffff;
   cursor: pointer;
   border: none;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.116);
 }
 .rankbtn2 p {
   color: #5c5c5c;
@@ -223,7 +208,7 @@
 .fandomimg {
   display: block;
   height: 100%;
-  width: 100%;
+  width: 50%;
   position: relative;
 }
 .imgbox {
@@ -251,12 +236,12 @@
 .fandom .swiper-slide {
   display: flex;
 }
-.fandom .swiper-slide img {
+/* .fandom .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   z-index: 9999;
-}
+} */
 .imgbox .starimg {
   width: 450px;
   height: 450px;
@@ -274,7 +259,7 @@
   z-index: 100;
 
   transition: all 0.2s ease-in;
-  position: relative;
+  
 }
 #fandomslide2 .imgbox .starimg {
   background: url("../images/fandom_v.jpg") no-repeat;
@@ -313,6 +298,15 @@
   position: relative;
   animation: rotate 10s linear infinite;
   border-radius: 50%;
+  box-shadow: 0 0 20px #fff281;
+}
+#fandomslide2 .imgbox .starimg span p{
+  background-color: #8d5cb2;
+  box-shadow: 0 0 20px #bb88e2;
+}
+#fandomslide3 .imgbox .starimg span p{
+  background-color: #e769d2;
+  box-shadow: 0 0 20px #ff95ed;
 }
 @keyframes rotate {
   from {
@@ -322,6 +316,17 @@
     transform: rotate(360deg);
   }
 }
+.donat{
+display: block;
+position: relative;
+  height: 300px;
+  width: 100%;
+  background-color: #797979;
+}
+
+
+
+
 @media all and (max-width: 1680px) {
 }
 
@@ -494,27 +499,49 @@
   }
 }
 @media all and (max-width: 760px) {
+
+  .fandom .inner{
+    padding: 0;
+  }
   .fandom {
     height: 1200px;
   }
   #fandombox {
     height: 1200px;
   }
-  #fandomslide .inner {
+  .star .inner {
     flex-direction: column-reverse;
   }
 
   /* 랭킹이미지 */
   .fandomimg {
     height: 70%;
+    width: 100%;
   }
   .ranktxt {
     min-width: -webkit-fill-available;
+  }
+  .ranktxt li{
+    display: none;
+  }
+  .imgbox .starimg span{
+    display: none;
   }
   /* 랭킹순서버튼 */
   #fandombtn {
     top: 43%;
     transform: translateX(-20%);
+  }
+  /* 보러가기버튼 */
+  .rankbtn1,
+  .rankbtn2 {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  .rankbtn1 p,
+  .rankbtn2 p {
+    font-size: 14px;
   }
 }
 @media all and (max-width: 480px) {

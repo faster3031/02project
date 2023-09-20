@@ -2,19 +2,28 @@
 
 .donation {
   width: 100%;
-  height: 100px;
-  background-color: #ebdeff;
+  height: 170px;
 }
-.Cheering p {
-  font-size: 24px !important;
+.cheering p {
+  font-size: 35px !important;
+  font-weight: 900;
+}
+.cheering::after{
+  background-color: #3b4212;
+  width: 120px;
+  display: block;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
 }
 .donation_box {
   margin: 0 auto;
   position: relative;
   display: flex;
   width: 100%;
-  height: 100px;
-  justify-content: space-around;
+
+  height: 170px;
+  justify-content: space-evenly;
   align-items: center;
 }
 .donation_box p {
@@ -23,78 +32,82 @@
   display: flex;
   justify-content: flex-end;
   /* font-weight: bold; */
-  color: #621387;
+  color: #3b4212;
   width: 100%;
 }
-.Participation {
+#fandomslide2 .donation_box p {
   font-family: "AppleSDGothicNeo";
-  width: 50%;
-  height: 30px;
-  text-align: center;
-  /* color: aliceblue; */
-  background-color: #a583c8;
-  border-radius: 50px;
-  margin-bottom: 10px;
-}
-.Participation p {
-  font-family: "AppleSDGothicNeo";
-  position: relative;
-  display: block;
-  /* line-height: 50px; */
-  font-size: 17px;
-  font-weight: bold;
-  color: aliceblue;
-}
-.personnel {
-  font-family: "AppleSDGothicNeo";
-  margin-left: 100px;
-}
-.personnel  {
-  font-family: "AppleSDGothicNeo";
-  position: relative;
+  font-size: 18px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: flex-end;
+  color: #4b2e61;
   width: 100%;
 }
-.personnel_CountCon {
+#fandomslide3 .donation_box p {
   font-family: "AppleSDGothicNeo";
-  padding-left: 50px;
-  font-weight: bold;
-  width: 60%;
-  justify-content: flex-end;
-  /* float: right; */
+  font-size: 18px;
   display: flex;
-  font-size: 28px;
+  justify-content: flex-end;
+  color: #711f63;
+  width: 100%;
 }
-.personnel2_CountCon {
-  font-family: "AppleSDGothicNeo";
-  padding-left: 50px;
-  font-weight: bold;
-  width: 60%;
-  justify-content: flex-end;
-  /* float: right; */
+.amount{
   display: flex;
-  font-size: 28px;
 }
 .amount p {
   font-family: "AppleSDGothicNeo";
-  color: #a583c8;
+  color:#555e23;
   position: relative;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+#fandomslide2 .amount p {
+  font-family: "AppleSDGothicNeo";
+  color:#583672;
+  position: relative;
+  display: flex;
+
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+#fandomslide3 .amount p {
+  font-family: "AppleSDGothicNeo";
+  color:#ad3098;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  padding-right: 20px;
 }
 .amount span {
-  color: #621387;
+  /* display: block; */
+  color: #7a8a20;
   padding-left: 50px;
   font-weight: bold;
-  width: 60%;
-  justify-content: flex-end;
-  /* float: right; */
-  display: flex;
-  font-size: 28px;
+  font-size: 30px;
+}
+#fandomslide2 .amount span {
+  /* display: block; */
+  color:#734695;
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 30px;
+}
+#fandomslide3 .amount span {
+  /* display: block; */
+  color:#d66cc5;
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 30px;
 }
 /* 반응형 */
 @media all and (max-width: 1680px) {
