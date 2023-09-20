@@ -56,5 +56,33 @@ window.addEventListener("load", function () {
     selectAllCheckbox.checked = checkboxes.length === checkedCheckboxes.length;
   }
 
-  
+  // 전채 버튼 활성화
+
+  // 테스트
+
+  // =========================================
+  $(document).ready(function () {
+    // '전체 약관 동의하기' 버튼 클릭 이벤트 처리
+    $(".terms_but").click(function () {
+      var termsBox = $(this)
+        .closest(".all_terms_box")
+        .find(".terms_box_hiding");
+      if (termsBox.is(":visible")) {
+        termsBox.hide();
+      } else {
+        termsBox.show();
+      }
+    });
+  });
+  // =============================================
+  // 버튼 요소와 checkbox 요소를 가져옵니다.
+  const termsButton = document.querySelector(".terms_but");
+  const checkbox = document.querySelector("#chk");
+
+  // 버튼 클릭 이벤트 핸들러를 추가합니다.
+  termsButton.addEventListener("click", function (e) {
+    e.preventDefault();
+    // 클릭 시 checkbox 요소의 required 속성을 제거합니다.
+    checkbox.removeAttribute("required");
+  });
 });

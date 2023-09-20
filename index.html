@@ -91,8 +91,16 @@
               <li><a href="review.html" alt="게시판">게시판</a></li>
             </ul>
           </nav>
+          <!-- 로그인  -->
           <div class="login">
-            <a href="login.html">로그인</a>
+            <div id="login-section">
+              <button id="login-button">로그인</button>
+            </div>
+            <div id="dashboard-section" style="display: none">
+              <div id="username-display"></div>
+              <button id="logout-button">로그아웃</button>
+            </div>
+            <!-- 로그인 끝 -->
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
         </div>
@@ -210,8 +218,8 @@
               </div>
             </div>
             <div class="personnel">
-              <p>참여 인원 <span>2,678명</span></p>
-              <p>참여 팬덤 <span>678명</span></p>
+              <p>참여 인원<span class="personnel_CountCon"></span></p>
+              <p>참여 팬덤 <div class="personnel2_CountCon"></div></p>
 
             </div>
             <div class="amount">
