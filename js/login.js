@@ -37,4 +37,10 @@ window.addEventListener("load", function () {
       loginForm.reset();
     }
   });
+  // 버튼 클릭 이벤트 핸들러를 추가합니다.
+  termsButton.addEventListener("click", function (e) {
+    e.preventDefault();
+    // 클릭 시 checkbox 요소의 required 속성을 제거합니다.
+    checkbox.removeAttribute("required");
+  });
 });

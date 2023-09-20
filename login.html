@@ -81,7 +81,7 @@
       <div class="login">
         <div class="inner">
           <div class="logo_box">
-            <a href="#"><img src="images/logo.png" alt="로고" /></a>
+            <a href="index.html"><img src="images/logo_02.png" alt="로고" /></a>
           </div>
           <div class="login_box">
             <form id="login-form">
@@ -91,7 +91,6 @@
                 id="username"
                 name="username"
                 placeholder="아이디"
-                size="30"
               />
               <br />
               <label for="password"></label>
@@ -100,17 +99,32 @@
                 id="password"
                 name="password"
                 placeholder="비밀번호"
-                size="30"
                 required
               />
               <br />
+              <label for="chk" class="chk">
+                <input type="checkbox" id="chk" />
+                <!--실제로는 글자를 기울이는 태그, 퍼블리셔들이 아이콘담을 때 많이 사용-->
+                <i class="terms_shape"></i>
+                <span class="text">자동 로그인</span>
               <button type="submit" class="login_button">로그인</button>
 
-              <button id="singup-botton">
-                <a href="signup.html">회원가입</a>
-              </button>
             </form>
           </div>
+          <div class="easy_login">
+            <div class="easy_login_text"><p>간편 로그인</p></div>
+            <div class="easy_login_img">
+            <a href="#" class="naver"><img src="images/naver.png" alt="네이버"></a>
+            <a href="#" class="kakao"><img src="images/kakao.png" alt="카카오"></a>
+            <a href="#" class="naver"><img src="images/facebook.png" alt="페이스북"></a>
+            <a href="#" class="google"><img src="images/google.png" alt="구글"></a>
+          </div>
+          </div>
+          <button id="singup-botton" class="singup-botton">
+          <a href="#">아이디 찾기</a>
+            <a href="#">비밀번호 찾기</a>
+            <a href="signup.html">회원가입</a>
+          </button>
         </div>
       </div>
     </div>
