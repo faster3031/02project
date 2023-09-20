@@ -31,9 +31,23 @@
   justify-content: space-around;
 }
 .nav ul li {
+  position: relative;
   font-family: "Cafe24Oneprettynight";
   font-weight: bold;
   font-size: 17px;
+  padding: 0 5px;
+}
+.nav ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #ad5cff;
+  opacity: 0;
+  transition: all 0.3s;
 }
 .nav ul li a{
   transition: all 0.3s;
@@ -45,7 +59,7 @@
   cursor: pointer;
 }
 .nav ul li:hover a {
-  color: #EBDEFF;
+  color: #ad5cff;
 }
 .login a {
   font-family: "Cafe24Oneprettynight";
@@ -55,12 +69,32 @@
   transition: all 0.3s;
 }
 .login a:hover{
-  color: #EBDEFF;
+  color: #ad5cff;
 }
 .login i {
   font-size: 17px;
 }
-
+.top-button{
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  z-index: 9999;
+  width: auto;
+}
+.top-btn{
+  display: block;
+  background-color:#d7bcff;
+  border-radius: 50%;
+  width: 55px;
+  line-height: 55px;
+  text-align: center;
+}
+.top-btn img{
+  transform: rotate(180deg);
+}
+.top-btn img.up{
+  transform: rotate(0deg);
+}
 @media all and (max-width: 1680px) {
 }
 
