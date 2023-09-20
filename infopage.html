@@ -80,42 +80,68 @@
           <span class="close" id="closePaymentModalBtn">&times;</span>
           <h2>기부하기</h2>
           <div class="payment-form">
+              <!-- 상세 정보 -->
+              <div class="payment-info">
+                <img src="images/infopage_main.jpg" alt="결제창상세">
+                <h1>[BTS] BTS와 함께 재난으로 고통 받는 어린이를 구해주세요.</h1>
+              </div>
               <!-- 금액 선택 버튼 -->
               <div class="amount-buttons">
                   <button class="amount-button" data-amount="5000">+5천원</button>
                   <button class="amount-button" data-amount="10000">+1만원</button>
                   <button class="amount-button" data-amount="30000">+3만원</button>
                   <button class="amount-button" data-amount="50000">+5만원</button>
-              </div>
-              <!-- 사용자가 직접 금액을 입력할 수 있는 필드 -->
-              <div class="form-group">
-                  <label for="custom-amount">직접 입력</label>
-                  <input type="text" id="custom-amount" name="custom-amount">
+                  <button class="amount-button" data-amount="100000">+10만원</button>
+                  <button class="amount-button" data-amount="500000">+50만원</button>
+                  <button class="amount-button" data-amount="1000000">+100만원</button>
+                  <button class="amount-button" data-amount="2000000">+200만원</button>
               </div>
               <!-- 선택한 금액을 표시할 필드 -->
               <div class="form-group">
                   <label for="selected-amount">기부 금액</label>
                   <span id="selected-amount-display"></span>
               </div>
+              <!-- 사용자가 직접 금액을 입력할 수 있는 필드 -->
               <div class="form-group">
-                  <label for="card-number">카드 번호</label>
-                  <input type="text" id="card-number" name="card-number" required>
+                  <label for="custom-amount">직접 입력</label>
+                  <input type="text" id="custom-amount" name="custom-amount">
               </div>
               <div class="form-group">
                 <label for="message">응원 메세지 입력</label>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="따뜻한 응원 메세지를 남겨주세요."></textarea>
             </div>
+            <div class="form-group" id="form-check">
+              <label for="anonymous-payment">익명으로 기부하기</label>
+              <input type="checkbox" id="anonymous-payment" name="anonymous-payment">
+              <span class="custom-checkbox"></span>
+          </div>
               <!-- ... (이전 코드) ... -->
               <button id="confirmAmountBtn">확인</button>
-              <button type="submit" id="submitPaymentBtn" style="display: none;">결제</button>
           </div>
       </div>
   </div>
-
+    <!-- 결제 확인 모달 (중첩 모달) -->
+    <div id="confirmPaymentModal" class="modal">
+      <div class="modal-content" id="modal-content">
+          <span class="close" id="closeConfirmPaymentModalBtn">&times;</span>
+          <h2>결제 확인</h2>
+          <p id="confirm-message">결제하시겠습니까?</p>
+          <button id="confirmPaymentBtn">예</button>
+          <button id="cancelPaymentBtn">아니오</button>
+      </div>
+  </div>
+      <!-- 결제 완료 모달 (중첩 모달) -->
+      <div id="paymentCompleteModal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <h2>결제 완료</h2>
+            <p>결제가 완료되었습니다.</p>
+            <button id="closePaymentCompleteModalBtn">닫기</button>
+        </div>
+    </div>
       <!-- 헤더 -->
       <header class="header">
         <div class="inner">
-          <a href="#" alt="메인 로고" class="logo">
+          <a href="index.html" alt="메인 로고" class="logo">
             <img src="images/logo.png" alt="logo" />
           </a>
           <!-- 메뉴 -->
@@ -304,10 +330,12 @@
                 </div>
               </div>
               <div class="side_box_notice">
-                <p>*공유, 응원, 댓글로 참여하면 별의온도가 기부합니다.*</p>
-                <p>*기부금은 100% 단체에 전달됩니다.*</p>
+                <p>*공유, 응원, 댓글로 참여하면 별의온도가 기부합니다.</p>
+                <p>*기부금은 100% 단체에 전달됩니다.</p>
               </div>
+              <div class="button-container" id="buttonContainer">
               <button id="openPaymentModalBtn">기부하기</button>
+            </div>
               <div class="side_box_icon">
                 <a href="#"><i class="fa-regular fa-heart"></i>3,000</a>
                 <a href="#"
