@@ -5,6 +5,7 @@
     height: 200px;
     background-color: #EBDEFF;
 }
+
 .footer .inner{
     display: flex;
     justify-content: space-between;
@@ -29,9 +30,9 @@ color: #0000007a;
     color: #0000007a;
 }
  .footer-left img{
-    margin-top: 10px;
-    width: 200px;
-    height: 70px;
+    margin-top: 20px;
+    width: 130px;
+    height: 50px;
   }
 .footer-right img{
     margin: 0 20px;
