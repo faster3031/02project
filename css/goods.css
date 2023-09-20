@@ -1,19 +1,20 @@
 /* 굿즈 */
 .goods {
   width: 100%;
-  height: 400px;
+  height: 300px;
   display: block;
   position: relative;
+
+
 }
 .goods > .inner {
   padding-top: 20px;
   padding-bottom: 20px;
-  background: rgb(249, 236, 255);  border-radius: 20px;
+  background: #f7f7f7; 
 }
 .goods .goodsbox {
   display: flex;
   position: relative;
-  padding: 20px 80px;
   height: 100%;
   width: 100%;
 
@@ -23,28 +24,29 @@
 .goodsbox .goodstxt {
   display: block;
   position: relative;
-  width: 30%;
+  width: 20%;
   height: 100%;
   min-width: 363px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   /* background-color: cadetblue; */
 }
 .goodsbox .goodstxt h2 {
-  font-size: 40px;
+  font-size: 35px;
   text-align: left;
   padding-bottom: 20px;
 }
 .goodsbox .goodstxt p {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.5em;
   padding-bottom: 20px;
 }
 .goodsbox .goodstxt > button {
-  width: 200px;
-  height: 60px;
-  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
   background-color: #8d5cb2;
   cursor: pointer;
   border: none;
@@ -76,15 +78,15 @@
   padding: 0px 10px;
 }
 .goodsart li img {
-  width: 250px;
-  height: 180px;
+  width: 235px;
+  height: 240px;
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
 }
 .goodsart li p {
   display: block;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   padding-top: 10px;
 }
@@ -97,7 +99,7 @@
     font-size: 30px;
   }
   .goodsbox .goodstxt p {
-    font-size: 18px;
+
   }
   .goodsbox .goodstxt button {
     width: 165px;
