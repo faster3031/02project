@@ -1,6 +1,5 @@
 //  dom (html 태그 로딩 완료시 실행)
 $(document).ready(function () {
-  
   // 페이지별 데이터와 요소 정보를 배열에 저장
   var pages = [
     {
@@ -94,12 +93,12 @@ $(document).ready(function () {
 
   // Swiper 슬라이더 초기화
   var swiper = new Swiper("#fandombox", {
-    // spaceBetween: 30,
-    // effect: "fade",
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    spaceBetween: 30,
+    effect: "fade",
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     loop: true,
     pagination: {
       el: ".swiper-pagination",
@@ -121,10 +120,7 @@ $(document).ready(function () {
       },
     },
   });
- 
 });
 
 // 멀티미디어 리소스 로딩 완료 후 실행
-window.addEventListener("load", function () {
- 
-});
+window.addEventListener("load", function () {});

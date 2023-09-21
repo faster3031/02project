@@ -2,7 +2,7 @@
 .fandom {
   width: 100%;
   height: 790px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .fandom .inner {
   padding: 0;
@@ -29,12 +29,7 @@
 }
 #fandomslide1 {
   padding-top: 30px;
-  background:  linear-gradient(
-    
-    #fbfccb 10%,
-    #feffbe 50%,
-    rgb(255, 255, 255)
-  );
+  background: linear-gradient(#fbfccb 10%, #feffbe 50%, rgb(255, 255, 255));
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -45,7 +40,7 @@
 #fandomslide2 {
   padding-top: 30px;
   background: linear-gradient(
-to top,
+    to top,
     #e7d2ff 10%,
     #f7e8ff 50%,
     rgb(255, 255, 255)
@@ -57,12 +52,7 @@ to top,
 #fandomslide3 {
   /* padding-left: 300px; */
   padding-top: 30px;
-  background: linear-gradient(
-
-    #fde9ff 10%,
-    #ffeffd 50%,
-    rgb(255, 255, 255)
-  );
+  background: linear-gradient(#fde9ff 10%, #ffeffd 50%, rgb(255, 255, 255));
   display: flex;
   flex-direction: column;
 }
@@ -94,21 +84,21 @@ to top,
 .ranktitle {
   margin-top: 55px;
 }
-.ranktitle>span{
+.ranktitle > span {
   font-family: "Cafe24Ssurround";
   font-weight: 900;
   font-size: 35px;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
-    color: #444504;
-    padding-left: 5px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
+  color: #444504;
+  padding-left: 5px;
 }
 #fandomslide2 .ranktitle span,
 #fandomslide2 .ranktitle h2 {
-color: #4b2e61;
+  color: #4b2e61;
 }
 #fandomslide3 .ranktitle span,
-#fandomslide3 .ranktitle h2  {
-color: #491440;
+#fandomslide3 .ranktitle h2 {
+  color: #491440;
 }
 .ranktxt {
   width: 50%;
@@ -135,7 +125,8 @@ color: #491440;
 .ranktxt h1 {
   font-size: 72px;
   color: #a2a50a;
-  font-weight: bold;  font-family: "Cafe24Ssurround";
+  font-weight: bold;
+  font-family: "Cafe24Ssurround";
   padding-top: 10px;
 }
 #fandomslide2 .ranktxt h1 {
@@ -274,10 +265,9 @@ color: #491440;
   z-index: 100;
 
   transition: all 0.2s ease-in;
-  
 }
 #fandomslide2 .imgbox .starimg {
-  background: url("../images/fandom_v.jpg") no-repeat;
+  background: url("../images/fandom_v2.jpg") no-repeat;
   background-size: cover;
   background-position-y: -50px;
   -webkit-box-shadow: 0 0 50px #8d5cb2;
@@ -304,7 +294,7 @@ color: #491440;
   animation: rotate 10s linear infinite;
 }
 .imgbox .starimg span p {
-  background:url("../images/fandom_plute.png") no-repeat;
+  background: #ffee51;
   background-size: cover;
   top: 51px;
   left: 45px;
@@ -316,11 +306,11 @@ color: #491440;
   border-radius: 50%;
   box-shadow: 0 0 20px #fff281;
 }
-#fandomslide2 .imgbox .starimg span p{
+#fandomslide2 .imgbox .starimg span p {
   background-color: #8d5cb2;
   box-shadow: 0 0 20px #bb88e2;
 }
-#fandomslide3 .imgbox .starimg span p{
+#fandomslide3 .imgbox .starimg span p {
   background-color: #e769d2;
   box-shadow: 0 0 20px #ff95ed;
 }
@@ -332,24 +322,20 @@ color: #491440;
     transform: rotate(360deg);
   }
 }
-.donat{
-display: block;
-position: relative;
+.donat {
+  display: block;
+  position: relative;
   height: 300px;
   width: 100%;
   background-color: #797979;
 }
 
-
-
-
 @media all and (max-width: 1680px) {
-  #fandombtn{
+  #fandombtn {
     left: 58%;
   }
 }
 @media all and (max-width: 1280px) {
-
   .fandom
     .swiper-pagination-horizontal.swiper-pagination-bullets
     .swiper-pagination-bullet {
@@ -357,7 +343,8 @@ position: relative;
     line-height: 15px;
   }
   .star {
-    height: 780px;}
+    height: 780px;
+  }
   /* 랭킹내용 */
   #fandomslide1,
   #fandomslide2,
@@ -365,8 +352,7 @@ position: relative;
     padding-left: 40px;
   }
   .ranktxt {
-    min-width: 500px;
-    width: 35%;
+    min-width: 420px;
     padding: 0;
   }
   .ranktxt h1 {
@@ -380,53 +366,53 @@ position: relative;
   }
   /* 랭킹순서버튼 */
   #fandombtn {
-    top: 70%;
-    left: 49%;
+    top: 75%;
+    left: 53%;
   }
-  /* 보러가기버튼 */
-  .rankbtn1,
-  .rankbtn2 {
-    width: 165px;
-    height: 55px;
-    border-radius: 15px;
-  }
-  .rankbtn1 p,
-  .rankbtn2 p {
-    font-size: 18px;
-  }
-  /* 랭킹이미지 */
-  .fandombox {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .imgbox .starimg {
-    width: 380px;
-    height: 380px;
-  }
-  .imgbox .starimg span {
-    width: 430px;
-    height: 430px;
-    border-radius: 50%;
-    border: 1px dotted #8d5cb2;
-    position: relative;
-    top: -6%;
-    left: -7%;
-  }
-  .imgbox .starimg span p {
+}
+/* 보러가기버튼 */
+.rankbtn1,
+.rankbtn2 {
+  width: 165px;
+  height: 55px;
+  border-radius: 15px;
+}
+.rankbtn1 p,
+.rankbtn2 p {
+  font-size: 18px;
+}
+/* 랭킹이미지 */
+.fandombox {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.imgbox .starimg {
+  width: 380px;
+  height: 380px;
+}
+.imgbox .starimg span {
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  border: 1px dotted #8d5cb2;
+  position: relative;
+  top: -6%;
+  left: -7%;
+}
+.imgbox .starimg span p {
+  top: 34px;
+  width: 43px;
+  height: 43px;
+}
+.donation {
+  height: 139px;
+}
 
-    top: 34px;
-    width: 43px;
-    height: 43px;
-  }
-  .donation {
-    height: 139px;
-}
-}
 @media all and (max-width: 1024px) {
   .fandom {
-    height: 590px;
+    height: 700px;
   }
-  .star{
+  .star {
     height: 700px;
   }
   #fandombox {
@@ -450,15 +436,10 @@ position: relative;
   }
   /* 랭킹내용 */
   .ranktxt {
-    min-width: 410px;
-  }
-  .ranktxt h1,
-  .ranktxt h2,
-  .ranklist li {
-    text-align: center;
+    min-width: 359px;
   }
   .ranktxt h2 {
-    margin-top: 30px;
+    margin-top: 0px;
     font-size: 36px;
     line-height: 40px;
   }
@@ -467,7 +448,7 @@ position: relative;
   }
   .ranktxt > h1 > span {
     font-size: 25px;
-}
+  }
   .ranklist li::before {
     left: 33%;
   }
@@ -475,7 +456,7 @@ position: relative;
     width: 100%;
     top: 52%;
     left: 47%;
-    text-align: center;
+    /* text-align: center; */
   }
   .ranktxt > h1 > span {
     font-size: 30px;
@@ -502,7 +483,7 @@ position: relative;
   }
   /* 랭킹이미지 */
   .imgbox {
-    height: 420px;
+    height: 559px;
   }
   .imgbox .starimg {
     width: 300px;
@@ -517,7 +498,7 @@ position: relative;
     top: -6%;
     left: -6%;
   }
-  .imgbox .starimg span p{
+  .imgbox .starimg span p {
     top: 10px;
   }
   .imgbox li span {
@@ -528,24 +509,26 @@ position: relative;
     border-radius: 50%;
   }
   /* 총모금액 */
-  .cheering{
+  .cheering {
     width: 35%;
     min-width: 260px;
   }
-  .amount{
+  .amount {
     width: 65%;
   }
 }
 @media all and (max-width: 760px) {
-
-  .fandom .inner{
+  .fandom .inner {
     padding: 0;
   }
   .fandom {
-    height: 800px;
+    height: 880px;
   }
   #fandombox {
-    height: 780px;
+    height: 920px;
+  }
+  .star {
+    height: 840px;
   }
   .star .inner {
     flex-direction: column-reverse;
@@ -553,34 +536,52 @@ position: relative;
 
   /* 랭킹이미지 */
   .fandomimg {
-    height: 40%;
+    height: 50%;
     width: 100%;
   }
-.ranktitle h2{
-  text-align: center;
-}
-.ranktxt .ranktitle h2{
-  text-align: center;
-}
+  #fandombtn {
+    display: none;
+  }
+  .imgbox {
+    height: 360px;
+  }
+  .ranktitle {
+    margin-top: 0;
+  }
+  .ranktitle h2 {
+    text-align: center;
+  }
+  .ranktxt .ranktitle h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 50px;
+    line-height: 55px;
+  }
   .ranktxt {
     min-width: -webkit-fill-available;
     text-align: center;
   }
-  .ranktxt li{
+  .ranktxt li {
     display: none;
   }
-  .imgbox .starimg span{
+  .rankname {
+    text-align: center;
+  }
+  .imgbox .starimg {
+    top: 50%;
+  }
+  .imgbox .starimg span {
     display: none;
   }
   /* 랭킹순서버튼 */
   #fandombtn {
-    top: 55%;
+    top: 50%;
     left: 44%;
     transform: translateX(-20%);
   }
   .ranktxt > h1 > span {
     font-size: 25px;
-}
+  }
   /* 보러가기버튼 */
   .rankbtn1,
   .rankbtn2 {
@@ -594,13 +595,17 @@ position: relative;
   }
 }
 @media all and (max-width: 480px) {
-    /* 랭킹순서버튼 */
-    #fandombtn {
-      top: 52%;
-      left: 38%;
-      transform: translateX(-20%);
-    }
-      .ranktxt h2 {
-        margin-top: 6px;
-    }
+  /* 랭킹순서버튼 */
+  #fandombtn {
+    top: 52%;
+    left: 38%;
+    transform: translateX(-20%);
+  }
+  .ranktxt h2 {
+    margin-top: 6px;
+  }
+
+  .cheering {
+    display: none;
+  }
 }
