@@ -151,4 +151,28 @@ window.addEventListener("load", function () {
             checkbox.checked = false;
         }
       });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        const commentForm = document.getElementById("comment-form");
+        const commentList = document.getElementById("comment-list");
+  
+        // 댓글 작성 폼 제출 이벤트 핸들러
+        commentForm.addEventListener("submit", function(event) {
+          event.preventDefault(); // 기본 동작 방지
+  
+          // 사용자가 입력한 댓글 내용 가져오기
+          const commentText = document.getElementById("name").value;
+  
+          // 댓글 목록에 새 댓글 추가
+          if (commentText) {
+            const newComment = document.createElement("li");
+            newComment.className = "comment";
+            newComment.textContent = commentText;
+            commentList.appendChild(newComment);
+  
+            // 댓글 입력 필드 초기화
+            document.getElementById("name").value = "";
+          }
+        });
+      });
 });
