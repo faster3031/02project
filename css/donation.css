@@ -2,10 +2,14 @@
 
 .donation {
   width: 100%;
-  height:230px;
+  height: 230px;
 }
 .donation .inner {
   padding: 0px 20px;
+}
+.amount span{
+  width:150px;
+  height: 30px;
 }
 .cheering p {
   font-size: 35px !important;
@@ -111,6 +115,9 @@
   }
 }
 @media all and (max-width: 1024px) {
+  .cheering{
+    width: 0%; 
+  }
   .cheering p {
     font-size: 23px !important;
     font-weight: 900;
@@ -122,13 +129,17 @@
     font-size: 20px !important;
   }
 }
-/* @media all and (max-width: 760px) {
-  .donation_box p {
-    transition: all 0.8s;
-    font-size: 12px;
+@media all and (max-width: 760px) {
+  .cheering {
+    min-width: 240px;
+
+
+  }
+  .amount{
+    width: 70%;
   }
 }
-@media all and (max-width: 480px) {
+/* @media all and (max-width: 480px) {
   .donation_box p {
     transition: all 0.8s;
     font-size: 10px;
