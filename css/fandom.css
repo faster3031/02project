@@ -1,7 +1,7 @@
 /* 팬덤 */
 .fandom {
   width: 100%;
-  height: 780px;
+  height: 790px;
   margin-bottom: 60px;
 }
 .fandom .inner {
@@ -10,14 +10,14 @@
 }
 .star .inner {
   padding: 0px 20px;
-  max-width: 1480px;
+  max-width: 1440px;
   width: 100%;
   display: flex;
 }
 
 .star {
   width: 100%;
-  height: 790px;
+  height: 860px;
   display: flex;
 }
 #fandomslide {
@@ -96,10 +96,16 @@ to top,
   font-family: "Cafe24Ssurround";
   font-weight: 900;
 }
+#fandomslide2 .ranktitle {
+color: #4b2e61;
+}
+#fandomslide3 .ranktitle {
+color: #491440;
+}
 .ranktxt {
   width: 50%;
   height: 100%;
-  min-width: 580px;
+  min-width: 593px;
   /* display: block; */
   padding-left: 50px;
   /* background-color: #6b6b6b; */
@@ -109,13 +115,14 @@ to top,
 }
 .ranktxt h2 {
   text-align: left;
-  font-size: 60px;
+  font-size: 70px;
   margin-top: 55px;
-  line-height: 60px;
-  color: #333;
+  line-height: 75px;
+  color: #444504;
   font-family: "Cafe24Ssurround";
   font-weight: 500;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
+  letter-spacing: 0.8px;
 }
 .ranktxt h1 {
   font-size: 72px;
@@ -157,12 +164,12 @@ to top,
 }
 /* 랭킹순서버튼  */
 #fandombtn {
-  width: 200px;
+  width: 157px;
   position: absolute;
   display: flex;
-  top: 80%;
+  top: 74%;
   transform: translateX(100%);
-  left: 54%;
+  left: 55.5%;
   flex-direction: row;
   height: 50px;
 }
@@ -213,7 +220,7 @@ to top,
 }
 .imgbox {
   position: relative;
-  height: 590px;
+  height: 685px;
   overflow: hidden;
 }
 .imgbox li {
@@ -251,7 +258,7 @@ to top,
   background: url("../images/fandom_iu.jpg") no-repeat;
   background-size: cover;
   display: block;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: none;
@@ -328,20 +335,19 @@ position: relative;
 
 
 @media all and (max-width: 1680px) {
+  #fandombtn{
+    left: 58%;
+  }
 }
-
 @media all and (max-width: 1280px) {
-  /* 랭킹순위 */
-
-  /* .rank {
-    width: 8%;
-  } */
   .fandom
     .swiper-pagination-horizontal.swiper-pagination-bullets
     .swiper-pagination-bullet {
     font-size: 18px;
     line-height: 15px;
   }
+  .star {
+    height: 835px;}
   /* 랭킹내용 */
   #fandomslide1,
   #fandomslide2,
@@ -351,7 +357,7 @@ position: relative;
   .ranktxt {
     min-width: 500px;
     width: 35%;
-    padding-left: 0;
+    padding: 0;
   }
   .ranktxt h1 {
     font-size: 58px;
@@ -364,8 +370,8 @@ position: relative;
   }
   /* 랭킹순서버튼 */
   #fandombtn {
-    top: 70%;
-    left: 48%;
+    top: 80%;
+    left: 49%;
   }
   /* 보러가기버튼 */
   .rankbtn1,
@@ -397,9 +403,14 @@ position: relative;
     left: -7%;
   }
   .imgbox .starimg span p {
+
+    top: 34px;
     width: 43px;
     height: 43px;
   }
+  .donation {
+    height: 139px;
+}
 }
 @media all and (max-width: 1024px) {
   .fandom {
@@ -414,8 +425,8 @@ position: relative;
     padding-left: 0px;
   }
   #fandombtn {
-    top: 85%;
-    left: 42%;
+    top: 53%;
+    left: 43%;
     display: flex;
     flex-direction: row;
     padding-left: 0;
@@ -435,12 +446,15 @@ position: relative;
   }
   .ranktxt h2 {
     margin-top: 30px;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 40px;
   }
   .ranktxt h1 {
-    font-size: 45px;
+    font-size: 38px;
   }
+  .ranktxt > h1 > span {
+    font-size: 25px;
+}
   .ranklist li::before {
     left: 33%;
   }
@@ -478,17 +492,20 @@ position: relative;
     height: 420px;
   }
   .imgbox .starimg {
-    width: 330px;
-    height: 330px;
+    width: 300px;
+    height: 300px;
   }
   .imgbox .starimg span {
-    width: 380px;
-    height: 380px;
+    width: 340px;
+    height: 340px;
     border-radius: 50%;
     border: 1px dotted #8d5cb2;
     position: relative;
-    top: -8%;
-    left: -7%;
+    top: -6%;
+    left: -6%;
+  }
+  .imgbox .starimg span p{
+    top: 10px;
   }
   .imgbox li span {
     display: block;
@@ -529,9 +546,13 @@ position: relative;
   }
   /* 랭킹순서버튼 */
   #fandombtn {
-    top: 43%;
+    top: 55%;
+    left: 44%;
     transform: translateX(-20%);
   }
+  .ranktxt > h1 > span {
+    font-size: 25px;
+}
   /* 보러가기버튼 */
   .rankbtn1,
   .rankbtn2 {
@@ -545,4 +566,13 @@ position: relative;
   }
 }
 @media all and (max-width: 480px) {
+    /* 랭킹순서버튼 */
+    #fandombtn {
+      top: 52%;
+      left: 38%;
+      transform: translateX(-20%);
+    }
+      .ranktxt h2 {
+        margin-top: 6px;
+    }
 }
