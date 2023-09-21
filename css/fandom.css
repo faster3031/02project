@@ -46,8 +46,8 @@
   padding-top: 30px;
   background: linear-gradient(
 to top,
-    #dabdff 10%,
-    #e4b4ff 50%,
+    #e7d2ff 10%,
+    #f7e8ff 50%,
     rgb(255, 255, 255)
   );
   /* border-radius: 0 50% 50% 0; */
@@ -59,8 +59,8 @@ to top,
   padding-top: 30px;
   background: linear-gradient(
 
-    #fbcaff 10%,
-    #ffd9f9 50%,
+    #fde9ff 10%,
+    #ffeffd 50%,
     rgb(255, 255, 255)
   );
   display: flex;
@@ -92,14 +92,22 @@ to top,
 }
 /* 랭킹내용 */
 .ranktitle {
-  /* font-style: italic; */
+  margin-top: 55px;
+}
+.ranktitle>span{
   font-family: "Cafe24Ssurround";
   font-weight: 900;
+  font-size: 35px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
+    color: #444504;
+    padding-left: 5px;
 }
-#fandomslide2 .ranktitle {
+#fandomslide2 .ranktitle span,
+#fandomslide2 .ranktitle h2 {
 color: #4b2e61;
 }
-#fandomslide3 .ranktitle {
+#fandomslide3 .ranktitle span,
+#fandomslide3 .ranktitle h2  {
 color: #491440;
 }
 .ranktxt {
@@ -113,10 +121,10 @@ color: #491440;
 .rankname {
   text-align: left;
 }
-.ranktxt h2 {
+.ranktxt .ranktitle h2 {
   text-align: left;
   font-size: 70px;
-  margin-top: 55px;
+
   line-height: 75px;
   color: #444504;
   font-family: "Cafe24Ssurround";
@@ -290,20 +298,21 @@ color: #491440;
   border-radius: 50%;
   border: 1px dotted #8d5cb2;
   position: relative;
-  top: -8%;
+  top: -7%;
   left: -8%;
   transform: translate(-50%, -50%);
   animation: rotate 10s linear infinite;
 }
 .imgbox .starimg span p {
-  background-color: #ffec46;
-  top: 45px;
+  background:url("../images/fandom_plute.png") no-repeat;
+  background-size: cover;
+  top: 51px;
   left: 45px;
   display: block;
   width: 50px;
   height: 50px;
   position: relative;
-  animation: rotate 10s linear infinite;
+  /* animation: rotate 10s linear infinite; */
   border-radius: 50%;
   box-shadow: 0 0 20px #fff281;
 }
@@ -340,6 +349,7 @@ position: relative;
   }
 }
 @media all and (max-width: 1280px) {
+
   .fandom
     .swiper-pagination-horizontal.swiper-pagination-bullets
     .swiper-pagination-bullet {
@@ -347,7 +357,7 @@ position: relative;
     line-height: 15px;
   }
   .star {
-    height: 835px;}
+    height: 780px;}
   /* 랭킹내용 */
   #fandomslide1,
   #fandomslide2,
@@ -370,7 +380,7 @@ position: relative;
   }
   /* 랭킹순서버튼 */
   #fandombtn {
-    top: 80%;
+    top: 70%;
     left: 49%;
   }
   /* 보러가기버튼 */
@@ -414,10 +424,13 @@ position: relative;
 }
 @media all and (max-width: 1024px) {
   .fandom {
-    height: 600px;
+    height: 590px;
+  }
+  .star{
+    height: 700px;
   }
   #fandombox {
-    height: 600px;
+    height: 700px;
   }
   #fandomslide1,
   #fandomslide2,
@@ -425,7 +438,7 @@ position: relative;
     padding-left: 0px;
   }
   #fandombtn {
-    top: 53%;
+    top: 73%;
     left: 43%;
     display: flex;
     flex-direction: row;
@@ -514,6 +527,14 @@ position: relative;
     height: 40px;
     border-radius: 50%;
   }
+  /* 총모금액 */
+  .cheering{
+    width: 35%;
+    min-width: 260px;
+  }
+  .amount{
+    width: 65%;
+  }
 }
 @media all and (max-width: 760px) {
 
@@ -521,10 +542,10 @@ position: relative;
     padding: 0;
   }
   .fandom {
-    height: 1200px;
+    height: 800px;
   }
   #fandombox {
-    height: 1200px;
+    height: 780px;
   }
   .star .inner {
     flex-direction: column-reverse;
@@ -532,11 +553,18 @@ position: relative;
 
   /* 랭킹이미지 */
   .fandomimg {
-    height: 70%;
+    height: 40%;
     width: 100%;
   }
+.ranktitle h2{
+  text-align: center;
+}
+.ranktxt .ranktitle h2{
+  text-align: center;
+}
   .ranktxt {
     min-width: -webkit-fill-available;
+    text-align: center;
   }
   .ranktxt li{
     display: none;
