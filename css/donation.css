@@ -7,8 +7,8 @@
 .donation .inner {
   padding: 0px 20px;
 }
-.amount span{
-  width:150px;
+.amount span {
+  width: 150px;
   height: 30px;
 }
 .cheering p {
@@ -38,7 +38,6 @@
   font-size: 18px;
   display: flex;
   justify-content: flex-end;
-  /* font-weight: bold; */
   color: #3b4212;
   width: 100%;
 }
@@ -69,7 +68,6 @@
   color: #ad3098;
 }
 .amount span {
-  /* display: block; */
   color: #7a8a20;
   padding-left: 50px;
   font-weight: bold;
@@ -97,8 +95,11 @@
   .amount p > span {
     font-size: 25px !important;
   }
+  .amount span {
+    width: 100px;
+    height: 30px;
+  }
 }
-
 @media all and (max-width: 1280px) {
   .donation {
     height: 100px;
@@ -108,40 +109,75 @@
     font-weight: 900;
   }
   .amount p {
-    font-size: 23px;
+    padding-right: 0;
+    font-size: 20px;
   }
-  .amount p > span {
-    font-size: 21px !important;
+
+  .amount > p > span {
+    padding-left: 20px !important;
   }
 }
 @media all and (max-width: 1024px) {
-  .cheering{
-    width: 0%; 
+  .cheering {
+    width: 0%;
+    min-width: 219px;
   }
   .cheering p {
-    font-size: 23px !important;
+    font-size: 21px !important;
     font-weight: 900;
+    padding-left: 0;
+  }
+  .amount {
+    width: 100%;
   }
   .amount p {
-    font-size: 22px;
-  }
-  .amount p > span {
-    font-size: 20px !important;
+    font-size: 20px;
   }
 }
 @media all and (max-width: 760px) {
-  .cheering {
-    min-width: 240px;
-
-
+  .donation {
+    height: 50px;
   }
-  .amount{
-    width: 70%;
+  .donation .inner {
+    padding: 0 15px;
+  }
+  .cheering {
+    width: 0;
+    display: none;
+  }
+  .amount {
+    width: 100%;
+  }
+  .amount span {
+    width: 85px;
+  }
+  .amount p {
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  .amount > p > span {
+    padding-left: 5px !important;
+    font-size: 18px !important;
+    line-height: 30px;
   }
 }
-/* @media all and (max-width: 480px) {
-  .donation_box p {
-    transition: all 0.8s;
-    font-size: 10px;
+
+@media all and (max-width: 480px) {
+  .donation_box {
+    justify-content: space-between;
   }
-} */
+  .cheering {
+    display: none;
+  }
+  .amount span {
+    width: 60px;
+  }
+}
+@media all and (max-width: 320px) {
+  .amount span {
+    width: 60px;
+  }
+  .amount p {
+    font-size: 15px;
+  }
+}
