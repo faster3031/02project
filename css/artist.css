@@ -4,6 +4,7 @@
   height: 400px;
 }
 .artist h1 {
+  font-family: 'AppleSDGothicNeo';
   display: inline-block;
   color: #000;
   font-size: 20px;
