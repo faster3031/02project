@@ -164,5 +164,4 @@ window.addEventListener('DOMContentLoaded', function() {
       topBtnImg.classList.remove("up");
     }
   });
-});
 
