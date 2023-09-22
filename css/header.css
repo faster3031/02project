@@ -20,9 +20,15 @@
   justify-content: space-between;
   align-items: center;
 }
+.header .logo {
+  width: 200px;
+  height: 35px;
+}
+/* .header .logo a{
+  width: 200px;
+} */
 .header .logo img {
-  width: 150px;
-  height: 50px;
+  height: 100%;
 }
 .nav {
   width: 50%;
@@ -71,10 +77,10 @@
   justify-content: flex-end;
 }
 .login a {
+  margin-right: 20px;
   font-family: "Cafe24Oneprettynight";
   font-weight: bold;
   font-size: 17px;
-  margin-right: 20px;
   transition: all 0.3s;
 }
 
