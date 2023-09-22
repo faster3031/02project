@@ -316,6 +316,9 @@
 @media all and (max-width: 760px) {
 }
 @media all and (max-width: 320px) {
+  .artist{
+    height: 700px;
+  }
   .artist h1{
     font-size: 15px;
     margin-bottom: 10px;
@@ -336,7 +339,6 @@
   }
   .artist .inner {
     padding: 0px 0px;
-    height: 600px;
   }
   .card-list > div {
     width: 260px;
