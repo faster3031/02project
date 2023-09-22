@@ -2,16 +2,10 @@
 
 /* 후기 게시판 */
 /* 후기 썸네일 */
-
-.thumbnail {
+#review {
   width: 100%;
-  height: 200px;
-  background-color: #ccc;
-  background: url("../images/review_thumbnail4.jpg");
-  background-size: cover;
-  display: none;
+  height: 100%;
 }
-
 /* 기부 타이틀 */
 .reviewTitle {
   width: 100%;
@@ -62,7 +56,7 @@ thead {
 tr {
   border-bottom: 1px solid #ccc;
 }
-tbody{
+tbody {
   font-size: 15px;
 }
 tbody > tr:nth-child(1),
@@ -93,15 +87,15 @@ td {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 32px;
+  margin-bottom: 15px;
 }
-#searchContainer .inner{
+#searchContainer .inner {
   display: flex;
   align-items: center;
-    justify-content: space-around;
+  justify-content: space-around;
 }
 /* 검색기능 - 날짜 */
-#searchContainer .date  input {
+#searchContainer .date input {
   height: 30px;
   width: 150px;
   padding: 0 5px;
@@ -136,71 +130,70 @@ td {
   margin-left: 381px;
   margin: 10px;
   cursor: pointer;
-  
+
   /* margin: 3rem auto; */
 }
 /* 검색기능 - 분류 */
 
 /* 페이지번호 */
-.container {
-  width: 30%;
+.page {
+  width: 100%;
   background: #fdfdfd;
   padding: 1rem;
   border-radius: 0.2rem;
   counter-reset: pagination;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 7rem;
-  margin-top: 2rem;
+  /* margin-bottom: 7rem; */
 }
-.container:after {
+.page:after {
   clear: both;
   content: "";
   display: table;
 }
-.container ul {
+.page ul {
   width: 100%;
 }
-.container .middle {
+/* .container .middle {
   width: 32rem;
-}
+} */
 
-.container ul,
+.page ul,
 li {
   list-style: none;
   display: inline;
   padding-left: 0px;
 }
 
-.container li {
+.page li {
   counter-increment: pagination;
 }
-.container li:hover a {
+.page li:hover a {
   color: #fdfdfd;
   background-color: #8d5cb2;
   border: solid 1px #8d5cb2;
 }
-.container li.active a {
+.page li.active a {
   color: #fdfdfd;
   background-color: #8d5cb2;
   border: solid 1px #8d5cb2;
 }
-.container li:first-child {
+.page li:first-child {
   float: left;
 }
-.container li:first-child a:after {
+.page li:first-child a:after {
   content: "Previous";
 }
-.container li:nth-child(2) {
+.page li:nth-child(2) {
   counter-reset: pagination;
 }
-.container li:last-child {
+.page li:last-child {
   float: right;
 }
-.container li:last-child a:after {
+.page li:last-child a:after {
   content: "Next";
 }
-.container li a {
+.page li a {
   border: solid 1px #d7d7d7;
   border-radius: 0.2rem;
   color: #7d7d7d;
@@ -210,7 +203,7 @@ li {
   text-align: center;
   padding: 0.5rem 0.9rem;
 }
-.container li a:after {
+.page li a:after {
   content: " " counter(pagination) " ";
 }
 
@@ -252,7 +245,103 @@ li {
   content: "...";
 }
 
+/* 작성글 */
+.writecontainer {
+  width: 100%;
 
+  margin-bottom: 20px;
+}
+.writecontainerbox {
+  background-color: #d6d6d6;
+  display: none;
+}
+
+.writecontainer h1 {
+  font-size: 25px;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.post-form {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.posttitles,
+.postcontents,
+.postetc {
+  display: flex;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.writecontainer label {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  width: 5%;
+}
+.writecontainer input[type="text"],
+textarea {
+  width: 95%;
+  padding: 10px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+/* .postcontents textarea{
+  height: 500px;
+} */
+.writecontainer button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: #8d5cb2;
+  color: #fff;
+  margin-left: 381px;
+  margin: 10px;
+  cursor: pointer;
+  margin-left: auto;
+  display: block;
+}
+.writecontainer button:hover {
+  background-color: #0056b3;
+}
+#postImage {
+  margin-left: 77px;
+}
+#postList {
+  height: 800px;
+  overflow-y: auto;
+}
+#postDate {
+  width: 120px;
+  padding: 2px;
+}
+#postContent {
+  height: 150px;
+}
+.post {
+  margin-bottom: 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.post-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.post-details img {
+  max-width: 100px;
+  min-width: 100px;
+  margin-left: 20px;
+}
 
 @media all and (max-width: 1680px) {
 }
