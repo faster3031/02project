@@ -41,10 +41,9 @@ window.addEventListener("load", function () {
     }
   });
 
-
   // -------------------------------------------------------로그인
   // 페이지가 로드될 때 초기 대시보드 화면을 표시
- 
+
   // 로그인 버튼 클릭시 호출되는 함수
   document
     .getElementById("login-button")
@@ -62,10 +61,10 @@ window.addEventListener("load", function () {
     .getElementById("logout-button")
     .addEventListener("click", function () {
       // 로그아웃 로직을 처리하고 다시 초기 화면을 표시합니다
-      document.getElementById("login-section").style.display = "block";
+      document.getElementById("login-section").style.display = "flex";
       document.getElementById("dashboard-section").style.display = "none";
     });
-    showInitialDashboard()
+  showInitialDashboard();
   // 대시보드 화면 표시 함수
   function showInitialDashboard() {
     //현재페이지의 URL에서 쿼리 문자열을 가져와 URLSearchParams()객체를 생성합니다.
@@ -74,44 +73,41 @@ window.addEventListener("load", function () {
     if (username) {
       document.getElementById("login-section").style.display = "none";
       document.getElementById("dashboard-section").style.display = "flex";
-      document.getElementById(
-        "username-display"
-      ).textContent = `${username}님`;
+      document.getElementById("username-display").textContent = `${username}님`;
       // 로그아웃 버튼
-      document.getElementById("logout-button").style.display = "block";
+      document.getElementById("logout-button").style.display = "flex";
     } else {
-      document.getElementById("login-section").style.display = "block";
+      document.getElementById("login-section").style.display = "flex";
       document.getElementById("dashboard-section").style.display = "none";
       document.getElementById("logout-button").style.display = "none";
     }
   }
-      // top 버튼 스크롤 기능
-      const topBtn = document.getElementById("top-btn");
-      topBtn.addEventListener("click", function (event) {
-        event.preventDefault();
-        console.log(window.scrollY);
-        if (window.scrollY == 0) {
-          window.scrollTo({
-            top: 99999,
-            behavior: "smooth",
-          });
-        } else {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        }
+  // top 버튼 스크롤 기능
+  const topBtn = document.getElementById("top-btn");
+  topBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    console.log(window.scrollY);
+    if (window.scrollY == 0) {
+      window.scrollTo({
+        top: 99999,
+        behavior: "smooth",
       });
-      // 화살표 이미지 회전
-      const topBtnImg = document.getElementById("top-btn-img");
-      window.addEventListener("scroll", function (scTop) {
-        scTop = this.document.documentElement.scrollTop;
-        if (scTop > 0) {
-          topBtnImg.classList.add("up");
-        } else {
-          topBtnImg.classList.remove("up");
-        }
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
       });
+    }
   });
- 
+  // 화살표 이미지 회전
+  const topBtnImg = document.getElementById("top-btn-img");
+  window.addEventListener("scroll", function (scTop) {
+    scTop = this.document.documentElement.scrollTop;
+    if (scTop > 0) {
+      topBtnImg.classList.add("up");
+    } else {
+      topBtnImg.classList.remove("up");
+    }
+  });
 
+});
