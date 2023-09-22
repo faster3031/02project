@@ -18,6 +18,7 @@
   line-height: 80px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header .logo img {
   width: 150px;
@@ -59,13 +60,15 @@
   cursor: pointer;
 }
 .nav ul li:hover a {
-
   color: #ebdeff;
 }
 .login {
-  width: 10%;
+  width: 20%;
   position: relative;
   display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: flex-end;
 }
 .login a {
   font-family: "Cafe24Oneprettynight";
@@ -81,7 +84,6 @@
 .login i {
   font-size: 17px;
 }
-
 
 /* 로그인 */
 /* 섹션 스타일 */
@@ -105,6 +107,7 @@
   position: relative;
   display: flex;
   /* width: 70%; */
+  align-items: center;
 }
 
 /* 버튼 */
@@ -121,7 +124,7 @@
 }
 
 #logout-button {
-  height: 50%;
+  height: 100%;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -130,9 +133,7 @@
   cursor: pointer;
   font-weight: bold;
   margin-right: 50px;
-  margin-top: 20px;
   background-color: #dc3545;
-  float: left;
 }
 
 /* 사용자 이름 디스플레이 스타일 */
@@ -144,27 +145,26 @@
   margin-right: 25px;
   font-size: 18px;
 }
-.top-button{
+.top-button {
   position: fixed;
   right: 30px;
   bottom: 40px;
   z-index: 9999;
   width: auto;
 }
-.top-btn{
+.top-btn {
   display: block;
-  background-color:#d7bcff;
+  background-color: #d7bcff;
   border-radius: 50%;
   width: 55px;
   line-height: 55px;
   text-align: center;
 }
-.top-btn img{
+.top-btn img {
   transform: rotate(180deg);
 }
-.top-btn img.up{
+.top-btn img.up {
   transform: rotate(0deg);
-
 }
 @media all and (max-width: 1680px) {
 }

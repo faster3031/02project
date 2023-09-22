@@ -22,7 +22,7 @@
   /* background-color: #e9dbff; */
 }
 #singup-botton a {
-  margin: 10px 10px;
+  margin: 10px 0px;
   padding: 5px;
   font-size: 18px;
   width: 1px;
@@ -47,7 +47,7 @@
 .logo_box img {
   position: relative;
   display: block;
-  width: 25%;
+  width: 20%;
   margin: 10px auto;
   margin-top: 50px;
   padding: 20px;
@@ -59,8 +59,8 @@
   position: relative;
   display: block;
   /* background-color: aliceblue; */
-  width: 25%;
-  height: 330px;
+  width: 23%;
+  height: 280px;
   margin: 0 auto;
   text-align: center;
 }
@@ -69,7 +69,7 @@
   display: block;
   text-align: center;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 37px;
 }
 
 #login-form input {
@@ -84,12 +84,12 @@
   border-radius: 5px;
   padding: 0 20px;
   font-size: 20px;
-  width: 75%;
+  width: 90%;
 }
 #login-form button {
   position: absolute;
   display: block;
-  top: 50px;
+  top: 40px;
   /* left: 70%; */
   margin: 0 auto;
   height: 50px;
@@ -116,7 +116,7 @@
   display: inline-block; /* 영역적용가능해짐 */
   width: 20px;
   height: 20px;
-  border: 2px solid #333;
+  border: 1px solid #333;
   box-sizing: border-box;
   border-radius: 10px; /* 모서리둥글게 처리 */
   position: relative;
@@ -148,13 +148,13 @@
 .chk {
   position: relative;
   display: flex;
-  width: 70%;
-  height: 50px;
+  width: 90%;
   padding: 0;
   /* margin: 0 auto; */
   text-align: center;
   /* background-color: aquamarine; */
   margin: 0 auto;
+  align-items: center;
 }
 .easy_login_img {
   padding: 0;
@@ -163,7 +163,7 @@
   margin: 0 auto;
   justify-content: center;
 }
-.easy_login_img a{
+.easy_login_img a {
   margin: 0;
   padding: 0;
 }
@@ -193,36 +193,36 @@
 
 @media all and (max-width: 1280px) {
   .login_box {
-    width: 30%;
+    width: 27%;
   }
 }
 @media all and (max-width: 1024px) {
   .login_box {
-    width: 42%;
+    width: 34%;
   }
-  .logo_box img{
+  .logo_box img {
     width: 35%;
   }
 }
 @media all and (max-width: 760px) {
   .login_box {
-    width: 50%;
+    width: 43%;
   }
-  .logo_box img{
+  .logo_box img {
     width: 60%;
   }
 }
 @media all and (max-width: 480px) {
   .login_box {
-    width: 90%;
+    width: 64%;
   }
-  .logo_box img{
+  .logo_box img {
     width: 70%;
   }
-  #login-form input{
-    font-size: 5px;
+  #login-form input {
+    font-size: 15px;
   }
-  #singup-botton a{
-    font-size:2px;
+  #singup-botton a {
+    font-size: 15px;
   }
 }
