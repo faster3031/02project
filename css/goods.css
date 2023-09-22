@@ -6,14 +6,14 @@
   position: relative;
 }
 .goods > .inner {
+  width: 100%;
+  height: 100%;
+  /* place-items: center; */
+}
+.goods .goodsbox {
   padding-top: 20px;
   padding-bottom: 20px;
   background: #f8f8f8;
-  width: 100%;
-  height: 100%;
-  place-items: center;
-}
-.goods .goodsbox {
   display: flex;
   position: relative;
   height: 100%;
@@ -74,36 +74,31 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  width: 100%;
+  height: 100%;
 }
 .goodsart li {
   position: relative;
   display: block;
   width: 250px;
   height: 100%;
-  padding: 0px 10px; 
+  padding: 0px 10px;
 }
+
 .goodsart li img {
-  width: 235px;
-  height: 240px;
+  width: 100%;
+  height: 80%;
   object-fit: cover;
   border-radius: 8px;
   /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
 }
-.goodsart li div{
-  width: 235px;
-    height: 240px;
-    overflow: hidden;
-    border-radius: 8px;
-}
-.goodsart li img:hover{
-  scale: 1.05;
 
-}
 .goodsart li p {
   display: block;
   font-size: 15px;
   text-align: center;
-  padding-top: 10px;
+  padding: 10px;
+  height: 30px;
 }
 
 @media all and (max-width: 1680px) {
@@ -118,6 +113,9 @@
   }
   .goodsart li p {
     font-size: 18px;
+  }
+  .goodsart li{
+    width: 60%;
   }
   /* 굿즈 설명박스 */
   .goodsbox .goodstxt {
@@ -137,16 +135,30 @@
 }
 
 @media all and (max-width: 1024px) {
+  .goods .goodsbox {
+    flex-direction: column;
+    width: 100%;
+
+
+  }
   /* 굿즈 설명박스 */
   .goodsbox .goodstxt {
-    min-width: 225px;
+    width: 100%;
+    flex-direction: row;
+    height: 40px;
+    min-width: 215px;
+    padding-left: 0;
   }
   .goodsbox .goodstxt h2 {
     font-size: 23px;
   }
   .goodsbox .goodstxt p {
-    font-size: 16px;
+    font-size: 14px;
     padding-bottom: 15px;
+    width: 50%;
+  }
+  .goodsbox .goodstxt p br{
+    display: none;
   }
   /* 굿즈 리스트 */
   .goodsbox .goodslist {
@@ -156,10 +168,13 @@
     justify-content: space-around;
   }
   .goodsart li {
-    width: 160px;
+
+    padding-top: 10px;
   }
   .goodsart li img {
-    height: 50%;
+    height: 80%;
+    width: 100%;
+    
   }
   /* 굿즈 보러가기 버튼 */
   .goodsbox .goodstxt > button {
@@ -189,13 +204,24 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-        overflow-x: scroll;
+    overflow: auto hidden;
   }
+  /* .goodsart li img {
+    height: 150px;
+    width: 150px;
+    
+  } */
   .goodsbox .goodstxt > button {
     width: 140px;
     height: 30px;
     border-radius: 10px;
     font-size: 15px;
+  }
+  .goodsart{
+    display: -webkit-inline-box;
+  }
+  .goodsart li{
+    padding: 0px 4px;
   }
 }
 @media all and (max-width: 480px) {
