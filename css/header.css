@@ -19,9 +19,15 @@
   display: flex;
   justify-content: space-between;
 }
+.header .logo {
+  width: 200px;
+  height: 35px;
+}
+/* .header .logo a{
+  width: 200px;
+} */
 .header .logo img {
-  width: 150px;
-  height: 50px;
+  height: 100%;
 }
 .nav {
   width: 50%;
@@ -63,15 +69,14 @@
   color: #ebdeff;
 }
 .login {
-  width: 10%;
   position: relative;
   display: flex;
 }
 .login a {
+  margin-right: 20px;
   font-family: "Cafe24Oneprettynight";
   font-weight: bold;
   font-size: 17px;
-  margin-right: 20px;
   transition: all 0.3s;
 }
 
@@ -164,7 +169,6 @@
 }
 .top-btn img.up{
   transform: rotate(0deg);
-
 }
 @media all and (max-width: 1680px) {
 }

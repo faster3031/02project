@@ -32,7 +32,6 @@
   border-radius: 10px;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
   margin-bottom: 50px;
-
 }
 .card-list > div {
   width: 4vw;
@@ -58,40 +57,7 @@
   z-index: 100;
 }
 
-@media (orientation: portrait) {
-  .artist .inner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  body:before {
-    /* content: "Up/Down arrows to move"; */
-  }
-.card-list{
-  padding: 0;
-  margin: 0;
-}
-  #artist-card {
-    width: 80vw;
-    max-width: 200vw;
-    height: 10vh;
-    margin: 1rem 0;
-    background-size: 100% auto;
-    display: none;
-    border-radius: 0%;
-    background-position: 50% 50%;
-    /* transform: skewX(-10deg); */
-  }
-  #artist-card:nth-child(1) {
-    display: block;
-  }
-  #artist-card:nth-child(2) {
-    display: block;
-  }
-  #artist-card:nth-child(3) {
-    display: block;
-  }
-}
+
 
 #artist-card:nth-child(1) {
   background-color: dodgerblue;
@@ -315,8 +281,95 @@
 @media all and (max-width: 1280px) {
 }
 @media all and (max-width: 1024px) {
+  .card-list{
+    padding: 20px;
+  }
+  .card-list > div {
+    width: 7vw;
+    max-width: 300px;
+    height: 8vh;
+    background: red;
+    background-size: auto 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 0.5rem;
+    filter: grayscale(0.5) opacity(0.1) contrast(100%);
+    transition: 0.5s;
+    /* transform: skewY(-10deg); */
+    z-index: -1;
+  }
+  #artist-card::after {
+    content: "NAME";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px #5f5f5f;
+  }
 }
 @media all and (max-width: 760px) {
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 320px) {
+  .artist h1{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .card-list{
+    padding-top: 10px;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow-y:scroll;
+  }
+  .artist .inner {
+    padding: 0px 0px;
+    height: 600px;
+  }
+  .card-list > div {
+    width: 260px;
+    max-width: 280px;
+    height: 10vh;
+    background: red;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: block;
+    margin: 0.5rem;
+    filter: grayscale(0.5) opacity(0.1) contrast(100%);
+    transition: 0.5s;
+    /* transform: skewY(-10deg); */
+    z-index: -1;
+  }
+  #artist-card:nth-child(1){
+    display: block;
+  }
+  #artist-card:nth-child(2){
+    display: block;
+  }
+  #artist-card:nth-child(3){
+    display: block;
+  }
+  #artist-card:nth-child(4){
+    display: block;
+  }
+  #artist-card:nth-child(5){
+    display: block;
+  }
+  #artist-card:nth-child(6){
+    display: block;
+  }
 }
