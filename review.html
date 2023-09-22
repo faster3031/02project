@@ -67,10 +67,7 @@
     <script src="js/news.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/review.js"></script>
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css"
-    />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css"/> -->
     <!-- fontawsome -->
     <link
       rel="stylesheet"
@@ -118,14 +115,14 @@
             </div>
            <!-- 기부 검색기능 -->
            <div id="searchContainer">
-            <div class="inner">
+           
               <div class="date">
-                <label for="postDate">날짜 &nbsp: &nbsp</label>
-                <input type="date" id="postDatePrev" name="postDate"> &nbsp;~&nbsp;
-                <input type="date" id="postDateNext" name="postDate">
+                <div class="datelist">
 
-              </div>
-
+                  <label for="postDate">날짜 &nbsp: &nbsp</label>
+                  <input type="date" id="postDatePrev" name="postDate"> &nbsp;~&nbsp;
+                  <input type="date" id="postDateNext" name="postDate">
+                </div>
               <div class="subject">
                 <select name="searchList" id="searchList">
                   <option value="bod_title">제목</option>
@@ -136,37 +133,44 @@
                 <button id="btnSearch">검색</button>
 
               </div>
+              </div>
+
+
               <!-- 게시글 작성버튼 -->
               <button id="writeBtn">게시글 작성</button>
-            </div>
+            
 
 
           </div>
-
+<!-- 작성글 -->
           <div class="writecontainer">
             <div class="writecontainerbox">
             <h1>게시글 작성</h1>
             <div class="post-form">
                 <div class="posttitles">
-                    <label for="postTitle">제목:</label>
+                    <label for="postTitle">제&nbsp;&nbsp;&nbsp;&nbsp;목&nbsp;:</label>
                     <input type="text" id="postTitle" required placeholder="제목을 입력하세요.">
                 </div>
                 <div class="posttitles">
-                    <label for="postWriter">작성자:</label>
+                    <label for="postWriter">작성자&nbsp;:</label>
                     <input type="text" id="postWriter" required placeholder="">
                 </div>
                 <div class="postetc">
                     <input type="file" id="postImage" accept="image/*">
-                    <label for="postDate">날짜:</label>
+                    <label for="postDate">날&nbsp;&nbsp;&nbsp;짜&nbsp;:</label>
                     <input type="date" id="postDate" name="postDate">
                 </div>
                 <div class="postcontents">
-                    <label for="postContent">내용:</label>
+                    <label for="postContent">내&nbsp;&nbsp;&nbsp;&nbsp;용&nbsp;:</label>
                     <textarea name="postContent" id="postContent" required></textarea>
                 </div>
-                <br />
-                <button id="addPostBtn">등록</button>
-                <button id="postClosseBtn">나가기</button>
+                <div class="postBtns">
+
+                  <button id="addPostBtn">등록</button>
+                  <button id="postClosseBtn">나가기</button>
+                </div>
+
+                </div>
             </div>
 
             </div>
@@ -181,6 +185,7 @@
                         <th class="writer">작성자</th>
                         <th class="date">작성일</th>
                         <th class="hit">조회</th>
+                        <th class="del">삭제</th>
                     </tr>
                 </thead>
                 <tbody id="postTableBody">
@@ -189,7 +194,32 @@
                         <td class="subject"><a href="#">[TWICE] 건강한 여름나기, 말복맞이 삼계탕 나눔 후기</a></td>
                         <td class="writer">원스</td>
                         <td class="date">2023-09-19</td>
+                        <td class="hit">12</td>
+                        <td class="del"> </td>
+                    </tr>
+                    <tr>
+                        <td class="num">공지</td>
+                        <td class="subject"><a href="#">[TWICE] 건강한 여름나기, 말복맞이 삼계탕 나눔 후기</a></td>
+                        <td class="writer">원스</td>
+                        <td class="date">2023-09-19</td>
+                        <td class="hit">65</td>
+                        <td class="del"> </td>
+                    </tr>
+                    <tr>
+                        <td class="num">공지</td>
+                        <td class="subject"><a href="#">[TWICE] 건강한 여름나기, 말복맞이 삼계탕 나눔 후기</a></td>
+                        <td class="writer">원스</td>
+                        <td class="date">2023-09-19</td>
+                        <td class="hit">90</td>
+                        <td class="del"> </td>
+                    </tr>
+                    <tr>
+                        <td class="num">000</td>
+                        <td class="subject"><a href="#">[TWICE] 건강한 여름나기, 말복맞이 삼계탕 나눔 후기</a></td>
+                        <td class="writer">원스</td>
+                        <td class="date">2023-09-19</td>
                         <td class="hit">123</td>
+                        <td class="del"> </td>
                     </tr>
                 </tbody>
             </table>
