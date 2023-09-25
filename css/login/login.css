@@ -83,7 +83,7 @@
   border: none;
   border-radius: 5px;
   padding: 0 20px;
-  font-size: 20px;
+  font-size: 18px;
   width: 90%;
 }
 #login-form button {
@@ -93,9 +93,9 @@
   /* left: 70%; */
   margin: 0 auto;
   height: 50px;
-  background-color: #c29cff;
+  background-color: #8d5cb2;
   color: aliceblue;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   font-family: "AppleSDGothicNeo";
   border: none;
@@ -104,7 +104,7 @@
   text-align: center;
 }
 #login-form button:hover {
-  background-color: #8d5cb2;
+  background-color: #663e83;
   color: aliceblue;
   font-weight: bold;
   font-family: "AppleSDGothicNeo";
@@ -174,7 +174,7 @@
   margin: 0 auto;
   text-align: center;
   margin: 20px auto;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: #333;
 }

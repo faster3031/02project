@@ -43,4 +43,5 @@ window.addEventListener("load", function () {
     // 클릭 시 checkbox 요소의 required 속성을 제거합니다.
     checkbox.removeAttribute("required");
   });
+
 });
