@@ -113,9 +113,8 @@
 }
 .ranktxt .ranktitle h2 {
   text-align: left;
-  font-size: 70px;
-
-  line-height: 75px;
+  font-size: 40px;
+  line-height: 50px;
   color: #444504;
   font-family: "Cafe24Ssurround";
   font-weight: 500;
@@ -359,7 +358,7 @@
     font-size: 58px;
   }
   .ranktxt h2 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .ranktxt > h1 > span {
     font-size: 40px;
@@ -369,8 +368,7 @@
     top: 75%;
     left: 53%;
   }
-}
-/* 보러가기버튼 */
+  /* 보러가기버튼 */
 .rankbtn1,
 .rankbtn2 {
   width: 165px;
@@ -408,6 +406,8 @@
   height: 139px;
 }
 
+}
+
 @media all and (max-width: 1024px) {
   .fandom {
     height: 700px;
@@ -438,13 +438,14 @@
   .ranktxt {
     min-width: 359px;
   }
-  .ranktxt h2 {
+
+  .ranktxt .ranktitle h2 {
     margin-top: 0px;
     font-size: 36px;
-    line-height: 40px;
-  }
+    line-height: 40px;}
+
   .ranktxt h1 {
-    font-size: 38px;
+    font-size: 50px;
   }
   .ranktxt > h1 > span {
     font-size: 25px;
@@ -462,7 +463,8 @@
     font-size: 30px;
   }
   .ranklist li {
-    padding: 5px 20px;
+    padding: 5px 0px;
+    margin-left: 0;
   }
   .ranklist li a {
     font-size: 20px;
@@ -522,13 +524,13 @@
     padding: 0;
   }
   .fandom {
-    height: 880px;
+    height: 757px;
   }
   #fandombox {
-    height: 920px;
+    height: 771px;
   }
   .star {
-    height: 840px;
+    height: 736px;
   }
   .star .inner {
     flex-direction: column-reverse;
@@ -536,7 +538,7 @@
 
   /* 랭킹이미지 */
   .fandomimg {
-    height: 50%;
+    height: 70%;
     width: 100%;
   }
   #fandombtn {
@@ -554,16 +556,20 @@
   .ranktxt .ranktitle h2 {
     margin-top: 0;
     text-align: center;
-    font-size: 50px;
-    line-height: 55px;
+    font-size: 40px;
+    line-height: 50px;
   }
   .ranktxt {
     min-width: -webkit-fill-available;
     text-align: center;
+    height: 80%;
   }
   .ranktxt li {
     display: none;
   }
+  .ranktxt h1 {
+    font-size: 50px;}
+
   .rankname {
     text-align: center;
   }
@@ -608,4 +614,9 @@
   .cheering {
     display: none;
   }
+}
+@media all and (max-width: 320px) {
+.rankname{
+  line-height: 45px;
+}
 }

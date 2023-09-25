@@ -12,6 +12,7 @@
   height: 220px;
   padding: 30px 50px;
   background-color: #eee7f3;
+  user-select:none;
 }
 .reviewTitle h2 {
   font-size: 2.5em;
@@ -35,15 +36,20 @@
   border-top: 2px solid #333;
   border-bottom: 2px solid #333;
 }
-.subject {
+.board_st .subject {
   text-overflow: ellipsis;
   overflow: hidden;
+  text-align: left;
 }
+.board_st .subject:hover{
+  text-decoration: underline;
+  }
 table .subject a {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   max-width: 90%;
+
 }
 #board_st caption {
   text-indent: -9999;
@@ -61,6 +67,7 @@ thead {
 tr {
   border-bottom: 1px solid #ccc;
 }
+
 tbody {
   font-size: 15px;
 }
@@ -68,6 +75,7 @@ tbody > tr:nth-child(1),
 tr:nth-child(2),
 tr:nth-child(3) {
   background-color: #f1f1f1;
+  font-weight: 500;
 }
 th {
   padding: 10px 10px;
@@ -105,6 +113,7 @@ td {
   align-items: center;
   justify-content: flex-end;
   margin-bottom: 15px;
+  user-select:none;
 }
 #searchContainer .inner {
   display: flex;
@@ -168,11 +177,17 @@ td {
   cursor: pointer;
 }
 #writeBtn:hover {
-  background-color: #734695;
+  background-color: #8038c7;
+}
+#postClosseBtn{
+  background-color: #8d6eab;
+}
+#postClosseBtn:hover{
+  background-color: #8038c7;
 }
 /* 검색기능 - 분류 */
 .subject option {
-  background: #734695;
+  background: #eee7f3;
 }
 /* 페이지번호 */
 .page {
@@ -297,10 +312,10 @@ li {
 }
 .writecontainerbox {
   background-color: #f7f7f7;
-  /* display: none; */
   padding: 20px 0;
   padding-bottom: 50px;
   margin-bottom: 20px;
+  display: none;
 }
 
 .writecontainer h1 {
@@ -358,7 +373,7 @@ textarea {
   display: inline-block;
 }
 .writecontainer button:hover {
-  background-color: #0056b3;
+  background-color: #8038c7;
 }
 #postImage {
   margin-left: 77px;
