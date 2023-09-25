@@ -24,7 +24,7 @@
 .campaign_gap {
   position: relative;
   display: block;
-  height: 80px;
+  height: 50px;
   width: 100%;
 }
 .campaign-wrap {
@@ -109,7 +109,7 @@
 /* 바 테스트 */
 .campaign_title {
   font-size: 14px;
-  /* font-weight: bold; */
+  font-weight: bold;
   margin: 10px;
   color: #242424;
 }
@@ -138,7 +138,7 @@
   /* margin-top: 25px; */
   margin: 0 auto;
   width: 95%;
-  height: 10px;
+  height: 7px;
   background-color: #d9d9d9;
   border-radius: 5px;
 }
@@ -147,8 +147,8 @@
   display: block;
   z-index: 99;
   width: 20%;
-  height: 10px;
-  background-color: #a583c8;
+  height: 7px;
+  background-color: #7724c9;
   border-radius: 5px;
 }
 .bar_20 {
@@ -156,8 +156,8 @@
   display: block;
   z-index: 99;
   width: 20%;
-  height: 10px;
-  background-color: #a583c8;
+  height: 7px;
+  background-color: #7724c9;
   border-radius: 5px;
 }
 .bar_30 {
@@ -165,8 +165,8 @@
   display: block;
   z-index: 99;
   width: 30%;
-  height: 10px;
-  background-color: #a583c8;
+  height: 7px;
+  background-color: #7724c9;
   border-radius: 5px;
 }
 .bar_40 {
@@ -174,8 +174,8 @@
   display: block;
   z-index: 99;
   width: 40%;
-  height: 10px;
-  background-color: #a583c8;
+  height: 7px;
+  background-color: #7724c9;
   border-radius: 5px;
 }
 .bar_50 {
@@ -183,8 +183,8 @@
   display: block;
   z-index: 99;
   width: 50%;
-  height: 10px;
-  background-color: #a583c8;
+  height: 7px;
+  background-color: #7724c9;
   border-radius: 5px;
 }
 .bar_60 {
@@ -192,8 +192,8 @@
   display: block;
   z-index: 99;
   width: 60%;
-  height: 10px;
-  background-color: #a583c8;
+  height: 7px;
+  background-color: #7724c9;
   border-radius: 5px;
 }
 .bar_70 {
@@ -201,8 +201,8 @@
   display: block;
   z-index: 99;
   width: 70%;
-  height: 10px;
-  background-color: #a583c8;
+  height: 7px;
+  background-color: #7724c9;
   border-radius: 5px;
 }
 .bar_80 {
@@ -210,8 +210,8 @@
   display: block;
   z-index: 99;
   width: 80%;
-  height: 10px;
-  background-color: #a583c8;
+  height:7px;
+  background-color: #7724c9;
   border-radius: 5px;
 }
 .bar_90 {
@@ -219,8 +219,8 @@
   display: block;
   z-index: 99;
   width: 90%;
-  height: 10px;
-  background-color: #a583c8;
+  height: 7px;
+  background-color: #7724c9;
   border-radius: 5px;
 }
 
@@ -232,31 +232,44 @@
   .campaign_box .hoverBox {
     bottom: -120%;
   }
+  .campaign_title{
+    font-size: 15px;
+  }
+  .campaign-wrap{
+    margin: 10px 0;
+  }
 }
 
 @media all and (max-width: 1280px) {
   .campaign_item {
-    width: calc(98% / 3);
+    width: calc(98% / 4);
   }
-  .akmu {
-    display: none;
-  }
-  .ive {
-    display: none;
+  .campaign_title{
+    font-size: 12px;
   }
 }
 @media all and (max-width: 1024px) {
   .campaign_item {
-    width: calc(98% / 2);
+    
+    width: calc(65% / 2);
   }
   .campaign_ber_title {
     font-size: 15px;
+  }
+  .campaign_title{
+    font-size: 12px;
   }
   .campaign_box .hoverBox {
     bottom: -150%;
   }
   .campaign_box:hover .hoverBox {
     bottom: -10%;
+  }
+  .ive{
+    display: none;
+  }
+  .akmu{
+    display: none;
   }
 }
 @media all and (max-width: 760px) {

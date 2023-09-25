@@ -1,39 +1,38 @@
 //  dom (html 태그 로딩 완료시 실행)
 $(document).ready(function () {
-    $("#comment-form").submit(function(event) {
-      event.preventDefault();
+  $("#comment-form").submit(function (event) {
+    event.preventDefault();
 
-      const commentText = $("#name").val();
-      const profilePicUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3NLneGh8hSCLKR5H-gHg45QZnXwDL1qGCJA&usqp=CAU"; // 고정된 이미지 URL
-      const currentDateTime = new Date().toLocaleString(); // 현재 날짜와 시간을 문자열로 가져옴
+    const commentText = $("#name").val();
+    const profilePicUrl =
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3NLneGh8hSCLKR5H-gHg45QZnXwDL1qGCJA&usqp=CAU"; // 고정된 이미지 URL
+    const currentDateTime = new Date().toLocaleString(); // 현재 날짜와 시간을 문자열로 가져옴
 
-      if (commentText) {
-        const newComment = $("<li>").addClass("comment");
-        const profilePic = $("<img>")
-          .addClass("profile-pic")
-          .attr("src", profilePicUrl) // 고정된 이미지 URL
-          .attr("alt", "프로필 사진");
-        const commentContent = $("<div>").text(commentText);
-        const dateTime = $("<p>").text(currentDateTime); // 날짜와 시간을 추가
+    if (commentText) {
+      const newComment = $("<li>").addClass("comment");
+      const profilePic = $("<img>")
+        .addClass("profile-pic")
+        .attr("src", profilePicUrl) // 고정된 이미지 URL
+        .attr("alt", "프로필 사진");
+      const commentContent = $("<div>").text(commentText);
+      const dateTime = $("<p>").text(currentDateTime); // 날짜와 시간을 추가
 
-        newComment.append(profilePic, commentContent, dateTime);
-        $("#comment-list").append(newComment);
+      newComment.append(profilePic, commentContent, dateTime);
+      $("#comment-list").append(newComment);
 
-        $("#name").val("");
-      }
-    });
+      $("#name").val("");
+    }
   });
-
-
+});
 
 // 멀티미디어 리소스 로딩 완료 후 실행
 window.addEventListener("load", function () {
   const number = 1000000; // 변환할 숫자
 
-// 숫자를 쉼표로 구분된 문자열로 변환
-const formattedNumber = number.toLocaleString();
+  // 숫자를 쉼표로 구분된 문자열로 변환
+  const formattedNumber = number.toLocaleString();
 
-console.log(formattedNumber); // "1,000,000"
+  console.log(formattedNumber); // "1,000,000"
   // 모달창 열기
   const openPaymentModalBtn = document.getElementById("openPaymentModalBtn");
   const paymentModal = document.getElementById("paymentModal");
@@ -147,39 +146,38 @@ console.log(formattedNumber); // "1,000,000"
       paymentModal.style.display = "none";
     });
   });
-  const checkbox = document.getElementById('anonymous-payment');
-  const customCheckbox = document.querySelector('.custom-checkbox');
+  const checkbox = document.getElementById("anonymous-payment");
+  const customCheckbox = document.querySelector(".custom-checkbox");
 
   // span을 클릭할 때도 체크박스를 토글합니다.
-  customCheckbox.addEventListener('click', function () {
-      checkbox.checked = !checkbox.checked;
-      updateCheckboxStyle();
+  customCheckbox.addEventListener("click", function () {
+    checkbox.checked = !checkbox.checked;
+    updateCheckboxStyle();
   });
 
-  checkbox.addEventListener('change', function () {
-      updateCheckboxStyle();
+  checkbox.addEventListener("change", function () {
+    updateCheckboxStyle();
   });
 
   function updateCheckboxStyle() {
-      if (checkbox.checked) {
-          customCheckbox.classList.add('checked');
-      } else {
-          customCheckbox.classList.remove('checked');
-      }
+    if (checkbox.checked) {
+      customCheckbox.classList.add("checked");
+    } else {
+      customCheckbox.classList.remove("checked");
+    }
   }
 
-  
-    // 모달 닫기 버튼 클릭 이벤트를 처리합니다.
-    paymentCompleteModal.addEventListener('click', () => {
-        // 모달 닫힐 때 체크박스를 초기화합니다.
-        checkbox.checked = false;
+  // 모달 닫기 버튼 클릭 이벤트를 처리합니다.
+  paymentCompleteModal.addEventListener("click", () => {
+    // 모달 닫힐 때 체크박스를 초기화합니다.
+    checkbox.checked = false;
 
-        // 모달을 숨깁니다.
-        paymentModal.style.display = 'none';
-    });
-    window.addEventListener("click", (event) => {
-        if (event.target == paymentModal) {
-            checkbox.checked = false;
-        }
-      });
+    // 모달을 숨깁니다.
+    paymentModal.style.display = "none";
+  });
+  window.addEventListener("click", (event) => {
+    if (event.target == paymentModal) {
+      checkbox.checked = false;
+    }
+  });
 });
