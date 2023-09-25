@@ -1,7 +1,7 @@
 /* 아티스트 목록 */
 .artist {
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 .artist h1 {
   font-family: 'AppleSDGothicNeo';
@@ -11,6 +11,7 @@
   font-weight: bold;
   text-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 1);
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 .artist i{
   font-size: 18px;
@@ -44,19 +45,21 @@
   border-radius: 50%;
   display: inline-block;
   margin: 0 0.5rem;
-  filter: grayscale(0.5) opacity(0.1) contrast(100%);
+  filter: grayscale(0.5) opacity(0.5) contrast(100%);
   transition: 0.5s;
   /* transform: skewY(-10deg); */
   z-index: -1;
 }
 
 .artist .inner .highlight {
+  width: 4vw;
+  max-width: 120px;
+  height: 8vh;
   filter: grayscale(0) opacity(1);
   transform: scale(1.1);
   box-shadow: 0 1px 1px black;
   z-index: 100;
 }
-
 
 
 #artist-card:nth-child(1) {
@@ -295,7 +298,7 @@
     border-radius: 50%;
     display: inline-block;
     margin: 0 0.5rem;
-    filter: grayscale(0.5) opacity(0.1) contrast(100%);
+    filter: grayscale(0.5) opacity(0.5) contrast(100%);
     transition: 0.5s;
     /* transform: skewY(-10deg); */
     z-index: -1;
@@ -323,22 +326,21 @@
     font-size: 15px;
     margin-bottom: 10px;
   }
+  .artist i{
+    font-size: 15px;
+  }
   .card-list{
-    padding-top: 10px;
-    width: 300px;
+    padding: 0;
+    width: 290px;
     height: 500px;
     border-radius: 10px;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
-    margin-bottom: 50px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
     overflow-y:scroll;
-  }
-  .artist .inner {
-    padding: 0px 0px;
   }
   .card-list > div {
     width: 260px;
@@ -351,7 +353,7 @@
     border-radius: 10px;
     display: block;
     margin: 0.5rem;
-    filter: grayscale(0.5) opacity(0.1) contrast(100%);
+    filter: grayscale(0.5) opacity(0.5) contrast(100%);
     transition: 0.5s;
     /* transform: skewY(-10deg); */
     z-index: -1;
