@@ -165,6 +165,7 @@
 @media all and (max-width: 480px) {
   .donation_box {
     justify-content: space-between;
+    overflow: auto hidden;
   }
   .cheering {
     display: none;
