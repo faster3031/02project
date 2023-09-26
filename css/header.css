@@ -401,7 +401,7 @@
   font-family: 'GmarketSansMedium';
   display: none;
   background-color: #fff;
-  width: 320px;
+  width: 480px;
   padding: 0 20px;
   line-height: 50px;
   height: 50px;
@@ -465,5 +465,8 @@
   .qna{
     width: 80%;
     min-width: 220px;
+  }
+  .nav-mb ul li{
+    width: 320px;
   }
 }
