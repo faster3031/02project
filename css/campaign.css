@@ -8,7 +8,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 100px 0;
 }
 .campaign-wrap h1 {
   position: relative;
@@ -16,6 +16,7 @@
   width: 100%;
   text-align: center;
   margin: 20px auto;
+  font-family: 'GmarketSansMedium';
   color: #000;
   font-size: 20px;
   font-weight: bold;
