@@ -441,7 +441,7 @@
   .nav{
     display: none;
   }
-  .login{
+  #login{
     display: none;
   }
   .nav-mb ul li{
