@@ -203,3 +203,15 @@ window.addEventListener("load", function () {
     }, 1000);
   });
 });
+    // 모바일 메뉴 토글
+    const toggleButton = document.getElementById('toggleButton');
+    const navMb = document.querySelector('.nav-mb');
+    toggleButton.addEventListener('click', () => {
+        if (navMb.style.opacity === '1') {
+            navMb.style.opacity = '0';
+        } else {
+            navMb.style.opacity = '1';
+        }
+    });
+});
+
