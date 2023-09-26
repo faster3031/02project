@@ -94,6 +94,7 @@
   }
   .amount p > span {
     font-size: 25px !important;
+    line-height: 25px;
   }
   .amount span {
     width: 100px;

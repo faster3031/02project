@@ -213,5 +213,4 @@ window.addEventListener("load", function () {
             navMb.style.opacity = '1';
         }
     });
-});
 

@@ -9,8 +9,8 @@ $(document).ready(function () {
   });
 });
 // 좋아요
-$(function() {
-  $(".heart").on("click", function() {
+$(function () {
+  $(".heart").on("click", function () {
     $(this).toggleClass("is-active");
   });
 });
@@ -45,7 +45,7 @@ window.addEventListener("load", function () {
     newRow.innerHTML = `
        <td class="num">${formattedRegistrationNumber}</td>
        <td class="subject"><a href="#">${post.title}</a></td>
-       <td class="writer">${post.writer}</td>
+       <td class="writer">${post.writer}<br><span>${post.date || ""}</span></td>
        <td class="date">${post.date || ""}</td>
        <td class="hearttitle"><div class="heart"></div></td>
        <td class="del"><button class=delete-post-btn>x</button></td>
@@ -76,12 +76,20 @@ window.addEventListener("load", function () {
 
     if (title && writer) {
       const currentDate = new Date(); // 현재 날짜와 시간을 가져옵니다.
-    const formattedDate = `${currentDate.getFullYear()}-${(currentDate.getMonth() + 1)
-      .toString()
-      .padStart(2, "0")}-${currentDate.getDate().toString().padStart(2, "0")} ${currentDate
-      .getHours()
-      .toString()
-      .padStart(2, "0")}:${currentDate.getMinutes().toString().padStart(2, "0")}`;
+      const formattedDate = `${currentDate.getFullYear()}-${(
+        currentDate.getMonth() + 1
+      )
+        .toString()
+        .padStart(2, "0")}-${currentDate
+        .getDate()
+        .toString()
+        .padStart(2, "0")} ${currentDate
+        .getHours()
+        .toString()
+        .padStart(2, "0")}:${currentDate
+        .getMinutes()
+        .toString()
+        .padStart(2, "0")}`;
 
       const newPost = {
         title,
