@@ -72,20 +72,7 @@
   align-items: center;
   justify-content: flex-end;
 }
-.login a {
-  margin-right: 20px;
-  font-family: "Cafe24Oneprettynight";
-  font-weight: bold;
-  font-size: 17px;
-  transition: all 0.3s;
-}
 
-.login a:hover {
-  color: #ebdeff;
-}
-.login i {
-  font-size: 17px;
-}
 
 /* 로그인 */
 /* 섹션 스타일 */
@@ -123,7 +110,6 @@
   font-size: 16px;
   cursor: pointer;
   font-weight: bold;
-  margin-right: 50px;
 }
 
 #logout-button {
@@ -137,7 +123,6 @@
   font-size: 16px;
   cursor: pointer;
   font-weight: bold;
-  margin-right: 50px;
   background:none
 }
 
