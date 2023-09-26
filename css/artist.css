@@ -4,7 +4,7 @@
   height: 500px;
 }
 .artist h1 {
-  font-family: 'AppleSDGothicNeo';
+  font-family: 'GmarketSansMedium';
   display: inline-block;
   color: #000;
   font-size: 20px;
@@ -52,9 +52,6 @@
 }
 
 .artist .inner .highlight {
-  width: 4vw;
-  max-width: 120px;
-  height: 8vh;
   filter: grayscale(0) opacity(1);
   transform: scale(1.1);
   box-shadow: 0 1px 1px black;

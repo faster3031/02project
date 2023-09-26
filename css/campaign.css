@@ -8,11 +8,12 @@
   position: relative;
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 100px 0;
 }
 .campaign-wrap h1 {
   position: absolute;
   display: block;
+  font-family: 'GmarketSansMedium';
   top: 0;
   left: 50%;
   transform: translateX(-50%);
