@@ -10,6 +10,23 @@ $(document).ready(function () {
 
 // 멀티미디어 리소스 로딩 완료 후 실행
 window.addEventListener("load", function () {
+      // top 버튼 스크롤 기능
+      const topBtn = document.getElementById("top-btn");
+      topBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        console.log(window.scrollY);
+        if (window.scrollY == 0) {
+          window.scrollTo({
+            top: 99999,
+            behavior: "smooth",
+          });
+        } else {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }
+      });
   //헤더 스크롤 기능
   //스크롤바의 상단위치
   let scy = 0;
@@ -89,23 +106,7 @@ window.addEventListener("load", function () {
       document.getElementById("logout-button").style.display = "none";
     }
   }
-  // top 버튼 스크롤 기능
-  const topBtn = document.getElementById("top-btn");
-  topBtn.addEventListener("click", function (event) {
-    event.preventDefault();
-    console.log(window.scrollY);
-    if (window.scrollY == 0) {
-      window.scrollTo({
-        top: 99999,
-        behavior: "smooth",
-      });
-    } else {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
-  });
+
   // 화살표 이미지 회전
   const topBtnImg = document.getElementById("top-btn-img");
   window.addEventListener("scroll", function (scTop) {
@@ -202,15 +203,16 @@ window.addEventListener("load", function () {
       $chat.input();
     }, 1000);
   });
+      // 모바일 메뉴 토글
+      const toggleButton = document.getElementById('toggleButton');
+      const navMb = document.querySelector('.nav-mb');
+      toggleButton.addEventListener('click', () => {
+          if (navMb.style.opacity === '1') {
+              navMb.style.opacity = '0';
+          } else {
+              navMb.style.opacity = '1';
+          }
+      });
 });
-    // 모바일 메뉴 토글
-    const toggleButton = document.getElementById('toggleButton');
-    const navMb = document.querySelector('.nav-mb');
-    toggleButton.addEventListener('click', () => {
-        if (navMb.style.opacity === '1') {
-            navMb.style.opacity = '0';
-        } else {
-            navMb.style.opacity = '1';
-        }
-    });
+
 
