@@ -214,5 +214,3 @@ window.addEventListener("load", function () {
           }
       });
 });
-
-
