@@ -73,6 +73,7 @@
   align-items: center;
   justify-content: flex-end;
 }
+
 .login a {
   margin-right: 20px;
   font-weight: bold;
@@ -80,12 +81,7 @@
   transition: all 0.3s;
 }
 
-.login a:hover {
-  color: #ebdeff;
-}
-.login i {
-  font-size: 17px;
-}
+
 
 /* 로그인 */
 /* 섹션 스타일 */
