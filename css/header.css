@@ -31,7 +31,7 @@
 }
 .nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .nav ul li {
@@ -387,24 +387,34 @@
   border-bottom-left-radius: 0px;
 }
 /* 모바일 메뉴 */
-.nav-mb {
-  opacity: 0;
+.nav-mb{
+  z-index: 999; /* 다른 요소 위에 나타나도록 설정 */
+  width: 100%;
+  display: none;
   position: absolute;
   top: 71px;
-  right: 0;
-  transition: opacity 0.3s ease;
+  right: -300px; /* 초기에 오른쪽으로 숨겨진 상태, 메뉴의 너비만큼 이동 */
+  transition: right 0.5s ease; /* 메뉴 위치 변화를 부드럽게 만들기 위한 트랜지션 */
 }
 
 .nav-mb ul li {
   font-family: "GmarketSansMedium";
   display: none;
   background-color: #fff;
-  width: 320px;
+  width: 100%;
   padding: 0 20px;
+  font-size: 14px;
   line-height: 50px;
   height: 50px;
   text-align: center;
   font-weight: bold;
+  transition: all 0.3s;
+}
+.nav-mb ul li:hover{
+  background-color: #eee4f8;
+}
+.nav-mb ul li:hover a{
+  color: #8d4ccd;
 }
 #toggleButton {
   font-size: 23px;
@@ -441,11 +451,6 @@
   }
   .nav-mb ul li{
     display: block;
-  }
-  .nav-mb ul li:nth-child(6){
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   #toggleButton{
     display: block;

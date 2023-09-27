@@ -206,16 +206,35 @@ window.addEventListener("load", function () {
       $chat.input();
     }, 1000);
   });
-      // 모바일 메뉴 토글
-      const toggleButton = document.getElementById('toggleButton');
-      const navMb = document.querySelector('.nav-mb');
-      toggleButton.addEventListener('click', () => {
-          if (navMb.style.opacity === '1') {
-              navMb.style.opacity = '0';
-          } else {
-              navMb.style.opacity = '1';
-          }
-      });
+
+  const toggleButton = document.getElementById('toggleButton');
+  const navMb = document.querySelector('.nav-mb');
+  const icon = document.querySelector('#toggleButton');
+  
+  toggleButton.addEventListener('click', () => {
+    if (navMb.style.opacity === '1') {
+      navMb.style.opacity = '0';
+      icon.className = 'fa-solid fa-bars'; // 클래스 이름을 'fa-bars'로 설정
+    } else {
+      navMb.style.opacity = '1';
+      icon.className = 'fa-solid fa-times'; // 클래스 이름을 'fa-times'로 설정
+    }
+  });
+
+const NavMb = document.getElementById('navMb');
+let isNavVisible = false; // 네비게이션 가시성 상태
+
+toggleButton.addEventListener('click', () => {
+  if (!isNavVisible) {
+    // 네비게이션을 오른쪽에서 나타나게 함
+    NavMb.style.right = '0';
+    isNavVisible = true;
+    NavMb.style.display = 'block'; // 메뉴를 나타나게 함
+  } else {
+    // 네비게이션을 오른쪽으로 숨김
+    NavMb.style.right = '-300px'; // 메뉴의 너비만큼 숨기도록 설정
+    isNavVisible = false;
+    NavMb.style.display = 'none'; // 메뉴를 숨김
+  }
 });
-
-
+});
