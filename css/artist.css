@@ -1,7 +1,7 @@
 /* 아티스트 목록 */
 .artist {
   width: 100%;
-  height: 700px;
+  height: 600px;
 }
 .artist h1 {
   font-family: 'GmarketSansMedium';
@@ -64,7 +64,7 @@
   width: 200px;
   height: 50px;
   cursor: pointer;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .artist-more a{
   font-family: 'GmarketSansMedium';
