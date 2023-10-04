@@ -449,6 +449,16 @@
   .nav-mb ul li{
     display: block;
   }
+  .nav-mb ul li:nth-child(6){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-mb ul li:nth-child(7){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   #toggleButton{
     display: block;
   }
