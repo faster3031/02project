@@ -96,11 +96,14 @@ window.addEventListener("load", function () {
     var username = params.get("username");
     if (username) {
       document.getElementById("login-section").style.display = "none";
+      document.getElementById("login_li").style.display = "none";
       document.getElementById("dashboard-section").style.display = "flex";
       document.getElementById("username-display").textContent = `${username}님`;
       // 로그아웃 버튼
       document.getElementById("logout-button").style.display = "flex";
+      document.getElementById("logout_li").style.display = "flex";
     } else {
+      document.getElementById("logout_li").style.display = "none";
       document.getElementById("login-section").style.display = "flex";
       document.getElementById("dashboard-section").style.display = "none";
       document.getElementById("logout-button").style.display = "none";

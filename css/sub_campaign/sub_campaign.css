@@ -210,10 +210,10 @@
 }
 @media all and (max-width: 760px) {
   .sub_campaign_text {
-    font-size: 13px;
+    font-size: 11px;
   }
   .sub_campaign_gather{
-    font-size: 13px;
+    font-size: 11px;
   }
   .sub_campaign_item {
     width: calc(97% / 2);
