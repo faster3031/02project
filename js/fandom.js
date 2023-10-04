@@ -3,7 +3,7 @@ $(document).ready(function () {
   // 페이지별 데이터와 요소 정보를 배열에 저장
   var pages = [
     {
-      counts: [111, 1111, 11111],
+      counts: [273401000, 1200, 2500],
       elements: [
         $(".memberCountConTxt_1"),
         $(".memberCountConTxt_2"),
@@ -11,7 +11,7 @@ $(document).ready(function () {
       ],
     },
     {
-      counts: [222, 2222, 22222],
+      counts: [567401000, 4320, 4500],
       elements: [
         $(".memberCountConTxt_4"),
         $(".memberCountConTxt_5"),
@@ -19,7 +19,7 @@ $(document).ready(function () {
       ],
     },
     {
-      counts: [333, 3333, 33333],
+      counts: [101201000, 1250, 2200],
       elements: [
         $(".memberCountConTxt_7"),
         $(".memberCountConTxt_8"),

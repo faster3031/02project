@@ -78,9 +78,9 @@
     <div class="wrap">
       <!-- 스크롤 버튼 -->
       <div class="top-button">
-      <a class="qna-btn" id="qna-btn">
-        <img src="images/logo_05.png" alt="qna-btn" id="qna-btn-img" />
-      </a>
+        <a class="qna-btn" id="qna-btn">
+          <img src="images/qnaicon.png" alt="qna-btn" id="qna-btn-img" />
+        </a>
       <a href="#" class="top-btn" id="top-btn">
         <img src="images/top-btn.png" alt="top-btn" id="top-btn-img" />
       </a>
@@ -90,13 +90,13 @@
         <div class="qnaheader"><p>별들의 따뜻한 후원, 별의온도</p><br>
           <span>문의사항이 있으신가요?</span> <i class="fa-solid fa-xmark" id="qnaClose"></i></div>
         <div class="messages">
-          <span class="msg"><img src="images/logo_05.png" alt="별의온도 로고">별의온도</span>
+          <span class="msg"><img src="images/logo_03.png" alt="별의온도 로고">별의온도</span>
           <span><img src="images/logo_04.png" alt="별의온도 로고"></span>
           <div class="message ai">안녕하세요. <br> 별의온도 입니다.<br> 무엇을 도와드릴까요?</div>
-          <div class="message ai">다음 중 문의사항에 해당되는 번호를 입력해주세요.<br>1. 로그인/회원가입<br>2. 박재완<br>3. 집에보내줘<br>4. 칭찬<br>5. 불만상담<br></div>
+          <div class="message ai">다음 중 문의사항에 해당되는 번호를 입력해주세요.<br>1. 로그인/회원가입<br>2. 결제하기<br>3. 후원굿즈<br>4. 칭찬<br>5. 불만상담<br>6. 기타사항<br></div>
         </div>
         <div class="qnainput">
-          <input type="text"  placeholder="..."/>
+          <input type="text"  placeholder="해당되는 번호를 입력해주세요."/>
           <button onclick="$chat.input();">전송</button>
         </div>
       </div>
@@ -118,10 +118,10 @@
           </nav>
                     <!-- 모바일 메뉴 -->
                     <i class="fa-solid fa-bars" id="toggleButton"></i>
-                    <nav class="nav-mb">
+                    <nav class="nav-mb" id="navMb">
                       <ul>
                         <li><a href="infopage.html" alt="기부">기부</a></li>
-                        <li><a href="#" alt="캠페인">캠페인</a></li>
+                        <li><a href="campaign page.html" alt="캠페인">캠페인</a></li>
                         <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
                         <li><a href="#" alt="후기">후기</a></li>
                         <li><a href="review.html" alt="게시판">게시판</a></li>
@@ -139,7 +139,6 @@
               <button id="logout-button">로그아웃</button>
             </div>
             <!-- 로그인 끝 -->
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
         </div>
       </header>
@@ -518,9 +517,9 @@
             <div class="goodstxt">
               <h2>별의온도 후원 굿즈</h2>
               <p>
-                별의온도를 통해 기부해 주시는 팬분들을 위한<br />
+                별의온도를 통해 후원해 주시는 팬분들을 위한<br />
                 오직 별의온도만의 특별한 굿즈.<br>
-                후원온도가 높을수록 받을 수 있는 높아지는 혜택. <br />
+                후원하시고 아티스트들의 후원 굿즈를 만나보세요. <br />
                 
               </p>
               <button>더보기</button>
@@ -640,7 +639,7 @@
       <!-- 아티스트 목록 -->
       <section class="artist">
         <div class="inner">
-          <h1>함께 하고 싶은 아티스트를 찾아보세요 <i class="fa-solid fa-chevron-right"></i></h1>
+          <h1>아티스트들이 진행중인 캠페인을 찾아보세요<i class="fa-solid fa-chevron-right"></i></h1>
           <div class="card-list">
           <div id="artist-card"></div>
           <div class='highlight' id="artist-card"></div>
@@ -669,6 +668,8 @@
           <div id="artist-card"></div>
           <div id="artist-card"></div>
           <div id="artist-card"></div>
+        </div>
+        <button class="artist-more"><a href="campaign page.html">진행중인 캠페인<i class="fa-solid fa-chevron-right"></i></a></button>
         </div>
       </section>
       <!-- 소식 -->

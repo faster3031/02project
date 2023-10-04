@@ -158,22 +158,25 @@ window.addEventListener("load", function () {
         $($chat_opt.inputSelector).val("");
         switch (userInput) {
           case '1':
-            response = '- 로그인/회원가입시 커뮤니티 글 작성, 후원굿즈 구매 등 다양한 혜택이 있습니다. <br> - 로그인/회원가입이 안되시는 경우, 별의온도 고객만족실 1234-4321으로 전화주시길 부탁드립니다.';
+            response = '- 로그인/회원가입시 커뮤니티 글 작성, 후원굿즈 구매 등 다양한 혜택이 있습니다. <br><br> - 로그인/회원가입이 안되시는 경우, 별의온도 고객만족실 1234-4321으로 전화주시길 부탁드립니다.';
             break;
           case '2':
-            response = '박재완님은 나무늘보입니다. 푸하하';
+            response = '- 결제/후원 하는 방법은 카드/무통장입금이 있습니다.<br><br>- 후원금은 `기부금 공제` 대상으로 현금영수증과 중복 공제되지 않습니다.<br><br>- 자세한 사항은 고객만족실 1234-4321으로 전화주시길 부탁드립니다.';
             break;
           case '3':
-            response = 'ㅠㅠㅠ';
+            response = '후원 굿즈는 별의온도를 통해 기부해주시는 분들을 위한, 오직 별의온도에서만 볼 수 있는 특별한 굿즈 입니다. <br><br> 별의온도에서 후원하고 아티스트들의 후원 굿즈를 만나보세요. ';
             break;
           case '4':
-            response = '별의온도에 대한 관심과 애용에 진심으로 감사의 말씀을 드립니다. 귀한 시간을 할애해 주신 점 감사드리며, 칭찬 내용을 별의온도 홈페이지 "고객지원-고객문의-칭찬상담"으로 접수해 주시면 칭찬 내용을 바탕으로 더 좋은 상품, 서비스를 제공하도록 하겠습니다. 감사합니다.';
+            response = '별의온도에 대한 관심과 애용에 진심으로 감사의 말씀을 드립니다.<br><br>귀한 시간을 할애해 주신 점 감사드리며, 칭찬 내용을 별의온도 홈페이지 "고객지원-고객문의-칭찬상담"으로 접수해 주시면 칭찬 내용을 바탕으로 더 좋은 상품, 서비스를 제공하도록 하겠습니다. 감사합니다.';
             break;
           case '5':
-            response = '불편을 드려 죄송합니다.<br>별의온도 이메일 starsondo@stars.com 혹은 별의온도 고객만족실 1234-4321으로 접수 부탁드립니다.';
+            response = '불편을 드려 죄송합니다.<br><br>별의온도 이메일 starsondo@stars.com 혹은 별의온도 고객만족실 1234-4321으로 접수 부탁드립니다.';
+            break;
+          case '6':
+            response = '그 외 기타사항은 별의온도 이메일 starsondo@stars.com 혹은 별의온도 고객만족실 1234-4321으로 접수 부탁드립니다.<br>감사합니다. ';
             break;
           default:
-            response = "무슨 말인지 모르겠어";
+            response = "죄송합니다. 문의사항에 해당되는 번호를 입력해주세요.";
             break;
         }
   
@@ -206,14 +209,35 @@ window.addEventListener("load", function () {
       $chat.input();
     }, 1000);
   });
-      // 모바일 메뉴 토글
-      const toggleButton = document.getElementById('toggleButton');
-      const navMb = document.querySelector('.nav-mb');
-      toggleButton.addEventListener('click', () => {
-          if (navMb.style.opacity === '1') {
-              navMb.style.opacity = '0';
-          } else {
-              navMb.style.opacity = '1';
-          }
-      });
+
+  const toggleButton = document.getElementById('toggleButton');
+  const navMb = document.querySelector('.nav-mb');
+  const icon = document.querySelector('#toggleButton');
+  
+  toggleButton.addEventListener('click', () => {
+    if (navMb.style.opacity === '1') {
+      navMb.style.opacity = '0';
+      icon.className = 'fa-solid fa-bars'; // 클래스 이름을 'fa-bars'로 설정
+    } else {
+      navMb.style.opacity = '1';
+      icon.className = 'fa-solid fa-times'; // 클래스 이름을 'fa-times'로 설정
+    }
+  });
+
+const NavMb = document.getElementById('navMb');
+let isNavVisible = false; // 네비게이션 가시성 상태
+
+toggleButton.addEventListener('click', () => {
+  if (!isNavVisible) {
+    // 네비게이션을 오른쪽에서 나타나게 함
+    NavMb.style.right = '0';
+    isNavVisible = true;
+    NavMb.style.display = 'block'; // 메뉴를 나타나게 함
+  } else {
+    // 네비게이션을 오른쪽으로 숨김
+    NavMb.style.right = '-300px'; // 메뉴의 너비만큼 숨기도록 설정
+    isNavVisible = false;
+    NavMb.style.display = 'none'; // 메뉴를 숨김
+  }
+});
 });
