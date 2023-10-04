@@ -4,6 +4,7 @@
     width: 100%;
     /* background-color: #EBDEFF; */
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 
 .footer .inner{
@@ -22,12 +23,12 @@
 }
 .footer-middle h3{
 font-size: 13px;
-margin-top: 50px;
+margin-top: 20px;
 color: #000;
 opacity: 0.5;
 }
 .footer-left p{
-    margin-top: 120px;
+    margin-top: 90px;
     font-size: 13px;
     color: #000;
     opacity: 0.5;
