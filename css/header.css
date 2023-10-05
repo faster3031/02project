@@ -386,13 +386,21 @@
 #my_modal {
   position: fixed;
   z-index: 999;
-  right: -100%;
+  opacity: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  transition: all 1s;
-  background: linear-gradient(90deg, rgba(40,40,40,0) 0%, rgba(40,40,40,0.5) 15%, rgba(40,40,40,0.7) 26%, rgba(40,40,40,1) 100%);
+  transition: all 0.3s;
+  background-color: rgba(45, 45, 45, 0.5);
+  visibility: hidden;
+  display: none;
+}
+.modal_wrap{
+  width: 100%; height: 100%; 
+  right: -100%; 
+  position: absolute; top: 0; 
+  transition-duration: 1s;
 }
 .my_modal-content {
   background: linear-gradient(0deg, rgb(255, 252, 215), rgb(215, 182, 255));
@@ -651,7 +659,8 @@
   width: 100%;
   position: absolute;
   top: 71px;
-  right: -100%; /* 초기에 오른쪽으로 숨겨진 상태, 메뉴의 너비만큼 이동 */
+  left: 0;
+  display: none;
   transition: right 0.5s ease; /* 메뉴 위치 변화를 부드럽게 만들기 위한 트랜지션 */
 }
 
@@ -725,6 +734,9 @@
     align-items: center;
   }
   #toggleButton {
+    display: block;
+  }
+  #my_modal{
     display: block;
   }
 }

@@ -223,7 +223,28 @@ window.addEventListener("load", function () {
       $chat.input();
     }, 1000);
   });
+// 모달창
 
+const modal = document.getElementById("my_modal");
+const modal_wrap = document.querySelector(".modal_wrap");
+const openModalBtn = document.getElementById("my_li");
+const closeModalBtn = document.getElementById("close-my_modal");
+
+// 모달창 열기
+openModalBtn.addEventListener("click", () => {
+  modal.style.opacity = "1";
+  modal_wrap.style.right = "0"
+  modal.style.visibility = "visible"
+  document.body.style.overflow = "hidden"; // 스크롤바 제거
+});
+// 모달창 닫기
+closeModalBtn.addEventListener("click", () => {
+  // modal.style.display = "none";
+  modal.style.opacity = "0";
+  modal_wrap.style.right = "-100%"
+  modal.style.visibility = "hidden"
+  document.body.style.overflow = "auto"; // 스크롤바 보이기
+});
   const toggleButton = document.getElementById('toggleButton');
   const navMb = document.querySelector('.nav-mb');
   const icon = document.querySelector('#toggleButton');
@@ -231,6 +252,7 @@ window.addEventListener("load", function () {
   toggleButton.addEventListener('click', () => {
     if (navMb.style.opacity === '1') {
       navMb.style.opacity = '0';
+      NavMb.style.display = 'block';
       icon.className = 'fa-solid fa-bars'; // 클래스 이름을 'fa-bars'로 설정
     } else {
       navMb.style.opacity = '1';
@@ -244,11 +266,11 @@ let isNavVisible = false; // 네비게이션 가시성 상태
 toggleButton.addEventListener('click', () => {
   if (!isNavVisible) {
     // 네비게이션을 오른쪽에서 나타나게 함
-    NavMb.style.right = '0';
+    NavMb.style.display = 'block';
     isNavVisible = true;
   } else {
     // 네비게이션을 오른쪽으로 숨김
-    NavMb.style.right = '-100%'; // 메뉴의 너비만큼 숨기도록 설정
+    NavMb.style.display = 'none'; // 메뉴의 너비만큼 숨기도록 설정
     isNavVisible = false;
   }
 });
@@ -270,26 +292,7 @@ myToggleButton.addEventListener('click', () => {
   }
 });
 
-// 모달창
 
-const modal = document.getElementById("my_modal");
-const openModalBtn = document.getElementById("my_li");
-const closeModalBtn = document.getElementById("close-my_modal");
-
-// 모달창 열기
-openModalBtn.addEventListener("click", () => {
-  modal.style.right = "0";
-  NavMb.style.right = '-100%'; // 메뉴의 너비만큼 숨기도록 설정
-  navMb.style.opacity = '0';
-  document.body.style.overflow = "hidden"; // 스크롤바 제거
-  icon.className = 'fa-solid fa-bars'; // 클래스 이름을 'fa-bars'로 설정
-});
-// 모달창 닫기
-closeModalBtn.addEventListener("click", () => {
-  // modal.style.display = "none";
-  modal.style.right = "-100%";
-  document.body.style.overflow = "auto"; // 스크롤바 보이기
-});
 
 
 // icon.className = 'fa-solid fa-bars'; // 클래스 이름을 'fa-bars'로 설정
