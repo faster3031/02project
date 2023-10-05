@@ -43,17 +43,25 @@
     <meta name="naver-site-verification" content="49dbb149e09865e68eaacd9c26ceda046bd631c5" />
     <title>별의 온도</title>
     <link rel="stylesheet" href="css/reset.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
     <script src="js/respond.min.js"></script>
     <script src="js/html5shiv.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/header.js"></script>
     <script src="js/slide.js"></script>
@@ -109,7 +117,6 @@
           <!-- 메뉴 -->
           <nav class="nav">
             <ul>
-              <li><a href="infopage.html" alt="기부">기부</a></li>
               <li><a href="campaign page.html" alt="캠페인">캠페인</a></li>
               <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
               <li><a href="#" alt="후기">후기</a></li>
@@ -738,7 +745,7 @@
       <!-- 아티스트 목록 -->
       <section class="artist">
         <div class="inner">
-          <h1>아티스트들이 진행중인 캠페인을 찾아보세요<i class="fa-solid fa-chevron-right"></i></h1>
+          <h1>함께하는 아티스트들 <i class="fa-solid fa-chevron-right"></i></h1>
           <div class="card-list">
           <div id="artist-card"></div>
           <div class='highlight' id="artist-card"></div>
@@ -768,9 +775,78 @@
           <div id="artist-card"></div>
           <div id="artist-card"></div>
         </div>
-        <button class="artist-more"><a href="campaign page.html">진행중인 캠페인<i class="fa-solid fa-chevron-right"></i></a></button>
+        <button class="artist-more" id="toggleBtn"><a href="#">자세히보기<i class="fa-solid fa-chevron-right"></i></a></button>
         </div>
       </section>
+      <!-- 아티스트 더보기 -->
+<section class="game-section" id="artist-hidden" style="display: none;">
+  <h2 class="line-title">아티스트&팬덤 소개</h2>
+  <div class="owl-carousel custom-carousel owl-theme">
+    <div class="item active" style="background-image: url(images/artist_idle.webp);">
+      <div class="item-desc">
+        <h3>(G)I-DLE(NEVERLAND)</h3>
+        <p>'네버랜드'는 2018년 데뷔한 대한민국의 5인조 걸그룹 (여자)아이들의 팬덤이다.
+          피터팬 속 상상의 공간 네버랜드에 사는 사람들은 변하지 않고 영원히 아이로 살 수 있는데, 아티스트는 팬들 속에서 함께 살아가듯이 (여자)아이들도 네버랜드 속에서 영원히 (여자)아이들로 살며 팬들과 함께 변하지 않고 오래오래 함께하자는 의미를 지니고 있다.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(images/artist_aespa.webp);">
+      <div class="item-desc">
+        <h3>AESPA(MY)</h3>
+        <p>MY(마이)란 aespa의 아바타 æ(아이)가 살고 있는 광야(KWANGYA)에서 '가장 소중한 친구'라는 의미로, aespa에게 팬들은 가장 소중한 존재이기에 『MY』로 결정되었다.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(images/artist_blackpink.webp);">
+      <div class="item-desc">
+        <h3>BLACKPINK(BLINK)</h3>
+        <p>
+          BLINK는 BLACKPINK의 팀명에서 BLACK의 앞글자 'BL'과 PINK의 뒷글자 'INK'를 이어붙여 만들어졌다. 단순하게 앞글자와 뒷글자를 이어붙여 '시작과 끝을 함께하자'는 의미가 있다.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(images/artist_bts.webp);">
+      <div class="item-desc">
+        <h3>BTS(AMRY)</h3>
+        <p>“A.R.M.Y”는 육군, 즉 군대라는 뜻으로, 방탄복과 군대는 거의 대부분 함께 하므로 방탄소년단과 팬클럽도 항상 함께라는 의미이며, Adorable Representative M.C for Youth의 약자이기도 하다. 공식 팬카페에서 투표를 통해 2013년 7월 9일, 공식 팬클럽명을 “A.R.M.Y”(아미)로 결정했다.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(images/artist_nct127.webp);">
+      <div class="item-desc">
+        <h3>NCT127(NCTzen)</h3>
+        <p>팬덤명 NCTzen(엔시티즌)은 NCT와 영어로 시민을 뜻하는 citizen의 합성어이다. 2017년 6월 12일 V LIVE 'NCT 127 COMEBACK SHOWCASE "CHERRY BOMB"'에서 NCTzen의 애칭이 '시즈니'로 확정되었다. 영문으로는 Czennie라고 표기한다.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(images/artist_lesserafim.webp);">
+      <div class="item-desc">
+        <h3>LESSERAFIM(FEARNOT)</h3>
+        <p>FEARNOT은 걸그룹 LE SSERAFIM의 공식 팬덤명이다.
+
+          피어나(FEARNOT)는 두려움 없이(FEARLESS) 앞으로 나아가는 르세라핌과, 르세라핌을 향한 응원과 사랑에 두려움이 없는(FEAR NOT) 팬들이 함께 모여 모든 순간이 새롭게 ‘피어난다'는 의미를 담고 있다.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(images/artist_itzy.webp);">
+      <div class="item-desc">
+        <h3>ITZY(MIDZY)</h3>
+        <p>
+          2019년 데뷔한 걸그룹 ITZY의 팬덤이며, 2019년 7월 8일 팬덤명을 공식적으로 확정하였다. '믿어[mideo]'와 '있지(ITZY)', 이 두 단어를 합쳐 ITZY는 팬들을 믿고, 팬들도 ITZY를 믿는다는 의미를 함축해서 지은 것으로 추정된다.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(images/artist_seveteen.webp);">
+      <div class="item-desc">
+        <h3>SEVENTEEN(CARAT)</h3>
+        <p>
+          대한민국의 13인조 보이그룹 세븐틴의 공식 팬클럽. 프리 데뷔(Pre-Debut) 시스템을 통해 세븐틴TV 등의 인터넷 방송을 진행하며 데뷔 전부터 팬들에게 얼굴을 비춰왔으나, 본격적으로 팬덤이라고 불릴 만한 단위의 팬들이 생기게 된 것은 2015년 5월 26일 타이틀곡 '아낀다'로 정식 데뷔를 치른 직후부터이다.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(images/artist_nmixx.webp);">
+      <div class="item-desc">
+        <h3>NMIXX(NSWER)</h3>
+        <p>
+          NSWER는 걸그룹 NMIXX의 팬덤이다.
+
+위의 사진 역시 고래 꼬리이며, 싱글 자켓 사진에도 고래가 등장하고, 비하인드 영상 속에서 지니가 착용한 고래 모양 목걸이 장신구를 보고 엔써라고 말하는 등, 상징은 고래인듯 하다. O.O의 MV에 고래가 등장하며, DICE의 MV 역시 고래가 등장한다.</p>
+      </div>
+    </div>
+  </div>
+</section>
       <!-- 소식 -->
       <section class="news">
         <div class="inner">

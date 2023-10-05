@@ -150,10 +150,10 @@
 }
 /* -------------------------------------------------------------------- */
 /* 헤더 색 */
-.header .nav ul li:nth-child(2) a {
+.header .nav ul li:nth-child(1) a {
   color: #ad5cff;
 }
-.header .nav ul li:nth-child(2):after {
+.header .nav ul li:nth-child(1):after {
   content: "";
   position: absolute;
   left: 0;
