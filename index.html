@@ -72,7 +72,7 @@
     <script src="js/artist.js"></script>
     <script src="js/news.js"></script>
     <script src="js/footer.js"></script>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css"> -->
     <!-- fontawsome -->
     <link
       rel="stylesheet"
@@ -123,18 +123,20 @@
               <li><a href="review.html" alt="게시판">게시판</a></li>
             </ul>
           </nav>
-                    <!-- 모바일 메뉴 -->
-                    <i class="fa-solid fa-bars" id="toggleButton"></i>
-                    <nav class="nav-mb" id="navMb">
-                      <ul>
-                        <li><a href="campaign page.html" alt="캠페인">캠페인</a></li>
-                        <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
-                        <li><a href="#" alt="후기">후기</a></li>
-                        <li><a href="review.html" alt="게시판">게시판</a></li>
-                        <li id="login_li"><a href="login.html">로그인 페이지로 이동</a></li>
-                        <li id="logout_li" style="display: none;"><a href="login.html"  ">로그아웃</a></li>
-                      </ul>
-                    </nav>
+          <!-- 모바일 메뉴 -->
+          <i class="fa-solid fa-bars" id="toggleButton"></i>
+          <nav class="nav-mb" id="navMb">
+            <ul>
+              <li><a href="infopage.html" alt="기부">기부</a></li>
+              <li><a href="campaign page.html" alt="캠페인">캠페인</a></li>
+              <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
+              <li><a href="#" alt="후기">후기</a></li>
+              <li><a href="review.html" alt="게시판">게시판</a></li>
+              <li id="login_li"><a href="login.html">로그인 페이지로 이동</a></li>
+              <li id="logout_li" style="display: none;"><a href="login.html"  ">로그아웃</a></li>
+              <li id="my_li">마이페이지</li>
+            </ul>
+          </nav>
           <!-- 로그인  -->
           <div class="login" id="login">
             <div id="login-section">
@@ -145,6 +147,104 @@
               <button id="logout-button">로그아웃</button>
             </div>
             <!-- 로그인 끝 -->
+            <i class="fa-solid fa-user" id="icon_my"></i>
+            <div class="icon_box" id="icon_modal">
+              <div class="icon_box_top">
+                <img src="images/artist_iu.webp" alt="프로필 자리" class="icon_box_top_img">
+                <div class="icon_text">
+                <p>따뜻한 마음씨의 소유자</p>
+                <p>OO님</p>
+                </div>
+              </div>
+              <div class="icon_box_bottom">
+                <div class="icon_activity">
+                  <div class="graph_box1"></div>
+                  <p>8월</p>
+                  <div class="graph_box2"></div>
+                  <p>9월</p>
+                </div>
+                <div class="icon_activity_text">
+                  <p>이번달 기부 횟수 0회</p>
+                  <p>총 참여 횟수 0회</p>
+                  <p>총 기부 금액 00,000,000원</p>
+                </div>
+                <div class="icon_each">
+                  <span>OO님의 등록 팬덤</span>
+                    <img src="images/ARMY_logo.png" alt="bts">
+                    <p>BTS 아미</p>
+                </div>
+                <div class="icon_each">
+                  <span>OO님의 결제수단 관리</span>
+                    <p>카카오 뱅크 체크카드</p>
+                    <p>0000 00** ****</p>
+                    <p>자세히 보기</p>
+                </div>
+                <div class="icon_each">
+                  <span>정기 후원 내역</span>
+                  <p>소화암 치료비 지원</p>
+                  <p>한부모 자녀 지원</p>
+                  <p>자세히 보기</p>
+                </div>
+                <div class="icon_each">
+                  <span>내가쓴 후기 보러가기</span>
+                  <p>바로 가기</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            
+
+        </div>
+        <div id="my_modal">
+          <div class="my_modal-content">
+            <p class="close-my_modal" id="icon_modal">
+              <div class="icon_box_top_modal">
+                <img src="images/artist_iu.webp" alt="프로필 자리" class="icon_img">
+                <div class="icon_text_modal">
+                <p>따뜻한 마음씨의 소유자</p>
+                <p>OO님</p>
+              </div>
+              <div class="icon_box_bottom_modal">
+                <div class="icon_activity_modal">
+                  <div class="graph_box1"></div>
+                  <p>8월</p>
+                  <div class="graph_box2"></div>
+                  <p>9월</p>
+                </div>
+                <div class="icon_activity_text_modal">
+                  <p>이번달 기부 횟수 0회</p>
+                  <p>총 참여 횟수 0회</p>
+                  <p>총 기부 금액 00,000,000원</p>
+                </div>
+                <div class="icon_each_modal">
+                  <span>OO님의 등록 팬덤</span>
+                    <img src="images/ARMY_logo.png" alt="bts" class="icon_each_modal_img">
+                  
+                </div>
+                <div class="icon_each_modal">
+                  <span>OO님의 결제수단 관리</span>
+                    <p>카카오 뱅크 체크카드</p>
+                    <p>0000 00** ****</p>
+                    <p>자세히 보기</p>
+                  
+                </div>
+                <div class="icon_each_modal">
+                  <span>정기 후원 내역</span>
+                    <p>소화암 치료비 지원</p>
+                    <p>한부모 자녀 지원</p>
+                    <p>자세히 보기</p>
+                  
+                </div>
+                <div class="icon_each_modal">
+                  <span>내가쓴 후기 보러가기</span>
+                    <p>바로 가기</p>
+                  
+                </div>
+                </div>
+              </div>
+            </p>
+            <button id="close-my_modal">닫기</button>
           </div>
         </div>
       </header>

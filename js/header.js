@@ -87,6 +87,9 @@ window.addEventListener("load", function () {
       // 로그아웃 로직을 처리하고 다시 초기 화면을 표시합니다
       document.getElementById("login-section").style.display = "flex";
       document.getElementById("dashboard-section").style.display = "none";
+      document.getElementById("login_li").style.display = "none";
+      document.getElementById("my_li").style.display = "none";
+      document.getElementById("icon_my").style.display = "none";
     });
   showInitialDashboard();
   // 대시보드 화면 표시 함수
@@ -98,18 +101,29 @@ window.addEventListener("load", function () {
       document.getElementById("login-section").style.display = "none";
       document.getElementById("login_li").style.display = "none";
       document.getElementById("dashboard-section").style.display = "flex";
+      document.getElementById("icon_my").style.display = "flex";
+
+      if (window.innerWidth <= 760){
+        document.getElementById("my_li").style.display = "flex";
+        document.getElementById("logout_li").style.display = "flex";
+      }else{
+        document.getElementById("my_li").style.display = "none";
+        document.getElementById("logout_li").style.display = "none";
+      }
       document.getElementById("username-display").textContent = `${username}님`;
       // 로그아웃 버튼
       document.getElementById("logout-button").style.display = "flex";
-      document.getElementById("logout_li").style.display = "flex";
     } else {
+      
       document.getElementById("logout_li").style.display = "none";
+      document.getElementById("my_li").style.display = "none";
       document.getElementById("login-section").style.display = "flex";
       document.getElementById("dashboard-section").style.display = "none";
+      document.getElementById("icon_my").style.display = "none";
       document.getElementById("logout-button").style.display = "none";
     }
   }
-
+  window.addEventListener("resize", showInitialDashboard);
   // 화살표 이미지 회전
   const topBtnImg = document.getElementById("top-btn-img");
   window.addEventListener("scroll", function (scTop) {
@@ -240,4 +254,49 @@ toggleButton.addEventListener('click', () => {
     NavMb.style.display = 'none'; // 메뉴를 숨김
   }
 });
+
+// 마이페이지
+// $("#icon_my").click(function () {
+//   $(".icon_box").show();
+// })
+
+const IconBox = document.querySelector('.icon_box');
+const myToggleButton = document.getElementById('icon_my');
+
+myToggleButton.addEventListener('click', () => {
+  if (IconBox.style.opacity === '1') {
+    IconBox.style.opacity = '0';
+  } else {
+    IconBox.style.opacity = '1';
+    IconBox.style.visibility = 'visible';
+  }
+});
+
+// 모달창
+
+const modal = document.getElementById("my_modal");
+const openModalBtn = document.getElementById("my_li");
+const closeModalBtn = document.getElementById("close-my_modal");
+
+// 모달창 열기
+openModalBtn.addEventListener("click", () => {
+  modal.style.right = "0";
+  NavMb.style.right = '-100%'; // 메뉴의 너비만큼 숨기도록 설정
+  navMb.style.opacity = '0';
+  document.body.style.overflow = "hidden"; // 스크롤바 제거
+  icon.className = 'fa-solid fa-bars'; // 클래스 이름을 'fa-bars'로 설정
+});
+// 모달창 닫기
+closeModalBtn.addEventListener("click", () => {
+  // modal.style.display = "none";
+  modal.style.right = "-100%";
+  document.body.style.overflow = "auto"; // 스크롤바 보이기
+});
+
+
+// icon.className = 'fa-solid fa-bars'; // 클래스 이름을 'fa-bars'로 설정
+// icon.className = 'fa-solid fa-times'; // 클래스 이름을 'fa-times'로 설정
+
+
+
 });
