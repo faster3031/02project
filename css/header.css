@@ -649,10 +649,9 @@
 .nav-mb {
   z-index: 999; /* 다른 요소 위에 나타나도록 설정 */
   width: 100%;
-  display: none;
   position: absolute;
   top: 71px;
-  right: -300px; /* 초기에 오른쪽으로 숨겨진 상태, 메뉴의 너비만큼 이동 */
+  right: -100%; /* 초기에 오른쪽으로 숨겨진 상태, 메뉴의 너비만큼 이동 */
   transition: right 0.5s ease; /* 메뉴 위치 변화를 부드럽게 만들기 위한 트랜지션 */
 }
 
