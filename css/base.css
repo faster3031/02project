@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline-style: none;
+  outline-style: none !important;
 }
 a {
   text-decoration: none !important;
