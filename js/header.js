@@ -268,10 +268,12 @@ toggleButton.addEventListener('click', () => {
     // 네비게이션을 오른쪽에서 나타나게 함
     NavMb.style.display = 'block';
     isNavVisible = true;
+    NavMb.style.display = 'block'; // 메뉴를 나타나게 함
   } else {
     // 네비게이션을 오른쪽으로 숨김
     NavMb.style.display = 'none'; // 메뉴의 너비만큼 숨기도록 설정
     isNavVisible = false;
+    NavMb.style.display = 'none'; // 메뉴를 숨김
   }
 });
 
