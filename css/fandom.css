@@ -370,43 +370,42 @@
     left: 53%;
   }
   /* 보러가기버튼 */
-.rankbtn1,
-.rankbtn2 {
-  width: 165px;
-  height: 55px;
-  border-radius: 15px;
-}
-.rankbtn1 p,
-.rankbtn2 p {
-  font-size: 18px;
-}
-/* 랭킹이미지 */
-.fandombox {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.imgbox .starimg {
-  width: 380px;
-  height: 380px;
-}
-.imgbox .starimg span {
-  width: 430px;
-  height: 430px;
-  border-radius: 50%;
-  border: 1px dotted #8d5cb2;
-  position: relative;
-  top: -6%;
-  left: -7%;
-}
-.imgbox .starimg span p {
-  top: 34px;
-  width: 43px;
-  height: 43px;
-}
-.donation {
-  height: 139px;
-}
-
+  .rankbtn1,
+  .rankbtn2 {
+    width: 165px;
+    height: 55px;
+    border-radius: 15px;
+  }
+  .rankbtn1 p,
+  .rankbtn2 p {
+    font-size: 18px;
+  }
+  /* 랭킹이미지 */
+  .fandombox {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .imgbox .starimg {
+    width: 380px;
+    height: 380px;
+  }
+  .imgbox .starimg span {
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    border: 1px dotted #8d5cb2;
+    position: relative;
+    top: -6%;
+    left: -7%;
+  }
+  .imgbox .starimg span p {
+    top: 34px;
+    width: 43px;
+    height: 43px;
+  }
+  .donation {
+    height: 139px;
+  }
 }
 
 @media all and (max-width: 1024px) {
@@ -443,7 +442,8 @@
   .ranktxt .ranktitle h2 {
     margin-top: 0px;
     font-size: 36px;
-    line-height: 40px;}
+    line-height: 40px;
+  }
 
   .ranktxt h1 {
     font-size: 50px;
@@ -531,7 +531,7 @@
     height: 771px;
   }
   .star {
-    height: 736px;
+    height: 770px;
   }
   .star .inner {
     flex-direction: column-reverse;
@@ -546,7 +546,7 @@
     display: none;
   }
   .imgbox {
-    height: 360px;
+    height: 400px;
   }
   .ranktitle {
     margin-top: 0;
@@ -569,7 +569,8 @@
     display: none;
   }
   .ranktxt h1 {
-    font-size: 50px;}
+    font-size: 50px;
+  }
 
   .rankname {
     text-align: center;
@@ -617,7 +618,7 @@
   }
 }
 @media all and (max-width: 320px) {
-.rankname{
-  line-height: 45px;
-}
+  .rankname {
+    line-height: 45px;
+  }
 }
