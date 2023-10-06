@@ -257,7 +257,7 @@
 }
 @media all and (max-width: 1024px) {
   .campaign_item {
-    width: calc(65% / 2);
+    width: calc((100% - 60px) / 3);
   }
   .campaign_ber_title {
     font-size: 15px;
@@ -280,7 +280,7 @@
 }
 @media all and (max-width: 760px) {
   .campaign_item {
-    width: calc(98% / 2);
+    width: calc(94% / 2);
   }
   .campaign_box .hoverBox p.p1 {
     display: block;
@@ -299,12 +299,7 @@
   .campaign_box:hover .hoverBox {
     bottom: -20%;
   }
-  .balackpink {
-    display: none;
-  }
-  .twice {
-    display: none;
-  }
+
 }
 @media all and (max-width: 480px) {
   .campaign_item {
