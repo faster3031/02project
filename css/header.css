@@ -104,6 +104,7 @@
   display: flex;
   /* width: 70%; */
   align-items: center;
+  font-family: "GmarketSansMedium";
 }
 
 /* 버튼 */
@@ -396,16 +397,17 @@
   visibility: hidden;
   display: none;
 }
-.modal_wrap{
-  width: 100%; height: 100%; 
-  right: -100%; 
-  position: absolute; top: 0; 
+.modal_wrap {
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  position: absolute;
+  top: 0;
   transition-duration: 1s;
 }
 .my_modal-content {
-  background: linear-gradient(0deg, rgb(255, 252, 215), rgb(215, 182, 255));
+  background-color: #a674d8;
   margin: 15% auto;
-  padding: 20px;
   border: 1px solid #888;
   width: 80%;
   height: 850px;
@@ -448,11 +450,11 @@
   line-height: 30px;
   cursor: pointer;
 }
-.icon_each_modal p{
+.icon_each_modal p {
   color: #2d2d2d;
   font-weight: 500;
 }
-.icon_each_modal span{
+.icon_each_modal span {
   color: #2d2d2d;
   font-size: 15px;
   font-weight: 700;
@@ -475,11 +477,12 @@
   margin: 10px auto;
 }
 .icon_box_bottom_modal {
-  background-color: none;
+  background-color: #fff;
   position: relative;
   display: block;
   width: 100%;
-  height: 550px;
+  margin: 0 auto;
+  height: 600px;
   border-radius: 0 0 10px 10px;
   padding-top: 20px;
 }
@@ -507,14 +510,14 @@
   margin: 10px auto;
   padding-left: 20px;
 }
-.icon_text_modal p{
+.icon_text_modal p {
   text-align: center;
   font-size: 25px;
 }
-#my_li{
+#my_li {
   cursor: pointer;
 }
-#close-my_modal{
+#close-my_modal {
   position: absolute;
   display: block;
   background: none;
@@ -526,11 +529,21 @@
   padding-left: 10px;
 }
 
-
-
-
 /* ------------------------------------- */
 /* 아이콘 */
+.profile {
+  position: absolute;
+  display: flex;
+  top: -170px;
+  right: 20px;
+  align-items: center;
+  cursor: pointer;  
+}
+.profile p {
+  font-size: 15px;
+  margin-right: 10px;
+  text-decoration: underline;
+}
 .fa-user {
   font-size: 20px;
   margin-left: 20px;
@@ -542,8 +555,8 @@
 .icon_box {
   position: absolute;
   display: block;
-  opacity: 1;
-  top: 53px;
+  top: 40px;
+  right: 10px;
   width: 400px;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -552,7 +565,7 @@
 .icon_box_top {
   position: relative;
   display: block;
-  background-color: #a674d8;
+  background-color: #dbb6ff;
   border-radius: 10px 10px 0 0;
   padding: 20px 0;
   text-align: center;
@@ -572,6 +585,7 @@
 }
 .icon_box_bottom {
   background-color: #ffffff;
+  border: 0.5px solid #2d2d2d3a;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -587,6 +601,7 @@
   align-items: baseline;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  padding-left: 20px;
   /* background-color: aquamarine; */
 }
 .graph_box1 {
@@ -595,7 +610,7 @@
   width: 25px;
   height: 80px;
   margin: 10px;
-  background-color: #9f9f9f;
+  background-color: #dbb6ff;
 }
 .graph_box2 {
   position: relative;
@@ -603,16 +618,18 @@
   width: 25px;
   height: 150px;
   margin: 10px;
-  background-color: #9f9f9f;
+  background-color: #ff9bdc;
 }
 .icon_activity_text {
   position: absolute;
   display: block;
   /* background-color: brown; */
-  top: 40px;
+  top: 30px;
   right: 10%;
   font-size: 14px;
   line-height: 50px;
+  padding-left: 20px;
+  border-left: 0.5px solid #2d2d2d3a;
 }
 .icon_activity_text p {
   font-size: 16px;
@@ -736,7 +753,7 @@
   #toggleButton {
     display: block;
   }
-  #my_modal{
+  #my_modal {
     display: block;
   }
 }
@@ -751,31 +768,31 @@
   .icon_each_modal {
     width: calc(80% / 2);
   }
-  .icon_each_modal p{
+  .icon_each_modal p {
     color: #2d2d2d;
     font-size: 10px;
     font-weight: 500;
     line-height: 20px;
   }
-  .icon_each_modal span{
+  .icon_each_modal span {
     color: #2d2d2d;
     font-size: 12px;
     font-weight: 700;
   }
-  .icon_each_modal img{
+  .icon_each_modal img {
     width: 40px;
     height: 60px;
   }
-  .graph_box1{
+  .graph_box1 {
     display: none;
   }
-  .graph_box2{
+  .graph_box2 {
     display: none;
   }
-  .icon_activity_modal{
+  .icon_activity_modal {
     height: 150px;
   }
-  .icon_activity_modal p{
+  .icon_activity_modal p {
     display: none;
   }
 }
