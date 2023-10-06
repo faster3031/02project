@@ -286,10 +286,10 @@ const IconBox = document.querySelector('.icon_box');
 const myToggleButton = document.getElementById('icon_my');
 
 myToggleButton.addEventListener('click', () => {
-  if (IconBox.style.opacity === '1') {
-    IconBox.style.opacity = '0';
+  if (IconBox.style.display === 'block') {
+    IconBox.style.display = 'none';
   } else {
-    IconBox.style.opacity = '1';
+    IconBox.style.display = 'block';
     IconBox.style.visibility = 'visible';
   }
 });
