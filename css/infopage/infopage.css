@@ -380,6 +380,7 @@
   margin-right: 20px;
 }
 #campaign_box {
+  cursor: pointer;
   padding: 5px 0;
 }
 #campaign_box h3 {
