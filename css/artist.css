@@ -1,7 +1,7 @@
 /* 아티스트 목록 */
 .artist {
   width: 100%;
-  height: 600px;
+  height: 700px;
 }
 .artist h1 {
   font-family: 'GmarketSansMedium';
@@ -308,7 +308,6 @@
 .game-section {
   width: 100%;
   height: 700px;
-  padding: 0px 30px 40px;
 }
 .game-section h3{
   font-size: 18px;
@@ -385,6 +384,39 @@
   position: relative;
   z-index: 5;
 }
+.artist-search{
+  text-align: center;
+  margin: 30px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.artist-search input{
+  border-radius: 5px;
+  width: 200px;
+  padding: 5px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  font-family: 'GmarketSansMedium';
+}
+.artist-search button{
+  font-family: 'GmarketSansMedium';
+  margin: 0 8px;
+  margin-top: 2px;
+  padding: 0 5px;
+  /* position: absolute; */
+  height: 30px;
+  width: 50px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #ad5cff;
+  border: none;
+  font-size: 12px;
+}
+.owl-dots{
+  display: none;
+}
 @media (min-width: 768px) and (max-width: 991px) {
 
   /* -------- Landing page ------- */
@@ -432,7 +464,33 @@
     -webkit-transform: translateY(calc(100% - 42px));
   }
 }
-
+@media (max-width: 480px) {
+  /* -------- Landing page ------- */
+  .game-section h3{
+    font-size: 14px;
+  }
+  .game-section p{
+    font-size: 12px;
+  }
+  .game-section {
+    padding: 30px 15px 20px;
+  }
+  .game-section .item {
+    margin: 0 10px 40px;
+    width: 180px;
+    height: 280px;
+  }
+  .game-section .item.active {
+    width: 250px;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+  .game-section .item-desc {
+    padding: 0 14px 5px;
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
 @media all and (max-width: 1680px) {
 }
 
@@ -661,5 +719,8 @@
   }
   #artist-card:nth-child(6){
     display: block;
+  }
+  .owl-dots{
+    display: none;
   }
 }
