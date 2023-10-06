@@ -193,6 +193,7 @@
 .side_title h1 {
   font-size: 25px;
   letter-spacing: 1px;
+  font-family: 'GmarketSansMedium';
 }
 .side_title button {
   border-radius: 3px;
