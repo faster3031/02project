@@ -64,6 +64,7 @@
 }
 .goodsbox .goodstxt > button:hover{
   background-color: #8038c7;
+  
 }
 /* 굿즈 리스트 */
 .goodsbox .goodslist {
@@ -98,9 +99,7 @@
   height: 80%;
   object-fit: cover;
   border-radius: 8px;
-  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
 }
-
 .goodsart li p {
   font-family: "GmarketSansMedium";
   display: block;
@@ -144,6 +143,9 @@
 }
 
 @media all and (max-width: 1024px) {
+  .goods{
+    height: 305px;
+  }
   .goods .goodsbox {
     flex-direction: column;
     width: 100%;
@@ -175,7 +177,7 @@
   .goodsbox .goodslist {
     width: 100%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-around;
   }
   .goodsart li {
@@ -231,11 +233,15 @@
   .goodsart{
     display: -webkit-inline-box;
   }
-  .goodsart li{
-    padding: 0px 4px;
-  }
+
 }
 @media all and (max-width: 480px) {
+  .goodsbox .goodstxt h2 {
+    font-size: 21px;
+  }
+  .goodsbox .goodstxt > button {
+    width: 110px;
+  }
 }
 @media all and (max-width: 320px) {
   .goodsbox .goodstxt  {

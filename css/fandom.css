@@ -177,16 +177,24 @@
   height: 60px;
   border-radius: 20px;
   background-color: #b9bd0b;
-
   cursor: pointer;
   border: none;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
+.rankbtn1:hover{
+  background-color: #939611;
+}
 #fandomslide2 .rankbtn1 {
   background-color: #8d5cb2;
 }
+#fandomslide2 .rankbtn1:hover {
+  background-color: #6d418f;
+}
 #fandomslide3 .rankbtn1 {
   background-color: #d66cc5;
+}
+#fandomslide3 .rankbtn1:hover {
+  background-color: #b355a3;
 }
 .rankbtn1 p {
   color: #fff;
@@ -203,6 +211,9 @@
   cursor: pointer;
   border: none;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.116);
+}
+.rankbtn2:hover{
+  background-color:#f0f0f0;
 }
 .rankbtn2 p {
   color: #5c5c5c;
