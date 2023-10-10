@@ -115,7 +115,7 @@
   font-size: 40px;
   line-height: 50px;
   color: #444504;
-  font-family: "Cafe24Ssurround";
+  font-family: "GmarketSansMedium";
   font-weight: 500;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
   letter-spacing: 0.8px;
@@ -124,7 +124,7 @@
   font-size: 72px;
   color: #a2a50a;
   font-weight: bold;
-  font-family: "Cafe24Ssurround";
+  font-family: "GmarketSansMedium";
   padding-top: 10px;
 }
 #fandomslide2 .ranktxt h1 {
@@ -140,6 +140,7 @@
   margin-top: 30px;
   width: 100%;
   margin-bottom: 30px;
+  font-family: "GmarketSansMedium";
 }
 .ranklist li {
   font-size: 22px;
@@ -586,6 +587,9 @@
     top: 50%;
     left: 44%;
     transform: translateX(-20%);
+  }
+  .ranklist {
+    margin-top: -15px;
   }
   .ranktxt > h1 > span {
     font-size: 25px;
