@@ -112,7 +112,7 @@
   width: 200px;
   padding: 5px;
   border: none;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
   font-family: 'GmarketSansMedium';
 }
 .artist-search button{
@@ -130,7 +130,7 @@
   font-size: 12px;
 }
 .artist-search button:hover{
-  background-color: #8d1cff;
+  background-color: #8038c7;
 }
 .owl-dots{
   display: none;
