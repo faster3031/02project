@@ -245,7 +245,10 @@
     font-size: 10px;
   }
   .sub_campaign_title_box p{
-    font-size: 20px;
+    font-size: 16px;
+  }
+  .sub_campaign_chk span{
+    font-size: 14px;
   }
   .sub_chk_box{
     margin-top: 10px;
