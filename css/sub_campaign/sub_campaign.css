@@ -221,7 +221,7 @@
     width: calc(97% / 1);
   }
   .sub_campaign_text {
-    font-size: 13px;
+    font-size: 11px;
   }
   .sub_campaign_gather{
     font-size: 15px;
@@ -240,6 +240,9 @@
     font-size: 15px;
     padding: 5px 5px;
     font-size: 10px;
+  }
+  .sub_chk_box span{
+    font-size: 15px;
   }
   .sub_campaign_title_box p{
     font-size: 20px;
