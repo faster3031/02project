@@ -62,6 +62,9 @@
   font-size: 20px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.116);
 }
+.goodsbox .goodstxt > button a{
+  color: #fff !important;
+}
 .goodsbox .goodstxt > button:hover{
   background-color: #8038c7;
   
