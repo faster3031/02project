@@ -63,7 +63,7 @@
   color: #242424;
   flex-wrap: wrap;
 }
-.sub_campaign_title_box p span{
+.sub_campaign_title_box p span {
   color: #aa78dc;
 }
 .sub_campaign_text .d-day {
@@ -162,7 +162,8 @@
   width: 100%;
   height: 3px;
   background: #ad5cff;
-  opacity: 1;}
+  opacity: 1;
+}
 /* ------------------------------------------------------------ */
 /* 서브 페이지 캠페인 */
 @media all and (max-width: 1680px) {
@@ -175,7 +176,7 @@
   .sub_campaign_text {
     font-size: 15px;
   }
-  .sub_campaign_gather{
+  .sub_campaign_gather {
     font-size: 12px;
   }
 }
@@ -186,7 +187,7 @@
   .sub_campaign_text {
     font-size: 12px;
   }
-  .sub_campaign_gather{
+  .sub_campaign_gather {
     font-size: 13px;
   }
   .sub_campaign_text .d-day {
@@ -209,7 +210,7 @@
   .sub_campaign_text {
     font-size: 11px;
   }
-  .sub_campaign_gather{
+  .sub_campaign_gather {
     font-size: 11px;
   }
   .sub_campaign_item {
@@ -223,37 +224,46 @@
   .sub_campaign_text {
     font-size: 11px;
   }
-  .sub_campaign_gather{
+  .sub_campaign_gather {
     font-size: 15px;
   }
   .sub_campaign_text .d-day {
     font-size: 15px;
-    padding: 5px 15px;
+    /* padding: 5px 15px; */
     font-size: 10px;
   }
   .sub_campaign_text .d-day_7 {
     font-size: 15px;
-    padding: 5px 15px;
+    /* padding: 5px 15px; */
     font-size: 10px;
   }
   .sub_campaign_text .d-close {
     font-size: 15px;
-    padding: 5px 5px;
+    /* padding: 5px 5px; */
     font-size: 10px;
   }
-  .sub_chk_box span{
+  .sub_chk_box span {
     font-size: 15px;
   }
-  .sub_campaign_title_box p{
+  .sub_campaign_title_box p {
     font-size: 20px;
   }
-  .sub_chk_box{
+  .terms_shape:after {
+    font-size: 20px;
+  }
+  .terms_shape {
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+    margin-right: 5px;
+  }
+  .sub_chk_box {
     margin-top: 10px;
   }
-  .sub_campaign_wrap{
+  .sub_campaign_wrap {
     gap: 15px 0;
   }
-  .sub_campaign_item{
+  .sub_campaign_item {
     padding: 10px 10px;
   }
 }
