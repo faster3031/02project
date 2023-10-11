@@ -142,15 +142,20 @@
   margin-bottom: 30px;
   font-family: "GmarketSansMedium";
 }
-.ranklist li {
+.ranklist > li > p {
   font-size: 22px;
   font-weight: 500;
   padding: 5px 21px;
   margin-left: 10px;
   position: relative;
   text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: keep-all;
+  /* width: 160px; */
+  white-space: nowrap;
 }
-.ranklist li::before {
+.ranklist li p::before {
   content: "";
   display: block;
   position: absolute;
@@ -181,7 +186,7 @@
   border: none;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
-.rankbtn1:hover{
+.rankbtn1:hover {
   background-color: #939611;
 }
 #fandomslide2 .rankbtn1 {
@@ -212,8 +217,8 @@
   border: none;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.116);
 }
-.rankbtn2:hover{
-  background-color:#f0f0f0;
+.rankbtn2:hover {
+  background-color: #f0f0f0;
 }
 .rankbtn2 p {
   color: #5c5c5c;
