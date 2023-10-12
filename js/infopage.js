@@ -77,27 +77,33 @@ window.addEventListener("load", function () {
     button.addEventListener("click", () => {
       const amount = parseInt(button.getAttribute("data-amount")); // 금액을 정수로 변환
       selectedAmount += amount; // 선택한 금액을 누적
-      selectedAmountDisplay.textContent = selectedAmount + "원"; // 선택한 금액 표시
+      const formattedAmount = selectedAmount.toLocaleString(); // 쉼표를 포함한 형식으로 변환
+      selectedAmountDisplay.textContent = formattedAmount + "원"; // 선택한 금액 표시
       confirmAmountBtn.style.display = "block";
     });
   });
 
   // 직접 금액 입력 필드 이벤트 처리
   customAmountInput.addEventListener("input", () => {
-    selectedAmountDisplay.textContent = customAmountInput.value + "원";
+    const inputValue = parseInt(customAmountInput.value.replace(/,/g, '')); // 쉼표 제거 후 숫자로 변환
+    const formattedInputValue = inputValue.toLocaleString(); // 쉼표를 포함한 형식으로 변환
+    selectedAmountDisplay.textContent = formattedInputValue + "원";
     confirmAmountBtn.style.display = "block";
   });
 
-  // 모달창 외부 클릭 시 닫기
-  window.addEventListener("click", (event) => {
-    if (event.target == paymentModal) {
-      paymentModal.style.display = "none";
+// 모달창 외부 클릭 시 닫기
+window.addEventListener("click", (event) => {
+  if (event.target == paymentModal) {
+    paymentModal.style.display = "none";
 
-      // 모달이 닫힐 때 선택한 금액 초기화
-      selectedAmount = 0;
-      selectedAmountDisplay.textContent = "0원"; // 초기화된 금액을 화면에 표시
-    }
-  });
+    // 모달이 닫힐 때 선택한 금액 및 직접 입력 값 초기화
+    selectedAmount = 0;
+    selectedAmountDisplay.textContent = "0원"; // 초기화된 금액을 화면에 표시
+    customAmountInput.value = ""; // 직접 입력 필드를 비움
+    confirmAmountBtn.style.display = "block"; // 확인 버튼 숨김
+  }
+});
+
 
   // ... (이전 코드) ...
 
