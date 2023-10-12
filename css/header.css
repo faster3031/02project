@@ -856,6 +856,10 @@
     font-weight: 500;
     line-height: 20px;
     display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
   }
   .icon_each_span_w{
     font-size: 10px;
