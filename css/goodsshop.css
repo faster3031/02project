@@ -32,7 +32,12 @@
   .goodsshop button:hover{
     background-color:#f2dbff ;
   }
-
+  #shopcate button.active {
+    background-color:#f2dbff ; /* Change this to the desired color */
+  }
+  #shopcate2 button.active {
+    background-color:#f2dbff ; /* Change this to the desired color */
+  }
 
 
   /* 굿즈목록 */
