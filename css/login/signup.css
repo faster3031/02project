@@ -93,16 +93,19 @@
   font-size: 15px;
 }
 /* 통신사 버튼 */
+.news_agency{
+  display: flex;
+  gap: 5px;
+  margin: 7px 0;
+}
 .news_agency input[type="radio"] {
   display: none;
 }
 .news_agency input[type="radio"] + label {
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
-  display: inline-block;
   cursor: pointer;
+  flex: 1;
   height: 30px;
-  width: calc(96% / 3);
-  margin: 5px 2px;
   border: 1px solid #fff;
   line-height: 24px;
   text-align: center;
@@ -271,9 +274,6 @@
 
 /* 로그인 반응형 */
 @media all and (max-width: 1680px) {
-  .news_agency input[type="radio"] + label {
-    width: calc(96% / 3);
-  }
   .sex input[type="radio"] + label {
     width: calc(97% / 2);
   }
@@ -283,9 +283,6 @@
 }
 
 @media all and (max-width: 1280px) {
-  .news_agency input[type="radio"] + label {
-    width: calc(95% / 3);
-  }
   .sex input[type="radio"] + label {
     width: calc(97% / 2);
   }
@@ -302,9 +299,6 @@
   }
 }
 @media all and (max-width: 1024px) {
-  .news_agency input[type="radio"] + label {
-    width: calc(93% / 3);
-  }
   .sex input[type="radio"] + label {
     width: calc(97% / 2);
   }
@@ -319,9 +313,6 @@
 @media all and (max-width: 760px) {
   .content_box {
     width: 80%;
-  }
-  .news_agency input[type="radio"] + label {
-    width: calc(92% / 3);
   }
   .sex input[type="radio"] + label {
     width: calc(95% / 2);
@@ -347,9 +338,6 @@
   .content_box {
     width: 100%;
   }
-  .news_agency input[type="radio"] + label {
-    width: calc(91% / 3);
-  }
   .sex input[type="radio"] + label {
     width: calc(94% / 2);
   }
@@ -370,9 +358,6 @@
 @media all and (max-width: 320px) {
   .content_box {
     width: 100%;
-  }
-  .news_agency input[type="radio"] + label {
-    width: calc(91% / 3);
   }
   .sex input[type="radio"] + label {
     width: calc(94% / 2);

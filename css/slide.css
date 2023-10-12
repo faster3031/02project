@@ -294,6 +294,7 @@
 .slide_left_button button {
   width: 200px;
   height: 40px;
+  line-height: 40px;
   border-radius: 20px;
   background-color: #8d4ccd;
   color: #fff;
@@ -318,6 +319,7 @@
 .slide_right_button button {
   width: 200px;
   height: 40px;
+  line-height: 40px;
   border-radius: 20px;
   background-color: #8d4ccd;
   color: #fff;
