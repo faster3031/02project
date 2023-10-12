@@ -722,7 +722,6 @@
   border: none !important;
   text-align: right;
   font-weight: 500 !important;
-  padding-left: 10px;
   
 }
 .icon_each_modal img {
@@ -741,6 +740,10 @@
   padding-top: 5px;
   font-size: 12px;
   justify-content: space-between;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 
 /* 모바일 메뉴 */
@@ -856,10 +859,7 @@
     font-weight: 500;
     line-height: 20px;
     display: block;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    word-break: keep-all;
-    white-space: nowrap;
+
   }
   .icon_each_span_w{
     font-size: 10px;
