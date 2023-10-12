@@ -21,6 +21,26 @@ $(document).ready(function () {
     let value = $(this).val();
     mixer.sort(value);
   });
+  const shopcateButtons = document.querySelectorAll('#shopcate button');
+  const shopcateButtons2 = document.querySelectorAll('#shopcate2 button');
+
+  // Function to handle button clicks
+  function handleButtonClick(event) {
+    // Remove the 'active' class from all buttons
+    shopcateButtons.forEach(button => button.classList.remove('active'));
+    shopcateButtons2.forEach(button => button.classList.remove('active'));
+
+    // Add the 'active' class to the clicked button
+    event.currentTarget.classList.add('active');
+  }
+
+  // Add a click event listener to each button in the "shopcate" list
+  shopcateButtons.forEach(button => {
+    button.addEventListener('click', handleButtonClick);
+  });
+  shopcateButtons2.forEach(button => {
+    button.addEventListener('click', handleButtonClick);
+  });
 });
 
 // 멀티미디어 리소스 로딩 완료 후 실행
